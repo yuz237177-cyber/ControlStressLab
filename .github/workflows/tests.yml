@@ -1,0 +1,24 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.12']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest discover -s tests -v
+      - run: python run_demo.py --output outputs/ci-demo
+      - run: python -m pip install --no-deps .
+      - run: controlstresslab --output installed-ci-demo
+        working-directory: ${{ runner.temp }}
+      - run: python scripts/build_readme_preview.py
+      - run: python -m pip install ".[charts]"
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: python scripts/build_chart_gallery.py --output outputs/ci-gallery
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'

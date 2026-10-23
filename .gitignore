@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+outputs/
+.env
+.env.*
+!.env.example
+
+# Local collaboration history and acceptance evidence stay on this computer.
+reviews/
+DEEPSEEK_TASKS.md
+docs/RELEASE_0_1_1.md
+docs/PUBLISH_READINESS.md
