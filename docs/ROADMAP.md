@@ -6,7 +6,7 @@
 - [x] SystemExit记录与传播，失败命令行措辞与状态文档。
 - [x] 新增六项回归检查，共55项通过。
 - [x] 九张PNG/SVG图表、配置快照与重建脚本；绘图依赖可选安装。
-- [ ] 首次推送后实际运行跨平台GitHub Actions。
+- [x] Windows/Linux × Python3.10/3.12四组GitHub Actions实际通过。
 
 ## v0.1.1 可靠性与报告（2026-10-23）
 

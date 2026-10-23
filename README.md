@@ -1,5 +1,7 @@
 # ControlStressLab
 
+[![tests](https://github.com/yuz237177-cyber/ControlStressLab/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/yuz237177-cyber/ControlStressLab/actions/workflows/tests.yml)
+
 **可复现的控制器压力测试与性能评估工具。**
 
 Connect a SISO controller, run explicit stress scenarios, and inspect performance trade-offs.
