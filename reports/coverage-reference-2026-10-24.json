@@ -1,0 +1,2480 @@
+{
+  "environment": {
+    "python": "3.9.13",
+    "numpy": "1.21.5",
+    "scipy": "1.9.1"
+  },
+  "suite": "outputs\\coverage-final",
+  "expected_runs": 224,
+  "plant_replays": 224,
+  "adrc_request_replays": 56,
+  "failed": 0,
+  "cases": [
+    {
+      "case_id": "first_order__combined_sine_prbs__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.10702591327572e-15,
+        "max_tolerance_fraction": 4.785158739800353e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.549516567451064e-15,
+        "max_tolerance_fraction": 7.05136290193754e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__combined_sine_prbs__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.773959005888173e-15,
+        "max_tolerance_fraction": 4.421116697875877e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__combined_sine_prbs__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.9960036108132044e-15,
+        "max_tolerance_fraction": 4.6263338946187814e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__combined_sine_prbs__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.884981308350689e-15,
+        "max_tolerance_fraction": 4.486150182730295e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_chirp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.661338147750939e-15,
+        "max_tolerance_fraction": 6.048365141104405e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.880984919163893e-15,
+        "max_tolerance_fraction": 9.073385406320558e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_chirp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.772360450213455e-15,
+        "max_tolerance_fraction": 6.158865817868624e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_chirp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.773159728050814e-15,
+        "max_tolerance_fraction": 5.247083676922044e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_chirp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.995204332975845e-15,
+        "max_tolerance_fraction": 5.436685626719361e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_prbs__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.856557324884574e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 1.0658141036401503e-14,
+        "max_tolerance_fraction": 9.51602311346482e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_prbs__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.856635788178466e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_prbs__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.83360224103976e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_prbs__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.661338147750939e-15,
+        "max_tolerance_fraction": 6.021168742058548e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_pulse__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.652044504025394e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-15,
+        "max_tolerance_fraction": 7.666372774830607e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_pulse__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.995204332975845e-15,
+        "max_tolerance_fraction": 5.454702282121947e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_pulse__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.328271240363392e-15,
+        "max_tolerance_fraction": 5.757075664770715e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_pulse__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.773159728050814e-15,
+        "max_tolerance_fraction": 5.251431305721692e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_sine__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.843069171011536e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 1.021405182655144e-14,
+        "max_tolerance_fraction": 9.37054853824795e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_sine__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.327471962526033e-15,
+        "max_tolerance_fraction": 6.629813645817858e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_sine__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.627241203952745e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_sine__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.327471962526033e-15,
+        "max_tolerance_fraction": 6.626880772147583e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_square__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.852459087842344e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.2148511043888e-15,
+        "max_tolerance_fraction": 8.545903768970668e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_square__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.231755465476909e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_square__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.260723540847539e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_square__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.219365383360009e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_step__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.643366172950762e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 1.099120794378905e-14,
+        "max_tolerance_fraction": 1.0177044590026419e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_step__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.231755465476909e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_step__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.105427357601002e-15,
+        "max_tolerance_fraction": 6.449427705985937e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__disturbance_step__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.256067273281214e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__measurement_noise_delay__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.106226635438361e-15,
+        "max_tolerance_fraction": 5.552559577706694e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.325873406851315e-15,
+        "max_tolerance_fraction": 8.458590189224075e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__measurement_noise_delay__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.328271240363392e-15,
+        "max_tolerance_fraction": 5.760515855620618e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__measurement_noise_delay__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.854350126800592e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__measurement_noise_delay__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.995204332975845e-15,
+        "max_tolerance_fraction": 5.450091694887093e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_chirp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.773959005888173e-15,
+        "max_tolerance_fraction": 4.456848095371468e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.881784197001252e-15,
+        "max_tolerance_fraction": 8.695492844164415e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_chirp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.551914400963142e-15,
+        "max_tolerance_fraction": 4.2585300195081306e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_chirp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.10702591327572e-15,
+        "max_tolerance_fraction": 4.7420334212261384e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_chirp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.131134574164346e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_multistep__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.218048215738236e-15,
+        "max_tolerance_fraction": 4.819183637802307e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-15,
+        "max_tolerance_fraction": 7.666372774830607e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_multistep__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.6629367034256575e-15,
+        "max_tolerance_fraction": 4.3604571021226026e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_multistep__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.884981308350689e-15,
+        "max_tolerance_fraction": 4.472356378016375e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_multistep__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.551914400963142e-15,
+        "max_tolerance_fraction": 4.2575347005043626e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_ramp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.652044489070058e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.881784197001252e-15,
+        "max_tolerance_fraction": 8.074349233464261e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_ramp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.773159728050814e-15,
+        "max_tolerance_fraction": 5.251474152200177e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_ramp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.88418203051333e-15,
+        "max_tolerance_fraction": 5.365020014793087e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_ramp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.855139319460026e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_sine__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.551115123125783e-15,
+        "max_tolerance_fraction": 5.146977802198612e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.771561172376096e-15,
+        "max_tolerance_fraction": 7.439819416798098e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_sine__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.9960036108132044e-15,
+        "max_tolerance_fraction": 4.645157822150054e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_sine__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.551115123125783e-15,
+        "max_tolerance_fraction": 5.11493947156576e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_sine__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.6629367034256575e-15,
+        "max_tolerance_fraction": 4.3231725594660547e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_step__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.853903220753577e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-15,
+        "max_tolerance_fraction": 7.666372774830607e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_step__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.995204332975845e-15,
+        "max_tolerance_fraction": 5.450530724488105e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_step__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.855225444052542e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_step__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.106226635438361e-15,
+        "max_tolerance_fraction": 5.553869378335679e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_triangle__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.9960036108132044e-15,
+        "max_tolerance_fraction": 4.672666324503283e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.659739592076221e-15,
+        "max_tolerance_fraction": 7.933273229575173e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_triangle__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.1057945700925013e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_triangle__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.9960036108132044e-15,
+        "max_tolerance_fraction": 4.7340369745128804e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "first_order__reference_triangle__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.6629367034256575e-15,
+        "max_tolerance_fraction": 4.3499342826844533e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__combined_sine_prbs__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7408297026122455e-13,
+        "max_tolerance_fraction": 5.032513815667254e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.016609515630989e-14,
+        "max_tolerance_fraction": 4.969405886119311e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__combined_sine_prbs__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.694822225952521e-13,
+        "max_tolerance_fraction": 1.2646666983291821e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__combined_sine_prbs__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.765876499528531e-13,
+        "max_tolerance_fraction": 1.2346605986469148e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__combined_sine_prbs__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.979039320256561e-13,
+        "max_tolerance_fraction": 1.086773937810199e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_chirp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 6.78502606839208e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.904787935331115e-14,
+        "max_tolerance_fraction": 4.5546521701728825e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_chirp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.907985046680551e-13,
+        "max_tolerance_fraction": 1.378230225246898e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_chirp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.836930773104541e-13,
+        "max_tolerance_fraction": 1.3534802030059632e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_chirp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.050093593832571e-13,
+        "max_tolerance_fraction": 1.1053969665150978e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_prbs__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 6.78502606839208e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.881784197001252e-14,
+        "max_tolerance_fraction": 5.802266860357877e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_prbs__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.907985046680551e-13,
+        "max_tolerance_fraction": 1.378230225246898e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_prbs__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.836930773104541e-13,
+        "max_tolerance_fraction": 1.3534802030059632e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_prbs__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.050093593832571e-13,
+        "max_tolerance_fraction": 1.1053969665150978e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_pulse__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 6.78502606839208e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.704148513061227e-14,
+        "max_tolerance_fraction": 5.1688349333763214e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_pulse__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.907985046680551e-13,
+        "max_tolerance_fraction": 1.378230225246898e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_pulse__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.836930773104541e-13,
+        "max_tolerance_fraction": 1.3534802030059632e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_pulse__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.050093593832571e-13,
+        "max_tolerance_fraction": 1.1053969665150978e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_sine__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 6.78502606839208e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 1.0036416142611415e-13,
+        "max_tolerance_fraction": 6.083204440280986e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_sine__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.907985046680551e-13,
+        "max_tolerance_fraction": 1.378230225246898e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_sine__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.836930773104541e-13,
+        "max_tolerance_fraction": 1.3534802030059632e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_sine__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.050093593832571e-13,
+        "max_tolerance_fraction": 1.1053969665150978e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_square__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 6.78502606839208e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.592326932761353e-14,
+        "max_tolerance_fraction": 6.066189910376498e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_square__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.907985046680551e-13,
+        "max_tolerance_fraction": 1.378230225246898e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_square__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.836930773104541e-13,
+        "max_tolerance_fraction": 1.3534802030059632e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_square__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.050093593832571e-13,
+        "max_tolerance_fraction": 1.1053969665150978e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_step__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 6.78502606839208e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.526512829121202e-14,
+        "max_tolerance_fraction": 4.681203447026583e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_step__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.907985046680551e-13,
+        "max_tolerance_fraction": 1.378230225246898e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_step__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.836930773104541e-13,
+        "max_tolerance_fraction": 1.3534802030059632e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__disturbance_step__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.050093593832571e-13,
+        "max_tolerance_fraction": 1.1053969665150978e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__measurement_noise_delay__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.8474111129762605e-13,
+        "max_tolerance_fraction": 6.4725894933976705e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.414691248821327e-14,
+        "max_tolerance_fraction": 5.716694785184651e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__measurement_noise_delay__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.979039320256561e-13,
+        "max_tolerance_fraction": 1.1868046120968822e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__measurement_noise_delay__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.334310688136611e-13,
+        "max_tolerance_fraction": 1.3966861837896943e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__measurement_noise_delay__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.334310688136611e-13,
+        "max_tolerance_fraction": 1.3545868404545286e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_chirp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3500311979441904e-13,
+        "max_tolerance_fraction": 4.748744356814817e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.750155989720952e-14,
+        "max_tolerance_fraction": 4.6529783136412825e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_chirp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.547473508864641e-13,
+        "max_tolerance_fraction": 1.4603052199044157e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_chirp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.263256414560601e-13,
+        "max_tolerance_fraction": 1.2913624394017127e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_chirp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.907985046680551e-13,
+        "max_tolerance_fraction": 1.086773937810199e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_multistep__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 1.8951994488663012e-05
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.994405055138486e-14,
+        "max_tolerance_fraction": 5.856140071703489e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_multistep__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.389644451905042e-13,
+        "max_tolerance_fraction": 7.11429305945142e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_multistep__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.755396159656812e-13,
+        "max_tolerance_fraction": 5.5404983515049547e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_multistep__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.542233338928781e-13,
+        "max_tolerance_fraction": 4.6924085703422745e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_ramp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.0605739337042905e-13,
+        "max_tolerance_fraction": 4.242563705103016e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.704148513061227e-14,
+        "max_tolerance_fraction": 5.290884415874045e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_ramp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 5.62336932518501e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_ramp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4921397450962104e-13,
+        "max_tolerance_fraction": 5.155389505523479e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_ramp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 4.994723191393918e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_sine__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7408297026122455e-13,
+        "max_tolerance_fraction": 5.032513815667254e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.394884621840902e-14,
+        "max_tolerance_fraction": 4.247350925560121e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_sine__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.694822225952521e-13,
+        "max_tolerance_fraction": 1.2646666983291821e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_sine__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.765876499528531e-13,
+        "max_tolerance_fraction": 1.2346605986469148e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_sine__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.979039320256561e-13,
+        "max_tolerance_fraction": 1.086773937810199e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_step__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 6.78502606839208e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.549516567451064e-14,
+        "max_tolerance_fraction": 4.547809179609942e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_step__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.907985046680551e-13,
+        "max_tolerance_fraction": 1.378230225246898e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_step__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.836930773104541e-13,
+        "max_tolerance_fraction": 1.3534802030059632e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_step__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.050093593832571e-13,
+        "max_tolerance_fraction": 1.1053969665150978e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_triangle__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6342482922482304e-13,
+        "max_tolerance_fraction": 4.721960812510157e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.572520305780927e-14,
+        "max_tolerance_fraction": 4.488115838701876e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_triangle__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.694822225952521e-13,
+        "max_tolerance_fraction": 1.2646666983291821e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_triangle__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.623767952376511e-13,
+        "max_tolerance_fraction": 1.2346605986469148e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "inductive_motor__reference_triangle__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.410605131648481e-13,
+        "max_tolerance_fraction": 1.086773937810199e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__combined_sine_prbs__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6021473639396585e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.9968028886505635e-14,
+        "max_tolerance_fraction": 3.323687224593971e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__combined_sine_prbs__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.831068712794149e-15,
+        "max_tolerance_fraction": 2.712451163285987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__combined_sine_prbs__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4988010832439613e-15,
+        "max_tolerance_fraction": 1.4462102023471977e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__combined_sine_prbs__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3948306241954835e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_chirp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.5543122344752192e-15,
+        "max_tolerance_fraction": 1.4764575642109892e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.241051954068098e-14,
+        "max_tolerance_fraction": 3.589845678208864e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_chirp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.3306690738754696e-15,
+        "max_tolerance_fraction": 3.1752678212145027e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_chirp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6016180812828427e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_chirp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_prbs__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3919869338258384e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.196643033083092e-14,
+        "max_tolerance_fraction": 3.580962923238223e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_prbs__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.9976021664879227e-15,
+        "max_tolerance_fraction": 2.8619374889727856e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_prbs__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6016180812828427e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_prbs__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_pulse__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3919869338258384e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.752553823233029e-14,
+        "max_tolerance_fraction": 3.250890210253528e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_pulse__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.43044453933987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_pulse__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6016180812828427e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_pulse__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_sine__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3919869338258384e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 5.484501741648273e-14,
+        "max_tolerance_fraction": 4.749827631413743e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_sine__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.43044453933987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_sine__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 1.9999303333088084e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_sine__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7763568394002505e-15,
+        "max_tolerance_fraction": 1.6842525346900746e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_square__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.5543122344752192e-15,
+        "max_tolerance_fraction": 1.4760968643999016e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.707345624410664e-14,
+        "max_tolerance_fraction": 4.072865816475298e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_square__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.43044453933987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_square__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 2.0084602406083293e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_square__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_step__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.887379141862766e-15,
+        "max_tolerance_fraction": 1.797442829020985e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 5.129230373768223e-14,
+        "max_tolerance_fraction": 4.460075156276439e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_step__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.43044453933987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_step__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6016180812828427e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__disturbance_step__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__measurement_noise_delay__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3322676295501878e-15,
+        "max_tolerance_fraction": 1.268837109014334e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.285460875053104e-14,
+        "max_tolerance_fraction": 3.6551980117357267e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__measurement_noise_delay__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.4416913763379853e-15,
+        "max_tolerance_fraction": 3.198810593569631e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__measurement_noise_delay__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1649348980190553e-15,
+        "max_tolerance_fraction": 2.0798106950190522e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__measurement_noise_delay__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2212453270876722e-15,
+        "max_tolerance_fraction": 1.1852437927464793e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_chirp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1657341758564144e-15,
+        "max_tolerance_fraction": 1.1300650661518003e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.907985046680551e-14,
+        "max_tolerance_fraction": 3.5018463729791575e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_chirp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.816391647148976e-15,
+        "max_tolerance_fraction": 3.7741942719115616e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_chirp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.887379141862766e-15,
+        "max_tolerance_fraction": 1.809215286776438e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_chirp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3877787807814457e-15,
+        "max_tolerance_fraction": 1.352225469319066e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_multistep__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3920543203916838e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-14,
+        "max_tolerance_fraction": 2.4931988541822374e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_multistep__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 6.181616080025156e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_multistep__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7208456881689926e-15,
+        "max_tolerance_fraction": 1.6715957440532272e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_multistep__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_ramp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.771561172376096e-16,
+        "max_tolerance_fraction": 7.401696436849236e-08
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.6637359812630166e-14,
+        "max_tolerance_fraction": 3.053145953231212e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_ramp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 8.326672684688674e-16,
+        "max_tolerance_fraction": 7.993475655511597e-08
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_ramp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.661338147750939e-16,
+        "max_tolerance_fraction": 6.442784739393059e-08
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_ramp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 8.326672684688674e-16,
+        "max_tolerance_fraction": 7.957706584085122e-08
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_sine__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7208456881689926e-15,
+        "max_tolerance_fraction": 1.6622213168878495e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.263256414560601e-14,
+        "max_tolerance_fraction": 3.6928209328143122e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_sine__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 2.0184571157400758e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_sine__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.5543122344752192e-15,
+        "max_tolerance_fraction": 1.5076925601289917e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_sine__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3322676295501878e-15,
+        "max_tolerance_fraction": 1.2968386327297404e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_step__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3919869338258384e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.6629367034256575e-14,
+        "max_tolerance_fraction": 3.885780729049624e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_step__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.43044453933987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_step__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6016180812828427e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_step__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_triangle__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3877787807814457e-15,
+        "max_tolerance_fraction": 1.3489954791372837e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.3306690738754696e-14,
+        "max_tolerance_fraction": 2.906972114445078e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_triangle__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.9136594684157955e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_triangle__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.27675647831893e-15,
+        "max_tolerance_fraction": 1.2331472096311982e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "mass_spring_damper__reference_triangle__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3322676295501878e-15,
+        "max_tolerance_fraction": 1.2945861910092717e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__combined_sine_prbs__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 4.193657752796906e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.220446049250313e-14,
+        "max_tolerance_fraction": 1.5070326049164573e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__combined_sine_prbs__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 4.07450213627359e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__combined_sine_prbs__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 4.687180959382344e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__combined_sine_prbs__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.8474111129762605e-13,
+        "max_tolerance_fraction": 4.60407747854047e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_chirp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3447910280083306e-13,
+        "max_tolerance_fraction": 3.3497272285422184e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.019806626980426e-14,
+        "max_tolerance_fraction": 1.6843952460079693e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_chirp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 3.2454136760343658e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_chirp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2026824808563106e-13,
+        "max_tolerance_fraction": 3.1814792255590907e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_chirp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3447910280083306e-13,
+        "max_tolerance_fraction": 3.3914648475544264e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_prbs__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3447910280083306e-13,
+        "max_tolerance_fraction": 3.3497272285422184e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.7533531010703882e-14,
+        "max_tolerance_fraction": 1.8237615236480368e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_prbs__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 3.2454136760343658e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_prbs__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1316282072803006e-13,
+        "max_tolerance_fraction": 3.2748181861667415e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_prbs__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 3.2481550268154833e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_pulse__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3447910280083306e-13,
+        "max_tolerance_fraction": 3.3497272285422184e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-14,
+        "max_tolerance_fraction": 1.6051417223982086e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_pulse__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4158453015843406e-13,
+        "max_tolerance_fraction": 3.411827864801324e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_pulse__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3447910280083306e-13,
+        "max_tolerance_fraction": 3.3603770193860075e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_pulse__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 3.2482406414531017e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_sine__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3447910280083306e-13,
+        "max_tolerance_fraction": 3.4029477824841572e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.842170943040401e-14,
+        "max_tolerance_fraction": 1.5757205872637038e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_sine__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 3.2454136760343658e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_sine__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3447910280083306e-13,
+        "max_tolerance_fraction": 3.274552122204809e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_sine__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4158453015843406e-13,
+        "max_tolerance_fraction": 3.547257910055978e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_square__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3447910280083306e-13,
+        "max_tolerance_fraction": 3.3497272285422184e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.5757174171303632e-14,
+        "max_tolerance_fraction": 1.551473754962577e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_square__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4158453015843406e-13,
+        "max_tolerance_fraction": 3.2574503574022834e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_square__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4158453015843406e-13,
+        "max_tolerance_fraction": 3.4483509480451196e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_square__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 3.2481550268154833e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_step__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3447910280083306e-13,
+        "max_tolerance_fraction": 3.3497272285422184e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-14,
+        "max_tolerance_fraction": 1.551473754962577e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_step__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3447910280083306e-13,
+        "max_tolerance_fraction": 3.3499696386060863e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_step__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2026824808563106e-13,
+        "max_tolerance_fraction": 3.1466890453997016e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__disturbance_step__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 3.248563299220908e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__measurement_noise_delay__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4158453015843406e-13,
+        "max_tolerance_fraction": 3.4586556675603168e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.375077994860476e-14,
+        "max_tolerance_fraction": 1.9782757299591595e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__measurement_noise_delay__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 3.2509999718726035e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__measurement_noise_delay__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.0605739337042905e-13,
+        "max_tolerance_fraction": 2.9649521288745734e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__measurement_noise_delay__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 3.2467356421855507e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_chirp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7763568394002505e-13,
+        "max_tolerance_fraction": 3.957823736632532e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.6201263381153694e-14,
+        "max_tolerance_fraction": 2.411051521826294e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_chirp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9184653865522705e-13,
+        "max_tolerance_fraction": 4.975764975036707e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_chirp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 5.282151472580645e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_chirp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.8474111129762605e-13,
+        "max_tolerance_fraction": 3.997689434022823e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_multistep__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.0605739337042905e-13,
+        "max_tolerance_fraction": 1.4903129302660709e-05
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.3092638912203256e-14,
+        "max_tolerance_fraction": 1.3972710220122452e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_multistep__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 1.7691782832177253e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_multistep__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9184653865522705e-13,
+        "max_tolerance_fraction": 1.4353624002377682e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_multistep__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 1.2921856837561515e-05
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_ramp__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1316282072803006e-13,
+        "max_tolerance_fraction": 3.0451890452385775e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.930988785010413e-14,
+        "max_tolerance_fraction": 1.7279790743762947e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_ramp__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2026824808563106e-13,
+        "max_tolerance_fraction": 3.1464420622985715e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_ramp__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2026824808563106e-13,
+        "max_tolerance_fraction": 3.154491906017753e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_ramp__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 2.8421713408836255e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_sine__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 4.513998656934902e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.5757174171303632e-14,
+        "max_tolerance_fraction": 1.666659188865424e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_sine__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.8474111129762605e-13,
+        "max_tolerance_fraction": 3.9696614691531454e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_sine__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1316282072803006e-13,
+        "max_tolerance_fraction": 4.687180959382344e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_sine__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.8474111129762605e-13,
+        "max_tolerance_fraction": 4.235667091649575e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_step__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4158453015843406e-13,
+        "max_tolerance_fraction": 3.451207573691921e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 5.417888360170764e-14,
+        "max_tolerance_fraction": 3.2637881687775744e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_step__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 3.248177139288887e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_step__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4158453015843406e-13,
+        "max_tolerance_fraction": 3.4512075738982364e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_step__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.2737367544323206e-13,
+        "max_tolerance_fraction": 3.2481550268154833e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_triangle__LADRC",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6342482922482304e-13,
+        "max_tolerance_fraction": 3.6956048243897143e-06
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.930988785010413e-14,
+        "max_tolerance_fraction": 1.989977382227231e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_triangle__PI",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.0605739337042905e-13,
+        "max_tolerance_fraction": 3.8083028493329874e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_triangle__PID_aw",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.8474111129762605e-13,
+        "max_tolerance_fraction": 4.331819245643831e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "reduced_motor__reference_triangle__TwoDOF_PID",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9895196601282805e-13,
+        "max_tolerance_fraction": 4.5028895642605935e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    }
+  ],
+  "scope": "plant input replay + independent linear ADRC matrices; not a new full independent nonlinear closed-loop simulation",
+  "reference_script_sha256": "74d23fdaf791415cc96f91c3b9cb63c4b53c1b051816a2a4b45e7a054efc2b4e"
+}

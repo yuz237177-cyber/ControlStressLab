@@ -1,0 +1,22 @@
+{
+  "comparison.json": "8833f01be2a119030a48be22c5ea6a76b41d9579a9f5ed61339ece97b522b33d",
+  "figures/closed_loop_acceptance.png": "650568f83d307557847723129e7c098eb7fac5b267c1077177f7967f2db26d5a",
+  "figures/closed_loop_acceptance.svg": "14c87adc1b27079ffebc8b1c0f88f2863d0a153c402ce9993a0e62b063b9bf2a",
+  "figures/maximum_output_errors.png": "e90ebf9dbe60dcaa919eb0704f3b0fc5543cd8865eb700383b3dcdef52f1e773",
+  "figures/maximum_output_errors.svg": "07ee3fef894ad7116d2353a36ca4a83dcd6670def17cc839e8ca321f52713b46",
+  "figures/representative_response_overlays.png": "e45f401d7f330bab9ba3d63ccd7e74bac7c9a70be08ebe0088f95a1c33650061",
+  "figures/representative_response_overlays.svg": "ec39853dc9134912cff9c03db47218808749517fe2027890a4aeb7828bca2c4b",
+  "figures/signed_numerical_differences.png": "1c823a4f14090b55935e5b3cae35c768a755e4adf43e9daa3bfbdd5cb63428fc",
+  "figures/signed_numerical_differences.svg": "f8950be1383ec4ebab339cbb588968bf6d2d9d496c3ba4b4c85123b0f8c1cc8d",
+  "manifest.json": "72306c177ede48f0f1562e821353537cfab2b8a567a7c05cbc245ebbaea4d387",
+  "product.json": "fbf96b7548cd15d7226b355498e2baacf4733ac4ee442ea4c2c92036cd8446be",
+  "reference.json": "e85815cb33886a9140a3c021fdceaa45b4b32b851a8f11b3b1db0b660a2c37b3",
+  "reference_process.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "reference_source/docs/REFERENCE_COMPARISON_DESIGN.md": "2c743c0524996bc94dfb48dae75ca4b1f4eb3e88152519d6ec8b22e20930e975",
+  "reference_source/scripts/reference_checks.py": "02cd19c1452666ea512ab48dd2466d43ba28dcef291f91eb5907d25313bebf4b",
+  "reference_source/scripts/reference_plots.py": "404266fcd111d33a6b85ee95c0f301cb245d72bebdf3fcb45bcf84f98dbd35c5",
+  "reference_source/scripts/scipy_reference.py": "1d52c1ce96036adc878c833904c7e7f4de7a9d1d08955ecb6f27f2d1c2d62c94",
+  "report.html": "35a6457f01d4ad4fac009d900b121964539cc82007907f8992e7fd56725c4799",
+  "suite.json": "44b1c4838f9f3d1b5c45fbe491db1994a5e3188ad511d23505a43def3eb111bb",
+  "status.json": "e22086762aa5f0f62dd591992292a321112dd93aef39b1e331cc4ecc0d0e8597"
+}

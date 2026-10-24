@@ -104,3 +104,15 @@ artifacts_complete只表示产物集完整，含失败或提前停止的批次�
 manifest.json 记录对象、控制器、场景、时间窗、版本和环境。逐次 CSV 保存实际轨迹。
 checksums.json 记录输出文件 SHA-256，能帮助发现文件变动，不能证明测量来源真实。
 输出目录禁止覆盖；正式引用实验时同时记录所用源码提交版本。
+# 开发扩展：采样波形与通用单位
+
+`SampledSignal`公开dt、完整样本和波形配方，区间内按零阶保持施加；与场景网格或长度不符时拒绝执行。
+`Scenario.recovery_mode`默认`settling`，保持原有“参考在恢复锚点后固定”的约束。
+新`tracking_only`用于持续变化参考/持续扰动：保留真实状态跟踪指标，恢复时间为null，状态为`not_applicable_tracking_only`。
+
+`controlstresslab-coverage`采用单独的`coverage-1.0`清单和`generic-1.0`轨迹：
+`time_s, reference, output, measurement, requested_input, applied_input, disturbance, interval_s, action_taken, transition_completed`。
+各运行记录附output/input/disturbance单位、参考尺度和输入限幅。旧演示的电机字段名继续用于兼容，
+新增导出的映射见manifest，不能把质量弹簧的位移/力误读为转速/电压。
+新入口同样最后提交完整状态，失败完整窗口指标为null，输出目录不得覆盖。
+设计与矩阵见 [覆盖扩展协议](COVERAGE_EXPANSION_DESIGN.md)。

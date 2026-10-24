@@ -1,0 +1,38 @@
+{
+  "schema": "reference-comparison-1.0",
+  "feature": "independent_numerical_comparison_development",
+  "evidence": "synthetic_assumption",
+  "reference_environment": {
+    "python": "3.9.13",
+    "numpy": "1.21.5",
+    "scipy": "1.9.1"
+  },
+  "product_python": "3.12.14",
+  "methods": {
+    "linear": "cont2discrete(zoh) + dlsim",
+    "nonlinear": "solve_ivp(DOP853)",
+    "rtol": 1e-11,
+    "atol": 1e-12
+  },
+  "case_count": 54,
+  "failed": 0,
+  "source_files_sha256": {
+    "__init__.py": "27e7155194e264a555175244baefb325eb1fc78bc3e237faeaf5da38feeeb858",
+    "cli.py": "6141ed1d6e287ec218d27548e93d94a82c55070716c634204ab539ffe6c7f1d4",
+    "controllers.py": "3f325b4e9318197adf1d9103cb3813ce8a684f9c4a974f4744fa7fa6e55e4a0e",
+    "metrics.py": "bb6d78c408698d0b12616c8c2558cee4ba5087450f219b73e87d2a31d94bc8b3",
+    "models.py": "9cd3284fbd6beefbac52d3a5aa81a74c1c31e1de0031d433e38ef2895e950f27",
+    "reporting.py": "f8e15bec2c4f8be5cc55a7c804908f5be4e0bf48a415d9c30a944e38f65a0ad0",
+    "simulation.py": "74e93b46832fd700a819ef066c556ce87c3588d8c53b94dc2b1c8bfce4ff9891",
+    "stress_grid.py": "f4cfe5ee17269233a283644fda3e581ea2ae7a9f17a91752c2322304eb0b8809",
+    "stress_grid_plots.py": "238a6d2dc8874331b41e5470284e49e57e4f402c4879198454b48cd0b3ec102b",
+    "uncertainty.py": "979519bdc92abbaa791c399185a20ac8f0591c56905fe33acfb04b7fcab38da9",
+    "uncertainty_plots.py": "22179a6e6dee3074a1488a3fd6d4da18b8b71b4f31f550e4c0e8c0957231ddcd"
+  },
+  "reference_sources_sha256": {
+    "scripts/reference_checks.py": "02cd19c1452666ea512ab48dd2466d43ba28dcef291f91eb5907d25313bebf4b",
+    "scripts/scipy_reference.py": "1d52c1ce96036adc878c833904c7e7f4de7a9d1d08955ecb6f27f2d1c2d62c94",
+    "scripts/reference_plots.py": "404266fcd111d33a6b85ee95c0f301cb245d72bebdf3fcb45bcf84f98dbd35c5",
+    "docs/REFERENCE_COMPARISON_DESIGN.md": "2c743c0524996bc94dfb48dae75ca4b1f4eb3e88152519d6ec8b22e20930e975"
+  }
+}

@@ -13,9 +13,13 @@ dependencies = []
 
 [project.optional-dependencies]
 charts = ["matplotlib>=3.8"]
+reference = ["scipy>=1.9.1"]
 
 [project.scripts]
 controlstresslab = "controlstresslab.cli:main"
+controlstresslab-uncertainty = "controlstresslab.uncertainty:main"
+controlstresslab-stress-grid = "controlstresslab.stress_grid:main"
+controlstresslab-coverage = "controlstresslab.coverage:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

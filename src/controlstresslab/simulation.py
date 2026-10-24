@@ -9,6 +9,7 @@ import traceback
 from typing import Protocol
 
 from .models import positive
+from .signals import SampledSignal
 
 MAX_SAMPLE_COUNT = 200_000
 
@@ -54,8 +55,8 @@ class Scenario:
     name: str = "nominal"
     dt_s: float = 0.01
     duration_s: float = 12.0
-    reference: StepSignal = field(default_factory=lambda: StepSignal(((0.0, 0.0), (0.5, 60.0))))
-    load: StepSignal = field(default_factory=StepSignal)
+    reference: StepSignal | SampledSignal = field(default_factory=lambda: StepSignal(((0.0, 0.0), (0.5, 60.0))))
+    load: StepSignal | SampledSignal = field(default_factory=StepSignal)
     noise_std: float = 0.0
     measurement_delay_s: float = 0.0
     voltage_limit: float = 12.0
@@ -66,6 +67,7 @@ class Scenario:
     recovery_band: float = 1.2
     recovery_dwell_s: float = 0.5
     evidence: str = "synthetic_assumption"
+    recovery_mode: str = "settling"
 
     def __post_init__(self) -> None:
         for name in ("dt_s", "duration_s", "voltage_limit", "output_bound", "recovery_band", "recovery_dwell_s"):
@@ -79,7 +81,13 @@ class Scenario:
             raise ValueError(f"sample count exceeds the {MAX_SAMPLE_COUNT} interval limit")
         times = [self.duration_s, self.measurement_delay_s, self.evaluation_start_s,
                  self.recovery_start_s, self.recovery_dwell_s]
-        times.extend(t for signal in (self.reference, self.load) for t, _ in signal.points)
+        for signal in (self.reference, self.load):
+            if isinstance(signal, SampledSignal):
+                signal.validate_grid(self.dt_s, self.duration_s)
+            elif isinstance(signal, StepSignal):
+                times.extend(t for t, _ in signal.points)
+            else:
+                raise TypeError("signals must be StepSignal or SampledSignal")
         if any(not math.isclose(t / self.dt_s, round(t / self.dt_s), abs_tol=1e-8, rel_tol=0) for t in times):
             raise ValueError("duration, delay, evaluation windows and signal changes must align with dt_s")
         if self.measurement_delay_s > self.duration_s:
@@ -90,9 +98,13 @@ class Scenario:
             raise ValueError("recovery_start_s must be inside the run")
         if self.recovery_start_s + self.recovery_dwell_s > self.duration_s:
             raise ValueError("recovery dwell does not fit the observation window")
-        if any(t >= self.duration_s for s in (self.reference, self.load) for t, _ in s.points[1:]):
+        if any(t >= self.duration_s for s in (self.reference, self.load) if isinstance(s, StepSignal) for t, _ in s.points[1:]):
             raise ValueError("signal change must precede the end of the run")
-        if any(t > self.recovery_start_s for t, _ in self.reference.points):
+        if self.recovery_mode not in ("settling", "tracking_only"):
+            raise ValueError("unknown recovery_mode")
+        constant = (self.reference.constant_after(self.recovery_start_s) if isinstance(self.reference, SampledSignal)
+                    else not any(t > self.recovery_start_s for t, _ in self.reference.points))
+        if self.recovery_mode == "settling" and not constant:
             raise ValueError("recovery metric requires a constant reference after recovery_start_s")
         if self.evidence != "synthetic_assumption":
             raise ValueError("v0.1 scenarios are synthetic; measured validation is not implemented")

@@ -1,0 +1,97 @@
+{
+  "case_id": "pid__d05_l02",
+  "controller_name": "pid",
+  "load_Nm": 0.1,
+  "delay_s": 0.25,
+  "scenario": {
+    "name": "load_delay_grid",
+    "dt_s": 0.01,
+    "duration_s": 20.0,
+    "reference": {
+      "points": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5,
+          60.0
+        ]
+      ]
+    },
+    "load": {
+      "points": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          8.0,
+          0.1
+        ]
+      ]
+    },
+    "noise_std": 0.0,
+    "measurement_delay_s": 0.25,
+    "voltage_limit": 12.0,
+    "output_bound": 1000.0,
+    "seed": 42,
+    "evaluation_start_s": 8.0,
+    "recovery_start_s": 8.0,
+    "recovery_band": 1.2,
+    "recovery_dwell_s": 0.5,
+    "evidence": "synthetic_assumption"
+  },
+  "plant": {
+    "inertia_kg_m2": 0.01,
+    "friction_Nm_s": 0.001,
+    "resistance_ohm": 1.0,
+    "torque_Nm_A": 0.1,
+    "back_emf_V_s": 0.1,
+    "initial_output": 0.0,
+    "type": "DCMotor",
+    "params_recorded": true
+  },
+  "controller": {
+    "kp": 0.25,
+    "ki": 0.8,
+    "kd": 0.0,
+    "anti_windup": false,
+    "derivative_filter_s": 0.03,
+    "type": "PID",
+    "params_recorded": true
+  },
+  "metrics": {
+    "status": "completed",
+    "reason": "",
+    "observed_until_s": 20.0,
+    "termination_time_s": 20.0,
+    "last_integrated_time_s": 20.0,
+    "metric_source": "model_state",
+    "rmse_rad_s": 0.8483676171792743,
+    "iae_rad": 4.745681279081118,
+    "max_abs_error_rad_s": 3.6177433111324717,
+    "input_total_variation_V": 5.625642176051264,
+    "saturation_fraction": 0.0,
+    "recovery_time_s": 1.6500000000000004,
+    "recovery_status": "recovered_in_observation_window",
+    "iae_pre_event_rad": null,
+    "iae_post_event_rad": 4.745681279081118,
+    "rmse_pre_event_rad_s": null,
+    "rmse_post_event_rad_s": 0.8483676171792743,
+    "pre_event_duration_s": 0,
+    "post_event_duration_s": 12.0
+  },
+  "classification": "recovered",
+  "steady_reference_feasible": true,
+  "steady_required_voltage_V": 7.6000000000000005,
+  "pre_event_settled": true,
+  "pre_event_pair_matches": true,
+  "incremental_load_iae_rad": 4.015040116917728,
+  "incremental_status": "available",
+  "baseline_case_id": "pid__d05_l00",
+  "failure": null,
+  "trace_file": "pid__d05_l02.csv",
+  "record_file": "pid__d05_l02.json",
+  "trace_sha256": "49a15effd10efb124d8675382a4ddffb5ee696dafb2cbecd1d5e7c8b727203e9"
+}

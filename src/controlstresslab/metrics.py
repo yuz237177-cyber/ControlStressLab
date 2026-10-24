@@ -44,6 +44,9 @@ def evaluate(run: Run) -> dict:
         metrics.update(status="metric_failure", reason="nonfinite metric; check signal scale and window", recovery_status="metrics_invalid")
         return metrics
     metrics.update(calculated)
+    if s.recovery_mode == "tracking_only":
+        metrics["recovery_status"] = "not_applicable_tracking_only"
+        return metrics
     post = [row for row in run.rows if row["time_s"] >= s.recovery_start_s - 1e-12]
     # Settling-style recovery: final uninterrupted in-band segment must cover dwell.
     last_outside = -1

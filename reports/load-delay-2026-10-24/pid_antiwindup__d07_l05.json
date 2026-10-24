@@ -1,0 +1,97 @@
+{
+  "case_id": "pid_antiwindup__d07_l05",
+  "controller_name": "pid_antiwindup",
+  "load_Nm": 0.25,
+  "delay_s": 0.35,
+  "scenario": {
+    "name": "load_delay_grid",
+    "dt_s": 0.01,
+    "duration_s": 20.0,
+    "reference": {
+      "points": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.5,
+          60.0
+        ]
+      ]
+    },
+    "load": {
+      "points": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          8.0,
+          0.25
+        ]
+      ]
+    },
+    "noise_std": 0.0,
+    "measurement_delay_s": 0.35,
+    "voltage_limit": 12.0,
+    "output_bound": 1000.0,
+    "seed": 42,
+    "evaluation_start_s": 8.0,
+    "recovery_start_s": 8.0,
+    "recovery_band": 1.2,
+    "recovery_dwell_s": 0.5,
+    "evidence": "synthetic_assumption"
+  },
+  "plant": {
+    "inertia_kg_m2": 0.01,
+    "friction_Nm_s": 0.001,
+    "resistance_ohm": 1.0,
+    "torque_Nm_A": 0.1,
+    "back_emf_V_s": 0.1,
+    "initial_output": 0.0,
+    "type": "DCMotor",
+    "params_recorded": true
+  },
+  "controller": {
+    "kp": 0.25,
+    "ki": 0.8,
+    "kd": 0.0,
+    "anti_windup": true,
+    "derivative_filter_s": 0.03,
+    "type": "PID",
+    "params_recorded": true
+  },
+  "metrics": {
+    "status": "completed",
+    "reason": "",
+    "observed_until_s": 20.0,
+    "termination_time_s": 20.0,
+    "last_integrated_time_s": 20.0,
+    "metric_source": "model_state",
+    "rmse_rad_s": 7.638629009739229,
+    "iae_rad": 74.89176385964262,
+    "max_abs_error_rad_s": 24.638323526762427,
+    "input_total_variation_V": 77.73088900902519,
+    "saturation_fraction": 0.04583333333333334,
+    "recovery_time_s": null,
+    "recovery_status": "not_recovered_in_observation_window",
+    "iae_pre_event_rad": null,
+    "iae_post_event_rad": 74.89176385964262,
+    "rmse_pre_event_rad_s": null,
+    "rmse_post_event_rad_s": 7.638629009739229,
+    "pre_event_duration_s": 0,
+    "post_event_duration_s": 12.0
+  },
+  "classification": "not_recovered_in_window",
+  "steady_reference_feasible": true,
+  "steady_required_voltage_V": 9.100000000000001,
+  "pre_event_settled": false,
+  "pre_event_pair_matches": true,
+  "incremental_load_iae_rad": 96.58027148830078,
+  "incremental_status": "available",
+  "baseline_case_id": "pid_antiwindup__d07_l00",
+  "failure": null,
+  "trace_file": "pid_antiwindup__d07_l05.csv",
+  "record_file": "pid_antiwindup__d07_l05.json",
+  "trace_sha256": "1c49f83ab9e3effe92041109631285fc5e7adbf1d4db67ee1e900aa6ab956b40"
+}

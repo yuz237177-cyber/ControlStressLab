@@ -1,0 +1,59 @@
+{
+  "case_id": "load_step__pid__j04_b05",
+  "scenario": "load_step",
+  "controller_name": "pid",
+  "inertia_factor": 1.5,
+  "friction_factor": 1.75,
+  "plant": {
+    "inertia_kg_m2": 0.015,
+    "friction_Nm_s": 0.00175,
+    "resistance_ohm": 1.0,
+    "torque_Nm_A": 0.1,
+    "back_emf_V_s": 0.1,
+    "initial_output": 0.0,
+    "type": "DCMotor",
+    "params_recorded": true
+  },
+  "controller": {
+    "kp": 0.25,
+    "ki": 0.8,
+    "kd": 0.0,
+    "anti_windup": false,
+    "derivative_filter_s": 0.03,
+    "type": "PID",
+    "params_recorded": true
+  },
+  "metrics": {
+    "status": "completed",
+    "reason": "",
+    "observed_until_s": 12.0,
+    "termination_time_s": 12.0,
+    "last_integrated_time_s": 12.0,
+    "metric_source": "model_state",
+    "rmse_rad_s": 11.247088299027942,
+    "iae_rad": 57.44311549870849,
+    "max_abs_error_rad_s": 60.0,
+    "input_total_variation_V": 13.163303247740822,
+    "saturation_fraction": 0.16608695652173913,
+    "recovery_time_s": 1.1399999999999997,
+    "recovery_status": "recovered_in_observation_window",
+    "iae_pre_event_rad": 52.611484493091055,
+    "iae_post_event_rad": 4.831631005617435,
+    "rmse_pre_event_rad_s": 20.278279527491378,
+    "rmse_post_event_rad_s": 1.3912796622059438,
+    "pre_event_duration_s": 3.5,
+    "post_event_duration_s": 8.0
+  },
+  "derived": {
+    "damping_Nm_s": 0.011750000000000002,
+    "time_constant_s": 1.276595744680851,
+    "dc_gain_rad_s_per_V": 8.51063829787234
+  },
+  "trace_sha256": "fc9e4bad5b89ff9bc9b8eb8d65b7d9fc89c22a6fbe9da15c47049392db4e101c",
+  "trace_file": null,
+  "failure": null,
+  "record_file": "load_step__pid__j04_b05.json",
+  "post_iae_ratio_to_own_nominal": 2.288315887474692,
+  "incremental_load_iae_rad": 2.4774869676463687,
+  "incremental_load_effect_status": "available"
+}

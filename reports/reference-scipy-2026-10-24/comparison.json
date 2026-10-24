@@ -1,0 +1,2081 @@
+{
+  "tolerances": {
+    "trajectory_atol": 1e-08,
+    "trajectory_rtol": 1e-09,
+    "iae_atol": 1e-06,
+    "iae_rtol": 1e-09
+  },
+  "cases": [
+    {
+      "id": "open_FirstOrder_0.01_0",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 5.773159728050814e-15,
+          "max_tolerance_fraction": 4.805400129209716e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_FirstOrder_0.01_1",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 9.769962616701378e-15,
+          "max_tolerance_fraction": 5.58180024247485e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_FirstOrder_0.01_2",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 4.884981308350689e-15,
+          "max_tolerance_fraction": 4.275404416767705e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "linear_FirstOrder_0.01",
+      "path": "linear_pi",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.6645352591003757e-15,
+          "max_tolerance_fraction": 2.457610016565377e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.6645352591003757e-15,
+          "max_tolerance_fraction": 2.457610016565377e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 2.6645352591003757e-15,
+          "max_tolerance_fraction": 2.4195587481151304e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 2.6645352591003757e-15,
+          "max_tolerance_fraction": 2.4195587481151304e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 1.4580802268145647,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "reference": {
+          "iae_rad": 1.4580802268145627,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "iae_abs_error": 1.9984014443252818e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "open_FirstOrder_0.02_0",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 7.549516567451064e-15,
+          "max_tolerance_fraction": 5.635945172406761e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_FirstOrder_0.02_1",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 8.881784197001252e-16,
+          "max_tolerance_fraction": 6.381488522035051e-08
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_FirstOrder_0.02_2",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.0658141036401503e-14,
+          "max_tolerance_fraction": 9.253841416669e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "linear_FirstOrder_0.02",
+      "path": "linear_pi",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 3.9968028886505635e-15,
+          "max_tolerance_fraction": 3.61700485354876e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 3.9968028886505635e-15,
+          "max_tolerance_fraction": 3.61700485354876e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.021405182655144e-14,
+          "max_tolerance_fraction": 9.275070781776802e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 1.021405182655144e-14,
+          "max_tolerance_fraction": 9.275070781776802e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 1.4577656808995163,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "reference": {
+          "iae_rad": 1.457765680899511,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "iae_abs_error": 5.329070518200751e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "open_FirstOrder_0.05_0",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.220446049250313e-15,
+          "max_tolerance_fraction": 1.701027130164122e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_FirstOrder_0.05_1",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 8.881784197001252e-16,
+          "max_tolerance_fraction": 7.320821401383448e-08
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_FirstOrder_0.05_2",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.5543122344752192e-15,
+          "max_tolerance_fraction": 1.4162660520025034e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "linear_FirstOrder_0.05",
+      "path": "linear_pi",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_tolerance_fraction": 1.608764174165029e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.7763568394002505e-15,
+          "max_tolerance_fraction": 1.608764174165029e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.1102230246251565e-15,
+          "max_tolerance_fraction": 1.0081919686404663e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 1.1102230246251565e-15,
+          "max_tolerance_fraction": 1.0081919686404663e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 1.456894017911759,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "reference": {
+          "iae_rad": 1.4568940179117615,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "iae_abs_error": 2.4424906541753444e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "open_DCMotor_0.01_0",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 7.815970093361102e-14,
+          "max_tolerance_fraction": 2.337137053639196e-06
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_DCMotor_0.01_1",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 7.815970093361102e-14,
+          "max_tolerance_fraction": 2.022308613585874e-06
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_DCMotor_0.01_2",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.3500311979441904e-13,
+          "max_tolerance_fraction": 3.7953429659283e-06
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "linear_DCMotor_0.01",
+      "path": "linear_pi",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 3.552713678800501e-15,
+          "max_tolerance_fraction": 3.193269042757404e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 3.552713678800501e-15,
+          "max_tolerance_fraction": 3.193269042757404e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.7069679003611782e-15,
+          "max_tolerance_fraction": 1.6900593686473591e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 1.7069679003611782e-15,
+          "max_tolerance_fraction": 1.6900593686473591e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 0.42755077154644094,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "reference": {
+          "iae_rad": 0.427550771546447,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "iae_abs_error": 6.050715484207103e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "open_DCMotor_0.02_0",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.842170943040401e-14,
+          "max_tolerance_fraction": 8.587021181867312e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_DCMotor_0.02_1",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.1316282072803006e-14,
+          "max_tolerance_fraction": 5.422793320803785e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_DCMotor_0.02_2",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 7.460698725481052e-14,
+          "max_tolerance_fraction": 2.1362891759132764e-06
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "linear_DCMotor_0.02",
+      "path": "linear_pi",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.1102230246251565e-15,
+          "max_tolerance_fraction": 1.0080550294111207e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.1102230246251565e-15,
+          "max_tolerance_fraction": 1.0080550294111207e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 4.163336342344337e-16,
+          "max_tolerance_fraction": 4.096591256071971e-08
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 4.163336342344337e-16,
+          "max_tolerance_fraction": 4.096591256071971e-08
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 0.4271314511714056,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "reference": {
+          "iae_rad": 0.42713145117140616,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "iae_abs_error": 5.551115123125783e-16,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "open_DCMotor_0.05_0",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 3.6074832417077106e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_DCMotor_0.05_1",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 7.993605777301127e-15,
+          "max_tolerance_fraction": 7.078033832897989e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "open_DCMotor_0.05_2",
+      "path": "open_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 5.765004103970965e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0.0
+        }
+      },
+      "metrics": {},
+      "passed": true
+    },
+    {
+      "id": "linear_DCMotor_0.05",
+      "path": "linear_pi",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 4.440892098500626e-16,
+          "max_tolerance_fraction": 4.036055809629269e-08
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 4.440892098500626e-16,
+          "max_tolerance_fraction": 4.036055809629269e-08
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 2.220446049250313e-16,
+          "max_tolerance_fraction": 2.1944209056609043e-08
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 2.220446049250313e-16,
+          "max_tolerance_fraction": 2.1944209056609043e-08
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 0.4265028964991239,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "reference": {
+          "iae_rad": 0.4265028964991236,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.0
+        },
+        "iae_abs_error": 2.7755575615628914e-16,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "closed_nominal_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.4838820938153713e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.4838820938153713e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 8.881784197001252e-15,
+          "max_tolerance_fraction": 3.842447717528234e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 5.329070518200751e-15,
+          "max_tolerance_fraction": 3.2114658942404725e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 31.86046146849484,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 2.07
+        },
+        "reference": {
+          "iae_rad": 31.86046146849483,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 2.07
+        },
+        "iae_abs_error": 1.0658141036401503e-14,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "closed_load_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.4838820938153713e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.4838820938153713e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 8.881784197001252e-15,
+          "max_tolerance_fraction": 3.842447717528234e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 5.329070518200751e-15,
+          "max_tolerance_fraction": 2.9465716998167685e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 2.111435327641526,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.9000000000000004
+        },
+        "reference": {
+          "iae_rad": 2.111435327641522,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.9000000000000004
+        },
+        "iae_abs_error": 3.9968028886505635e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "closed_noise_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.842170943040401e-14,
+          "max_tolerance_fraction": 3.75132177338902e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.842170943040401e-14,
+          "max_tolerance_fraction": 3.7826856684498005e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.0658141036401503e-14,
+          "max_tolerance_fraction": 4.3988907138364443e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 8.881784197001252e-15,
+          "max_tolerance_fraction": 4.126965145225763e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 32.24454962630731,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 2.06
+        },
+        "reference": {
+          "iae_rad": 32.24454962630734,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 2.06
+        },
+        "iae_abs_error": 2.842170943040401e-14,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "closed_delay_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.842170943040401e-14,
+          "max_tolerance_fraction": 3.13764276414412e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.842170943040401e-14,
+          "max_tolerance_fraction": 3.13764276414412e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.2434497875801753e-14,
+          "max_tolerance_fraction": 7.510300421367086e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 1.2434497875801753e-14,
+          "max_tolerance_fraction": 7.510300421367086e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 40.1909395297449,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 2.98
+        },
+        "reference": {
+          "iae_rad": 40.190939529744874,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 2.98
+        },
+        "iae_abs_error": 2.842170943040401e-14,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "closed_saturation_release_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.4158453015843406e-13,
+          "max_tolerance_fraction": 2.7409746426019505e-06
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.4158453015843406e-13,
+          "max_tolerance_fraction": 2.7409746426019505e-06
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-13,
+          "max_tolerance_fraction": 6.500626629823859e-06
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-13,
+          "max_tolerance_fraction": 6.500626629823859e-06
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 203.13901524785055,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 5.67
+        },
+        "reference": {
+          "iae_rad": 203.13901524785058,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 5.67
+        },
+        "iae_abs_error": 2.842170943040401e-14,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.15_0.3_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.2079226507921703e-13,
+          "max_tolerance_fraction": 2.1385075199293656e-06
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.2079226507921703e-13,
+          "max_tolerance_fraction": 2.1385075199293656e-06
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 3.907985046680551e-14,
+          "max_tolerance_fraction": 3.1772177864295704e-06
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 3.907985046680551e-14,
+          "max_tolerance_fraction": 3.1772177864295704e-06
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 25.954276543932487,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 9.129999999999999
+        },
+        "reference": {
+          "iae_rad": 25.954276543932615,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 9.129999999999999
+        },
+        "iae_abs_error": 1.2789769243681803e-13,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.15_0.35_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 4.973799150320701e-13,
+          "max_tolerance_fraction": 7.494635409013635e-06
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 4.973799150320701e-13,
+          "max_tolerance_fraction": 7.494635409013635e-06
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.7408297026122455e-13,
+          "max_tolerance_fraction": 1.0340704741321286e-05
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 1.7408297026122455e-13,
+          "max_tolerance_fraction": 1.0340704741321286e-05
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 114.40603762117208,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "reference": {
+          "iae_rad": 114.40603762117242,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "iae_abs_error": 3.410605131648481e-13,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.15_0.5_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 5.186961971048731e-13,
+          "max_tolerance_fraction": 3.15465334217229e-05
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 5.186961971048731e-13,
+          "max_tolerance_fraction": 3.15465334217229e-05
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 2.4158453015843406e-13,
+          "max_tolerance_fraction": 1.8667650417104608e-05
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 2.327027459614328e-13,
+          "max_tolerance_fraction": 1.8667650417104608e-05
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 281.8057249275955,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "reference": {
+          "iae_rad": 281.8057249275955,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "iae_abs_error": 0.0,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.55_0_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 3.552713678800501e-14,
+          "max_tolerance_fraction": 5.152715795121192e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 3.552713678800501e-14,
+          "max_tolerance_fraction": 5.152715795121192e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.8474111129762605e-13,
+          "max_tolerance_fraction": 5.4428295945872905e-06
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 5.329070518200751e-15,
+          "max_tolerance_fraction": 3.2114658942404725e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 21.511713672657795,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 3.5500000000000007
+        },
+        "reference": {
+          "iae_rad": 21.51171367265797,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 3.5500000000000007
+        },
+        "iae_abs_error": 1.7408297026122455e-13,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.6_0_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.842170943040401e-14,
+          "max_tolerance_fraction": 4.4034306447272076e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.842170943040401e-14,
+          "max_tolerance_fraction": 4.4034306447272076e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.1368683772161603e-13,
+          "max_tolerance_fraction": 1.5340965597231795e-06
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 5.329070518200751e-15,
+          "max_tolerance_fraction": 3.2114658942404725e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 70.66973177836758,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "reference": {
+          "iae_rad": 70.66973177836773,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "iae_abs_error": 1.5631940186722204e-13,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.6_0.5_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 5.186961971048731e-13,
+          "max_tolerance_fraction": 3.15465334217229e-05
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 5.186961971048731e-13,
+          "max_tolerance_fraction": 3.15465334217229e-05
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 3.552713678800501e-13,
+          "max_tolerance_fraction": 1.8667650417104608e-05
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 2.327027459614328e-13,
+          "max_tolerance_fraction": 1.8667650417104608e-05
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 112.56638741901736,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "reference": {
+          "iae_rad": 112.5663874190179,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "iae_abs_error": 5.400124791776761e-13,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "derivative_filter0_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 4.973799150320701e-14,
+          "max_tolerance_fraction": 7.176141620380748e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 4.973799150320701e-14,
+          "max_tolerance_fraction": 7.186959867385541e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 3.907985046680551e-14,
+          "max_tolerance_fraction": 1.7538193540543697e-06
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 3.197442310920451e-14,
+          "max_tolerance_fraction": 1.6836717338418636e-06
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 44.06271660629155,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.8600000000000003
+        },
+        "reference": {
+          "iae_rad": 44.06271660629157,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.8600000000000003
+        },
+        "iae_abs_error": 2.1316282072803006e-14,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "derivative_filter0.03_aw0",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.842170943040401e-14,
+          "max_tolerance_fraction": 3.958228184775345e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.842170943040401e-14,
+          "max_tolerance_fraction": 3.964103074017051e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 2.1316282072803006e-14,
+          "max_tolerance_fraction": 7.38111568509564e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 8.881784197001252e-15,
+          "max_tolerance_fraction": 5.695662591694063e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 43.94321398940667,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.8600000000000003
+        },
+        "reference": {
+          "iae_rad": 43.94321398940667,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.8600000000000003
+        },
+        "iae_abs_error": 0.0,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "closed_nominal_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.0301403460580094e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.0301403460580094e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 5.329070518200751e-15,
+          "max_tolerance_fraction": 3.210283455723284e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 5.329070518200751e-15,
+          "max_tolerance_fraction": 3.210283455723284e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 23.736718504390034,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.9100000000000001
+        },
+        "reference": {
+          "iae_rad": 23.73671850439004,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.9100000000000001
+        },
+        "iae_abs_error": 7.105427357601002e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "closed_load_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.041770744352446e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.041770744352446e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 7.105427357601002e-15,
+          "max_tolerance_fraction": 3.9061257724936603e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 7.105427357601002e-15,
+          "max_tolerance_fraction": 3.9061257724936603e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 2.1522859053655834,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.9100000000000001
+        },
+        "reference": {
+          "iae_rad": 2.152285905365577,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.9100000000000001
+        },
+        "iae_abs_error": 6.217248937900877e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "closed_noise_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.2733125348706542e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.2733629494201422e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 7.993605777301127e-15,
+          "max_tolerance_fraction": 4.969912452605296e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 7.993605777301127e-15,
+          "max_tolerance_fraction": 4.969912452605296e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 24.25661951258401,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.9
+        },
+        "reference": {
+          "iae_rad": 24.256619512584003,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.9
+        },
+        "iae_abs_error": 7.105427357601002e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "closed_delay_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.1316282072803006e-14,
+          "max_tolerance_fraction": 3.0451831503456557e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.1316282072803006e-14,
+          "max_tolerance_fraction": 3.0451831503456557e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.2434497875801753e-14,
+          "max_tolerance_fraction": 7.380302672162834e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 1.2434497875801753e-14,
+          "max_tolerance_fraction": 7.380302672162834e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 23.609225021484757,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.71
+        },
+        "reference": {
+          "iae_rad": 23.60922502148474,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.71
+        },
+        "iae_abs_error": 1.7763568394002505e-14,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "closed_saturation_release_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 4.263256414560601e-14,
+          "max_tolerance_fraction": 4.4667058240070033e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 4.263256414560601e-14,
+          "max_tolerance_fraction": 4.4667058240070033e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.2434497875801753e-14,
+          "max_tolerance_fraction": 1.0372790327353086e-06
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 1.2434497875801753e-14,
+          "max_tolerance_fraction": 1.0372790327353086e-06
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 19.1436849498116,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.62
+        },
+        "reference": {
+          "iae_rad": 19.143684949811565,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.62
+        },
+        "iae_abs_error": 3.552713678800501e-14,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.15_0.3_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.1368683772161603e-13,
+          "max_tolerance_fraction": 1.605712873482949e-06
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.1368683772161603e-13,
+          "max_tolerance_fraction": 1.605712873482949e-06
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 3.9968028886505635e-14,
+          "max_tolerance_fraction": 2.569163783527275e-06
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 3.9968028886505635e-14,
+          "max_tolerance_fraction": 2.569163783527275e-06
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 14.962468928645471,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 6.780000000000001
+        },
+        "reference": {
+          "iae_rad": 14.962468928645318,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 6.780000000000001
+        },
+        "iae_abs_error": 1.5276668818842154e-13,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.15_0.35_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.5579538487363607e-13,
+          "max_tolerance_fraction": 4.0786224646285785e-06
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.5579538487363607e-13,
+          "max_tolerance_fraction": 4.0786224646285785e-06
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 8.704148513061227e-14,
+          "max_tolerance_fraction": 5.6978857588213665e-06
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 8.704148513061227e-14,
+          "max_tolerance_fraction": 5.6978857588213665e-06
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 93.95915450882774,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "reference": {
+          "iae_rad": 93.95915450882718,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "iae_abs_error": 5.542233338928781e-13,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.15_0.5_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 3.197442310920451e-13,
+          "max_tolerance_fraction": 5.8460132776749415e-06
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 3.197442310920451e-13,
+          "max_tolerance_fraction": 5.8460132776749415e-06
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.5631940186722204e-13,
+          "max_tolerance_fraction": 7.446180452055174e-06
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 1.545430450278218e-13,
+          "max_tolerance_fraction": 7.446180452055174e-06
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 133.61612510918283,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "reference": {
+          "iae_rad": 133.61612510918283,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "iae_abs_error": 0.0,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.55_0_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.842170943040401e-14,
+          "max_tolerance_fraction": 4.1150816455242496e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.842170943040401e-14,
+          "max_tolerance_fraction": 4.1150816455242496e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.0658141036401503e-14,
+          "max_tolerance_fraction": 4.844246193541704e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 8.881784197001252e-15,
+          "max_tolerance_fraction": 4.037178494700138e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 21.536132305852316,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 3.5500000000000007
+        },
+        "reference": {
+          "iae_rad": 21.536132305852465,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 3.5500000000000007
+        },
+        "iae_abs_error": 1.4921397450962104e-13,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.6_0_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.1316282072803006e-14,
+          "max_tolerance_fraction": 3.304604142671437e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.1316282072803006e-14,
+          "max_tolerance_fraction": 3.304604142671437e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.0658141036401503e-14,
+          "max_tolerance_fraction": 4.837001441348159e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 7.105427357601002e-15,
+          "max_tolerance_fraction": 3.2297452661940544e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 70.67392391460002,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "reference": {
+          "iae_rad": 70.67392391460014,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "iae_abs_error": 1.1368683772161603e-13,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "stress_0.6_0.5_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.1368683772161603e-13,
+          "max_tolerance_fraction": 2.397704138100379e-06
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.1368683772161603e-13,
+          "max_tolerance_fraction": 2.397704138100379e-06
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 5.3290705182007514e-14,
+          "max_tolerance_fraction": 2.801675667186953e-06
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 5.3290705182007514e-14,
+          "max_tolerance_fraction": 2.801675667186953e-06
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 70.89416926609358,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "reference": {
+          "iae_rad": 70.89416926609368,
+          "recovery_status": "not_recovered_in_observation_window",
+          "recovery_time_s": null
+        },
+        "iae_abs_error": 9.947598300641403e-14,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "derivative_filter0_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.2567954014230256e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.2443064975533115e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.9539925233402755e-14,
+          "max_tolerance_fraction": 1.0535041425397247e-06
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 1.9539925233402755e-14,
+          "max_tolerance_fraction": 1.0535041425397247e-06
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 29.236689638083085,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.9199999999999999
+        },
+        "reference": {
+          "iae_rad": 29.23668963808309,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.9199999999999999
+        },
+        "iae_abs_error": 3.552713678800501e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "derivative_filter0.03_aw1",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.1316282072803006e-14,
+          "max_tolerance_fraction": 3.048912031644409e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.1316282072803006e-14,
+          "max_tolerance_fraction": 3.061060285208073e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 1.1546319456101628e-14,
+          "max_tolerance_fraction": 6.458881464366428e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 1.1546319456101628e-14,
+          "max_tolerance_fraction": 6.458881464366428e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 29.083294639020508,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.9000000000000004
+        },
+        "reference": {
+          "iae_rad": 29.083294639020504,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.9000000000000004
+        },
+        "iae_abs_error": 3.552713678800501e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "corner_J0.5_b0.5",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.0799267581731918e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.0799267581731918e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 4.440892098500626e-15,
+          "max_tolerance_fraction": 2.4948832014071254e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 4.440892098500626e-15,
+          "max_tolerance_fraction": 2.4948832014071254e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 14.2452984767293,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.7300000000000004
+        },
+        "reference": {
+          "iae_rad": 14.24529847672929,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.7300000000000004
+        },
+        "iae_abs_error": 8.881784197001252e-15,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "corner_J0.5_b2",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 2.1316282072803006e-14,
+          "max_tolerance_fraction": 3.04518315325622e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 2.1316282072803006e-14,
+          "max_tolerance_fraction": 3.04518315325622e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 5.329070518200751e-15,
+          "max_tolerance_fraction": 2.849771216601566e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 5.329070518200751e-15,
+          "max_tolerance_fraction": 2.849771216601566e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 14.934154270179476,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.7300000000000004
+        },
+        "reference": {
+          "iae_rad": 14.934154270179455,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 0.7300000000000004
+        },
+        "iae_abs_error": 2.1316282072803006e-14,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "corner_J2_b0.5",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.030309604446476e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 2.030309604446476e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 7.105427357601002e-15,
+          "max_tolerance_fraction": 4.03583028923747e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 7.105427357601002e-15,
+          "max_tolerance_fraction": 4.03583028923747e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 49.04611475099355,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.2800000000000002
+        },
+        "reference": {
+          "iae_rad": 49.04611475099355,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.2800000000000002
+        },
+        "iae_abs_error": 0.0,
+        "passed": true
+      },
+      "passed": true
+    },
+    {
+      "id": "corner_J2_b2",
+      "path": "ode_closed_loop",
+      "channels": {
+        "time": {
+          "passed": true,
+          "max_abs_error": 0.0,
+          "max_tolerance_fraction": 0
+        },
+        "output": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 4.7541603180748573e-07
+        },
+        "measurement": {
+          "passed": true,
+          "max_abs_error": 1.4210854715202004e-14,
+          "max_tolerance_fraction": 4.7541603180748573e-07
+        },
+        "command": {
+          "passed": true,
+          "max_abs_error": 8.881784197001252e-15,
+          "max_tolerance_fraction": 4.6339739807599206e-07
+        },
+        "applied": {
+          "passed": true,
+          "max_abs_error": 8.881784197001252e-15,
+          "max_tolerance_fraction": 4.6339739807599206e-07
+        }
+      },
+      "metrics": {
+        "product": {
+          "iae_rad": 48.96738269408767,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.2999999999999998
+        },
+        "reference": {
+          "iae_rad": 48.96738269408767,
+          "recovery_status": "recovered_in_observation_window",
+          "recovery_time_s": 1.2999999999999998
+        },
+        "iae_abs_error": 0.0,
+        "passed": true
+      },
+      "passed": true
+    }
+  ],
+  "failed": 0
+}

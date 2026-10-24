@@ -1,0 +1,71 @@
+{
+  "schema_version": "coverage-1.0",
+  "trace_schema_version": "generic-1.0",
+  "feature": "waveforms_algorithms_models_development",
+  "hardware_validated": false,
+  "python": "3.12.14",
+  "evidence": "synthetic_assumption",
+  "expected_runs": 224,
+  "models": [
+    "first_order",
+    "reduced_motor",
+    "inductive_motor",
+    "mass_spring_damper"
+  ],
+  "scenarios": [
+    "reference_step",
+    "reference_ramp",
+    "reference_sine",
+    "reference_triangle",
+    "reference_chirp",
+    "reference_multistep",
+    "disturbance_step",
+    "disturbance_pulse",
+    "disturbance_sine",
+    "disturbance_square",
+    "disturbance_chirp",
+    "disturbance_prbs",
+    "combined_sine_prbs",
+    "measurement_noise_delay"
+  ],
+  "controllers": [
+    "PI",
+    "PID_aw",
+    "TwoDOF_PID",
+    "LADRC"
+  ],
+  "pairing": "same model + scenario => same signals, grid, limit, noise array; no per-case retuning",
+  "source_files_sha256": {
+    "__init__.py": "342af4514be9877eb14def660f2deb3520f6fa01d1f910ab035fec6de4758df2",
+    "cli.py": "6141ed1d6e287ec218d27548e93d94a82c55070716c634204ab539ffe6c7f1d4",
+    "controllers.py": "3f325b4e9318197adf1d9103cb3813ce8a684f9c4a974f4744fa7fa6e55e4a0e",
+    "coverage.py": "ccbaffdcbf72bad4a48c91a0fb218e91b5343a507c3cbfcea8f4230f16f0c491",
+    "coverage_plots.py": "c573d3cc3bf7c0025de207c9495b6cd654020ab9a8a6037333e7bc3df62154b7",
+    "extended_controllers.py": "59c8db40ed91622c475b949907bfe35b7c79646408372e46a5be8f95d9297fdb",
+    "extended_models.py": "d75612a62d80e4a52bb7c24f9d305c4b19e8da4cbafac7a50a14de1211cf6a7c",
+    "metrics.py": "394a4e445845444e3507cb3fd5d7092d5ddd6a86287f1206f376f1e3538684e9",
+    "models.py": "9cd3284fbd6beefbac52d3a5aa81a74c1c31e1de0031d433e38ef2895e950f27",
+    "reporting.py": "f8e15bec2c4f8be5cc55a7c804908f5be4e0bf48a415d9c30a944e38f65a0ad0",
+    "signals.py": "feed52900a32c94efff5690d889d3e888b6c30bcaffde1b1d8cd10766a0ce9cb",
+    "simulation.py": "c07fb45d66279331342bd72a3271ff6c1e4d963f91a369f08f6a8db7cfaf3c98",
+    "stress_grid.py": "f4cfe5ee17269233a283644fda3e581ea2ae7a9f17a91752c2322304eb0b8809",
+    "stress_grid_plots.py": "238a6d2dc8874331b41e5470284e49e57e4f402c4879198454b48cd0b3ec102b",
+    "uncertainty.py": "979519bdc92abbaa791c399185a20ac8f0591c56905fe33acfb04b7fcab38da9",
+    "uncertainty_plots.py": "22179a6e6dee3074a1488a3fd6d4da18b8b71b4f31f550e4c0e8c0957231ddcd"
+  },
+  "column_map_from_legacy_core": {
+    "time_s": "time_s",
+    "reference": "reference_rad_s",
+    "output": "true_output_rad_s",
+    "measurement": "measurement_rad_s",
+    "requested_input": "command_V",
+    "applied_input": "applied_V",
+    "disturbance": "load_Nm",
+    "interval_s": "interval_s",
+    "action_taken": "action_taken",
+    "transition_completed": "transition_completed"
+  },
+  "artifacts_complete": true,
+  "written_runs": 224,
+  "failed_runs": 0
+}

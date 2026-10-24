@@ -17,8 +17,26 @@ jobs:
       - run: python -m pip install --no-deps .
       - run: controlstresslab --output installed-ci-demo
         working-directory: ${{ runner.temp }}
+      - run: controlstresslab-uncertainty --inertia-factors 1,1.5 --friction-factors 1,1.5 --output installed-uncertainty
+        working-directory: ${{ runner.temp }}
+      - run: controlstresslab-stress-grid --loads "0,0.15" --delays "0,0.1" --output installed-stress-grid
+        working-directory: ${{ runner.temp }}
+      - run: controlstresslab-coverage --models first_order,mass_spring_damper --scenarios reference_sine,disturbance_prbs --output installed-coverage
+        working-directory: ${{ runner.temp }}
       - run: python scripts/build_readme_preview.py
       - run: python -m pip install ".[charts]"
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
       - run: python scripts/build_chart_gallery.py --output outputs/ci-gallery
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: controlstresslab-uncertainty --inertia-factors 1,1.5 --friction-factors 1,1.5 --output outputs/ci-uncertainty-plots --plots
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: controlstresslab-stress-grid --loads "0,0.15" --delays "0,0.1" --output outputs/ci-stress-plots --plots
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: python -m pip install ".[reference]"
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: python scripts/reference_checks.py --output outputs/ci-reference --plots
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: controlstresslab-coverage --models first_order,mass_spring_damper --scenarios reference_sine,disturbance_prbs,measurement_noise_delay --output outputs/ci-coverage --plots
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: python scripts/check_coverage_reference.py --suite outputs/ci-coverage --output outputs/ci-coverage-reference.json
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'

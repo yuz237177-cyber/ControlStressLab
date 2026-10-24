@@ -1,0 +1,109 @@
+{
+  "feature": "parameter_uncertainty_development",
+  "design": {
+    "inertia_factors": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75,
+      2.0
+    ],
+    "friction_factors": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75,
+      2.0
+    ],
+    "dt_s": 0.01,
+    "kp": 0.25,
+    "ki": 0.8,
+    "kd": 0.0
+  },
+  "scenarios": [
+    {
+      "name": "nominal",
+      "dt_s": 0.01,
+      "duration_s": 12.0,
+      "reference": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5,
+            60.0
+          ]
+        ]
+      },
+      "load": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ]
+        ]
+      },
+      "noise_std": 0.0,
+      "measurement_delay_s": 0.0,
+      "voltage_limit": 12.0,
+      "output_bound": 1000.0,
+      "seed": 42,
+      "evaluation_start_s": 0.5,
+      "recovery_start_s": 0.5,
+      "recovery_band": 1.2,
+      "recovery_dwell_s": 0.5,
+      "evidence": "synthetic_assumption"
+    },
+    {
+      "name": "load_step",
+      "dt_s": 0.01,
+      "duration_s": 12.0,
+      "reference": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.5,
+            60.0
+          ]
+        ]
+      },
+      "load": {
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            4.0,
+            0.15
+          ]
+        ]
+      },
+      "noise_std": 0.0,
+      "measurement_delay_s": 0.0,
+      "voltage_limit": 12.0,
+      "output_bound": 1000.0,
+      "seed": 42,
+      "evaluation_start_s": 0.5,
+      "recovery_start_s": 4.0,
+      "recovery_band": 1.2,
+      "recovery_dwell_s": 0.5,
+      "evidence": "synthetic_assumption"
+    }
+  ],
+  "expected_runs": 196,
+  "evidence": "synthetic_assumption",
+  "domain_is_hardware_tolerance": false,
+  "probability_distribution": null,
+  "controller_retuning": false,
+  "replication": "deterministic grid, no independent replicates"
+}
