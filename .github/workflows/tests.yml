@@ -27,8 +27,13 @@ jobs:
         run: controlstresslab-benchmark --config "${{ github.workspace }}/configs/benchmark-ci.json" --output installed-benchmark
         working-directory: ${{ runner.temp }}
       - run: python scripts/build_readme_preview.py
-      - run: python -m pip install ".[charts]"
-        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: python -m pip install ".[gui]"
+        if: matrix.python == '3.12'
+      - name: Desktop interactions and real background worker
+        run: python -m unittest discover -s tests -p test_gui.py -v
+        if: matrix.python == '3.12'
+        env:
+          QT_QPA_PLATFORM: offscreen
       - run: python scripts/build_chart_gallery.py --output outputs/ci-gallery
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
       - run: controlstresslab-uncertainty --inertia-factors 1,1.5 --friction-factors 1,1.5 --output outputs/ci-uncertainty-plots --plots

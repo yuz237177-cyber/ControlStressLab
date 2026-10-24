@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120">
+<title>ControlStressLab v0.4 dark desktop design concept</title>
+<desc>Original GUI layout inspired by the supplied dark reference. Curves are placeholders; metrics are empty. Not an implemented application.</desc>
+<rect x="0" y="0" width="1799" height="1119" rx="13" fill="#0b0c0e" stroke="#34373d"/>
+<polyline points="32.00,36.00 42.00,27.00 52.00,36.00" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="35.00,35.00 35.00,47.00 49.00,47.00 49.00,35.00" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="40.00,47.00 40.00,40.00 45.00,40.00 45.00,47.00" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="66" y="27" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#f2f3f5">返回主页</text>
+<text x="1395" y="29" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">界面设计预览</text>
+<circle cx="1562" cy="37" r="10" fill="none" stroke="#f2f3f5" stroke-width="1.7"/>
+<polyline points="1558.00,33.00 1560.00,30.00 1565.00,30.00 1567.00,33.00 1566.00,35.00 1562.00,38.00 1562.00,40.00" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1562" cy="44" r="0.9" fill="#f2f3f5" stroke="none" stroke-width="1"/>
+<polyline points="1624.00,38.00 1644.00,38.00" fill="none" stroke="#f2f3f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1681" y="28" width="18" height="18" rx="1" fill="#0b0c0e" stroke="#f2f3f5"/>
+<polyline points="1742.00,28.00 1760.00,46.00" fill="none" stroke="#f2f3f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1760.00,28.00 1742.00,46.00" fill="none" stroke="#f2f3f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="30" y="103" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="32" font-weight="700" fill="#f2f3f5">ControlStressLab</text>
+<text x="31" y="153" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" fill="#9ca3b0">控制器评测工作台</text>
+<circle cx="40" cy="196" r="3.5" fill="#49cfbc" stroke="none" stroke-width="1"/>
+<text x="53" y="188" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#f2f3f5">本地实验</text>
+<text x="151" y="188" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">v0.4 设计草案</text>
+<rect x="30" y="234" width="308" height="46" rx="9" fill="#1c1e22" stroke="#2b2e34"/>
+<polyline points="47.55,256.20 62.85,256.20" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="55.20,248.55 55.20,263.85" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="75" y="248.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">新建实验配置</text>
+<rect x="30" y="292" width="149" height="46" rx="9" fill="#1c1e22" stroke="#2b2e34"/>
+<polyline points="47.55,315.05 47.55,321.85 62.85,321.85 62.85,315.05" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="55.20,304.85 55.20,316.75" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="50.95,312.50 55.20,316.75 59.45,312.50" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="75" y="306.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">导入配置</text>
+<rect x="189" y="292" width="149" height="46" rx="9" fill="#1c1e22" stroke="#2b2e34"/>
+<polyline points="204.85,309.10 210.80,309.10 213.35,311.65 222.70,311.65 222.70,321.85 204.85,321.85 204.85,309.10" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="234" y="306.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">打开实验</text>
+<text x="30" y="366" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#f2f3f5">实验配置</text>
+<text x="122" y="368" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">3</text>
+<polyline points="316.00,374.00 321.00,379.00 326.00,374.00" fill="none" stroke="#9ca3b0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="30" y="408" width="308" height="61" rx="10" fill="#11151d" stroke="#31588c"/>
+<rect x="30" y="422" width="3" height="33" rx="1" fill="#2878ff" stroke="none"/>
+<text x="47" y="421" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#2878ff">一阶惯性 · 阶跃抗扰</text>
+<text x="47" y="446" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#9ca3b0">草稿</text>
+<circle cx="318.8" cy="429.4" r="0.96" fill="#9ca3b0" stroke="none" stroke-width="1"/>
+<circle cx="318.8" cy="435.8" r="0.96" fill="#9ca3b0" stroke="none" stroke-width="1"/>
+<circle cx="318.8" cy="442.2" r="0.96" fill="#9ca3b0" stroke="none" stroke-width="1"/>
+<rect x="30" y="482" width="308" height="61" rx="10" fill="#121315" stroke="none"/>
+<text x="47" y="495" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">二阶振荡 · 正弦跟踪</text>
+<text x="47" y="520" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#9ca3b0">示例</text>
+<circle cx="318.8" cy="503.4" r="0.96" fill="#9ca3b0" stroke="none" stroke-width="1"/>
+<circle cx="318.8" cy="509.8" r="0.96" fill="#9ca3b0" stroke="none" stroke-width="1"/>
+<circle cx="318.8" cy="516.2" r="0.96" fill="#9ca3b0" stroke="none" stroke-width="1"/>
+<rect x="30" y="556" width="308" height="61" rx="10" fill="#121315" stroke="none"/>
+<text x="47" y="569" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">LADRC · 噪声与延迟</text>
+<text x="47" y="594" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#9ca3b0">示例</text>
+<circle cx="318.8" cy="577.4" r="0.96" fill="#9ca3b0" stroke="none" stroke-width="1"/>
+<circle cx="318.8" cy="583.8" r="0.96" fill="#9ca3b0" stroke="none" stroke-width="1"/>
+<circle cx="318.8" cy="590.2" r="0.96" fill="#9ca3b0" stroke="none" stroke-width="1"/>
+<rect x="30" y="664" width="147" height="37" rx="9" fill="#141c2b" stroke="#2c61ae"/>
+<text x="45" y="673.5" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#2878ff">我的配置</text>
+<rect x="187" y="664" width="151" height="37" rx="9" fill="#1c1e22" stroke="#2b2e34"/>
+<text x="202" y="673.5" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">示例预设</text>
+<text x="30" y="737" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="700" fill="#f2f3f5">当前配置</text>
+<text x="30" y="773" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">一阶惯性 / 2 个控制器</text>
+<text x="30" y="804" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">阶跃参考 + 阶跃扰动</text>
+<polyline points="30.00,851.00 338.00,851.00" fill="none" stroke="#2b2e34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="30" y="882" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">配置保存在本机</text>
+<text x="30" y="911" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#737d8d">每次运行独立保存原始数据与报告</text>
+<circle cx="39.6" cy="1037.6" r="8.0" fill="none" stroke="#9ca3b0" stroke-width="1.7"/>
+<polyline points="36.40,1034.40 38.00,1032.00 42.00,1032.00 43.60,1034.40 42.80,1036.00 39.60,1038.40 39.60,1040.00" fill="none" stroke="#9ca3b0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="39.6" cy="1043.2" r="0.7200000000000001" fill="#9ca3b0" stroke="none" stroke-width="1"/>
+<text x="59" y="1028" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#9ca3b0">使用说明</text>
+<text x="30" y="1076" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#7f8897">合成模型 · 未经硬件验证</text>
+<rect x="368" y="79" width="1400" height="1008" rx="16" fill="#121315" stroke="none"/>
+<rect x="397" y="99" width="153" height="46" rx="10" fill="#1a1c21" stroke="none"/>
+<polyline points="413.90,111.90 413.90,129.90 433.70,129.90" fill="none" stroke="#2878ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="416.60,125.40 421.10,118.20 425.60,121.80 431.90,113.70" fill="none" stroke="#2878ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="445" y="112" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#2878ff">实验对比</text>
+<polyline points="596.60,111.90 596.60,130.80" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="594.8" y="116.4" width="3.6" height="4.5" rx="1" fill="#f2f3f5" stroke="none"/>
+<polyline points="603.80,111.90 603.80,130.80" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="602.0" y="123.6" width="3.6" height="4.5" rx="1" fill="#f2f3f5" stroke="none"/>
+<polyline points="611.00,111.90 611.00,130.80" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="609.2" y="114.6" width="3.6" height="4.5" rx="1" fill="#f2f3f5" stroke="none"/>
+<text x="626" y="112" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#f2f3f5">预算整定</text>
+<circle cx="799.8" cy="121.8" r="8.1" fill="none" stroke="#f2f3f5" stroke-width="1.7"/>
+<polyline points="799.80,116.40 799.80,121.80 804.30,124.50" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="823" y="112" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700" fill="#f2f3f5">历史实验</text>
+<polyline points="989.70,123.60 989.70,129.90 1005.90,129.90 1005.90,123.60" fill="none" stroke="#9ca3b0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="997.80,125.40 997.80,112.80" fill="none" stroke="#9ca3b0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="993.30,117.30 997.80,112.80 1002.30,117.30" fill="none" stroke="#9ca3b0" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1020" y="112" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#9ca3b0">报告导出</text>
+<text x="1575" y="117" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#9ca3b0">仅本地运行</text>
+<polyline points="399.00,164.00 1737.00,164.00" fill="none" stroke="#24272d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="405" y="191" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="700" fill="#f2f3f5">闭环响应</text>
+<text x="405" y="227" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">一阶惯性 / 阶跃参考与扰动</text>
+<rect x="1416" y="191" width="291" height="31" rx="16" fill="#1b1e25" stroke="none"/>
+<circle cx="1432" cy="206" r="3" fill="#8e98aa" stroke="none" stroke-width="1"/>
+<text x="1445" y="198" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#aeb6c3">尚未运行 · 曲线为布局示意</text>
+<rect x="854" y="239" width="372" height="36" rx="8" fill="#0e1013" stroke="none"/>
+<rect x="858" y="243" width="113" height="28" rx="6" fill="#24272d" stroke="none"/>
+<text x="876" y="249" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#f2f3f5">输出与参考</text>
+<text x="1002" y="249" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#9ca3b0">跟踪误差</text>
+<text x="1117" y="249" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#9ca3b0">实际输入</text>
+<text x="405" y="281" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#7f899a">输出 / unit</text>
+<polyline points="463.00,302.00 1673.00,302.00" fill="none" stroke="#242831" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="424" y="295.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#7f899a">1.2</text>
+<polyline points="463.00,348.00 1673.00,348.00" fill="none" stroke="#242831" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="424" y="341.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#7f899a">0.9</text>
+<polyline points="463.00,394.00 1673.00,394.00" fill="none" stroke="#242831" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="424" y="387.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#7f899a">0.6</text>
+<polyline points="463.00,440.00 1673.00,440.00" fill="none" stroke="#242831" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="424" y="433.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#7f899a">0.3</text>
+<polyline points="463.00,486.00 1673.00,486.00" fill="none" stroke="#242831" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="424" y="479.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#7f899a">0.0</text>
+<polyline points="463.00,302.00 463.00,486.00" fill="none" stroke="#1f232b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="457.0" y="497" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#7f899a">0</text>
+<polyline points="614.25,302.00 614.25,486.00" fill="none" stroke="#1f232b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="765.50,302.00 765.50,486.00" fill="none" stroke="#1f232b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="759.5" y="497" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#7f899a">3</text>
+<polyline points="916.75,302.00 916.75,486.00" fill="none" stroke="#1f232b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1068.00,302.00 1068.00,486.00" fill="none" stroke="#1f232b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1062.0" y="497" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#7f899a">6</text>
+<polyline points="1219.25,302.00 1219.25,486.00" fill="none" stroke="#1f232b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1370.50,302.00 1370.50,486.00" fill="none" stroke="#1f232b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1364.5" y="497" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#7f899a">9</text>
+<polyline points="1521.75,302.00 1521.75,486.00" fill="none" stroke="#1f232b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1673.00,302.00 1673.00,486.00" fill="none" stroke="#1f232b" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1667.0" y="497" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#7f899a">12</text>
+<text x="1660" y="510" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#9ca3b0">时间 / s</text>
+<polyline points="463.00,486.00 513.42,486.00 513.42,332.67 1673.00,332.67" fill="none" stroke="#a1a8b5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 7"/>
+<polyline points="463.00,486.00 465.89,486.00 468.78,486.00 471.66,486.00 474.55,486.00 477.44,486.00 480.33,486.00 483.21,486.00 486.10,486.00 488.99,486.00 491.88,486.00 494.77,486.00 497.65,486.00 500.54,486.00 503.43,486.00 506.32,486.00 509.21,486.00 512.09,486.00 514.98,482.89 517.87,477.32 520.76,471.95 523.64,466.79 526.53,461.81 529.42,457.02 532.31,452.41 535.20,447.96 538.08,443.69 540.97,439.57 543.86,435.60 546.75,431.78 549.63,428.11 552.52,424.56 555.41,421.16 558.30,417.87 561.19,414.71 564.07,411.67 566.96,408.74 569.85,405.91 572.74,403.20 575.63,400.58 578.51,398.06 581.40,395.64 584.29,393.30 587.18,391.05 590.06,388.88 592.95,386.80 595.84,384.79 598.73,382.86 601.62,380.99 604.50,379.20 607.39,377.48 610.28,375.81 613.17,374.21 616.05,372.67 618.94,371.19 621.83,369.76 624.72,368.38 627.61,367.06 630.49,365.78 633.38,364.55 636.27,363.37 639.16,362.23 642.05,361.13 644.93,360.08 647.82,359.06 650.71,358.08 653.60,357.14 656.48,356.23 659.37,355.36 662.26,354.51 665.15,353.70 668.04,352.92 670.92,352.17 673.81,351.45 676.70,350.75 679.59,350.08 682.47,349.43 685.36,348.81 688.25,348.21 691.14,347.64 694.03,347.08 696.91,346.55 699.80,346.03 702.69,345.54 705.58,345.06 708.47,344.60 711.35,344.16 714.24,343.73 717.13,343.32 720.02,342.92 722.90,342.54 725.79,342.18 728.68,341.82 731.57,341.48 734.46,341.16 737.34,340.84 740.23,340.54 743.12,340.25 746.01,339.97 748.89,339.70 751.78,339.43 754.67,339.18 757.56,338.94 760.45,338.71 763.33,338.48 766.22,338.27 769.11,338.06 772.00,337.86 774.89,337.67 777.77,337.48 780.66,337.30 783.55,337.13 786.44,336.97 789.32,336.81 792.21,336.65 795.10,336.51 797.99,336.36 800.88,336.23 803.76,336.09 806.65,335.97 809.54,335.84 812.43,335.73 815.32,335.61 818.20,335.50 821.09,335.40 823.98,335.30 826.87,335.20 829.75,335.11 832.64,335.01 835.53,334.93 838.42,334.84 841.31,334.76 844.19,334.69 847.08,334.61 849.97,334.54 852.86,334.47 855.74,334.40 858.63,334.34 861.52,334.28 864.41,334.22 867.30,334.16 870.18,334.10 873.07,334.05 875.96,334.00 878.85,333.95 881.74,333.90 884.62,333.86 887.51,333.81 890.40,333.77 893.29,333.73 896.17,333.69 899.06,333.65 901.95,333.61 904.84,333.58 907.73,333.55 910.61,333.51 913.50,333.48 916.39,333.45 919.28,333.42 922.16,333.39 925.05,333.37 927.94,333.34 930.83,333.32 933.72,333.29 936.60,333.27 939.49,333.25 942.38,333.22 945.27,333.20 948.16,333.18 951.04,333.17 953.93,333.15 956.82,333.13 959.71,333.11 962.59,333.10 965.48,333.08 968.37,333.06 971.26,333.05 974.15,333.04 977.03,333.02 979.92,333.01 982.81,333.00 985.70,332.98 988.58,332.97 991.47,332.96 994.36,332.95 997.25,332.94 1000.14,332.93 1003.02,332.92 1005.91,332.91 1008.80,332.90 1011.69,332.89 1014.58,332.88 1017.46,332.88 1020.35,332.87 1023.24,332.86 1026.13,332.85 1029.01,332.85 1031.90,332.84 1034.79,332.83 1037.68,332.83 1040.57,332.82 1043.45,332.82 1046.34,332.81 1049.23,332.80 1052.12,332.80 1055.00,332.79 1057.89,332.79 1060.78,332.79 1063.67,332.78 1066.56,332.78 1069.44,332.59 1072.33,332.23 1075.22,331.90 1078.11,331.59 1081.00,331.30 1083.88,331.03 1086.77,330.77 1089.66,330.54 1092.55,330.32 1095.43,330.11 1098.32,329.92 1101.21,329.75 1104.10,329.59 1106.99,329.44 1109.87,329.30 1112.76,329.18 1115.65,329.06 1118.54,328.96 1121.42,328.86 1124.31,328.78 1127.20,328.70 1130.09,328.64 1132.98,328.58 1135.86,328.53 1138.75,328.48 1141.64,328.45 1144.53,328.41 1147.42,328.39 1150.30,328.37 1153.19,328.35 1156.08,328.35 1158.97,328.34 1161.85,328.34 1164.74,328.34 1167.63,328.35 1170.52,328.36 1173.41,328.38 1176.29,328.40 1179.18,328.42 1182.07,328.44 1184.96,328.47 1187.84,328.50 1190.73,328.53 1193.62,328.56 1196.51,328.60 1199.40,328.64 1202.28,328.67 1205.17,328.71 1208.06,328.76 1210.95,328.80 1213.84,328.84 1216.72,328.89 1219.61,328.93 1222.50,328.98 1225.39,329.03 1228.27,329.07 1231.16,329.12 1234.05,329.17 1236.94,329.22 1239.83,329.27 1242.71,329.32 1245.60,329.37 1248.49,329.42 1251.38,329.47 1254.26,329.52 1257.15,329.57 1260.04,329.62 1262.93,329.67 1265.82,329.72 1268.70,329.77 1271.59,329.82 1274.48,329.87 1277.37,329.92 1280.26,329.97 1283.14,330.01 1286.03,330.06 1288.92,330.11 1291.81,330.15 1294.69,330.20 1297.58,330.25 1300.47,330.29 1303.36,330.34 1306.25,330.38 1309.13,330.43 1312.02,330.47 1314.91,330.51 1317.80,330.55 1320.68,330.60 1323.57,330.64 1326.46,330.68 1329.35,330.72 1332.24,330.76 1335.12,330.80 1338.01,330.84 1340.90,330.87 1343.79,330.91 1346.68,330.95 1349.56,330.98 1352.45,331.02 1355.34,331.05 1358.23,331.09 1361.11,331.12 1364.00,331.15 1366.89,331.19 1369.78,331.22 1372.67,331.25 1375.55,331.28 1378.44,331.31 1381.33,331.34 1384.22,331.37 1387.11,331.40 1389.99,331.43 1392.88,331.45 1395.77,331.48 1398.66,331.51 1401.54,331.53 1404.43,331.56 1407.32,331.59 1410.21,331.61 1413.10,331.63 1415.98,331.66 1418.87,331.68 1421.76,331.70 1424.65,331.73 1427.53,331.75 1430.42,331.77 1433.31,331.79 1436.20,331.81 1439.09,331.83 1441.97,331.85 1444.86,331.87 1447.75,331.89 1450.64,331.91 1453.53,331.92 1456.41,331.94 1459.30,331.96 1462.19,331.98 1465.08,331.99 1467.96,332.01 1470.85,332.02 1473.74,332.04 1476.63,332.06 1479.52,332.07 1482.40,332.08 1485.29,332.10 1488.18,332.11 1491.07,332.13 1493.95,332.14 1496.84,332.15 1499.73,332.16 1502.62,332.18 1505.51,332.19 1508.39,332.20 1511.28,332.21 1514.17,332.22 1517.06,332.23 1519.95,332.24 1522.83,332.26 1525.72,332.27 1528.61,332.28 1531.50,332.29 1534.38,332.29 1537.27,332.30 1540.16,332.31 1543.05,332.32 1545.94,332.33 1548.82,332.34 1551.71,332.35 1554.60,332.36 1557.49,332.36 1560.37,332.37 1563.26,332.38 1566.15,332.39 1569.04,332.39 1571.93,332.40 1574.81,332.41 1577.70,332.41 1580.59,332.42 1583.48,332.43 1586.37,332.43 1589.25,332.44 1592.14,332.44 1595.03,332.45 1597.92,332.46 1600.80,332.46 1603.69,332.47 1606.58,332.47 1609.47,332.48 1612.36,332.48 1615.24,332.49 1618.13,332.49 1621.02,332.50 1623.91,332.50 1626.79,332.50 1629.68,332.51 1632.57,332.51 1635.46,332.52 1638.35,332.52 1641.23,332.52 1644.12,332.53 1647.01,332.53 1649.90,332.54 1652.79,332.54 1655.67,332.54 1658.56,332.55 1661.45,332.55 1664.34,332.55 1667.22,332.55 1670.11,332.56 1673.00,332.56" fill="none" stroke="#2878ff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="463.00,486.00 465.89,486.00 468.78,486.00 471.66,486.00 474.55,486.00 477.44,486.00 480.33,486.00 483.21,486.00 486.10,486.00 488.99,486.00 491.88,486.00 494.77,486.00 497.65,486.00 500.54,486.00 503.43,486.00 506.32,486.00 509.21,486.00 512.09,486.00 514.98,481.43 517.87,473.35 520.76,465.71 523.64,458.48 526.53,451.65 529.42,445.19 532.31,439.07 535.20,433.29 538.08,427.83 540.97,422.66 543.86,417.77 546.75,413.15 549.63,408.78 552.52,404.64 555.41,400.73 558.30,397.04 561.19,393.54 564.07,390.23 566.96,387.11 569.85,384.15 572.74,381.35 575.63,378.71 578.51,376.21 581.40,373.84 584.29,371.61 587.18,369.49 590.06,367.49 592.95,365.60 595.84,363.81 598.73,362.12 601.62,360.52 604.50,359.01 607.39,357.58 610.28,356.22 613.17,354.94 616.05,353.73 618.94,352.59 621.83,351.51 624.72,350.48 627.61,349.52 630.49,348.60 633.38,347.74 636.27,346.92 639.16,346.14 642.05,345.41 644.93,344.72 647.82,344.06 650.71,343.45 653.60,342.86 656.48,342.31 659.37,341.78 662.26,341.29 665.15,340.82 668.04,340.38 670.92,339.96 673.81,339.56 676.70,339.19 679.59,338.83 682.47,338.50 685.36,338.18 688.25,337.88 691.14,337.60 694.03,337.33 696.91,337.08 699.80,336.84 702.69,336.61 705.58,336.40 708.47,336.19 711.35,336.00 714.24,335.82 717.13,335.65 720.02,335.49 722.90,335.33 725.79,335.19 728.68,335.05 731.57,334.92 734.46,334.80 737.34,334.68 740.23,334.58 743.12,334.47 746.01,334.37 748.89,334.28 751.78,334.19 754.67,334.11 757.56,334.03 760.45,333.96 763.33,333.89 766.22,333.82 769.11,333.76 772.00,333.70 774.89,333.64 777.77,333.59 780.66,333.54 783.55,333.49 786.44,333.45 789.32,333.41 792.21,333.37 795.10,333.33 797.99,333.29 800.88,333.26 803.76,333.23 806.65,333.19 809.54,333.17 812.43,333.14 815.32,333.11 818.20,333.09 821.09,333.07 823.98,333.04 826.87,333.02 829.75,333.00 832.64,332.99 835.53,332.97 838.42,332.95 841.31,332.94 844.19,332.92 847.08,332.91 849.97,332.90 852.86,332.88 855.74,332.87 858.63,332.86 861.52,332.85 864.41,332.84 867.30,332.83 870.18,332.82 873.07,332.81 875.96,332.80 878.85,332.80 881.74,332.79 884.62,332.78 887.51,332.78 890.40,332.77 893.29,332.77 896.17,332.76 899.06,332.76 901.95,332.75 904.84,332.75 907.73,332.74 910.61,332.74 913.50,332.73 916.39,332.73 919.28,332.73 922.16,332.72 925.05,332.72 927.94,332.72 930.83,332.71 933.72,332.71 936.60,332.71 939.49,332.71 942.38,332.70 945.27,332.70 948.16,332.70 951.04,332.70 953.93,332.70 956.82,332.70 959.71,332.69 962.59,332.69 965.48,332.69 968.37,332.69 971.26,332.69 974.15,332.69 977.03,332.69 979.92,332.69 982.81,332.68 985.70,332.68 988.58,332.68 991.47,332.68 994.36,332.68 997.25,332.68 1000.14,332.68 1003.02,332.68 1005.91,332.68 1008.80,332.68 1011.69,332.68 1014.58,332.68 1017.46,332.68 1020.35,332.68 1023.24,332.67 1026.13,332.67 1029.01,332.67 1031.90,332.67 1034.79,332.67 1037.68,332.67 1040.57,332.67 1043.45,332.67 1046.34,332.67 1049.23,332.67 1052.12,332.67 1055.00,332.67 1057.89,332.67 1060.78,332.67 1063.67,332.67 1066.56,332.67 1069.44,332.49 1072.33,332.14 1075.22,331.81 1078.11,331.50 1081.00,331.21 1083.88,330.94 1086.77,330.69 1089.66,330.46 1092.55,330.24 1095.43,330.04 1098.32,329.85 1101.21,329.68 1104.10,329.52 1106.99,329.37 1109.87,329.24 1112.76,329.12 1115.65,329.01 1118.54,328.90 1121.42,328.81 1124.31,328.73 1127.20,328.66 1130.09,328.59 1132.98,328.53 1135.86,328.48 1138.75,328.44 1141.64,328.40 1144.53,328.38 1147.42,328.35 1150.30,328.33 1153.19,328.32 1156.08,328.31 1158.97,328.31 1161.85,328.31 1164.74,328.31 1167.63,328.32 1170.52,328.34 1173.41,328.35 1176.29,328.37 1179.18,328.39 1182.07,328.42 1184.96,328.45 1187.84,328.48 1190.73,328.51 1193.62,328.54 1196.51,328.58 1199.40,328.62 1202.28,328.66 1205.17,328.70 1208.06,328.74 1210.95,328.78 1213.84,328.83 1216.72,328.87 1219.61,328.92 1222.50,328.97 1225.39,329.01 1228.27,329.06 1231.16,329.11 1234.05,329.16 1236.94,329.21 1239.83,329.26 1242.71,329.31 1245.60,329.36 1248.49,329.41 1251.38,329.46 1254.26,329.51 1257.15,329.56 1260.04,329.61 1262.93,329.66 1265.82,329.71 1268.70,329.76 1271.59,329.81 1274.48,329.86 1277.37,329.91 1280.26,329.96 1283.14,330.01 1286.03,330.05 1288.92,330.10 1291.81,330.15 1294.69,330.20 1297.58,330.24 1300.47,330.29 1303.36,330.33 1306.25,330.38 1309.13,330.42 1312.02,330.46 1314.91,330.51 1317.80,330.55 1320.68,330.59 1323.57,330.63 1326.46,330.67 1329.35,330.71 1332.24,330.75 1335.12,330.79 1338.01,330.83 1340.90,330.87 1343.79,330.91 1346.68,330.94 1349.56,330.98 1352.45,331.02 1355.34,331.05 1358.23,331.08 1361.11,331.12 1364.00,331.15 1366.89,331.18 1369.78,331.22 1372.67,331.25 1375.55,331.28 1378.44,331.31 1381.33,331.34 1384.22,331.37 1387.11,331.40 1389.99,331.43 1392.88,331.45 1395.77,331.48 1398.66,331.51 1401.54,331.53 1404.43,331.56 1407.32,331.58 1410.21,331.61 1413.10,331.63 1415.98,331.66 1418.87,331.68 1421.76,331.70 1424.65,331.72 1427.53,331.75 1430.42,331.77 1433.31,331.79 1436.20,331.81 1439.09,331.83 1441.97,331.85 1444.86,331.87 1447.75,331.89 1450.64,331.91 1453.53,331.92 1456.41,331.94 1459.30,331.96 1462.19,331.98 1465.08,331.99 1467.96,332.01 1470.85,332.02 1473.74,332.04 1476.63,332.05 1479.52,332.07 1482.40,332.08 1485.29,332.10 1488.18,332.11 1491.07,332.13 1493.95,332.14 1496.84,332.15 1499.73,332.16 1502.62,332.18 1505.51,332.19 1508.39,332.20 1511.28,332.21 1514.17,332.22 1517.06,332.23 1519.95,332.24 1522.83,332.26 1525.72,332.27 1528.61,332.28 1531.50,332.29 1534.38,332.29 1537.27,332.30 1540.16,332.31 1543.05,332.32 1545.94,332.33 1548.82,332.34 1551.71,332.35 1554.60,332.36 1557.49,332.36 1560.37,332.37 1563.26,332.38 1566.15,332.39 1569.04,332.39 1571.93,332.40 1574.81,332.41 1577.70,332.41 1580.59,332.42 1583.48,332.43 1586.37,332.43 1589.25,332.44 1592.14,332.44 1595.03,332.45 1597.92,332.46 1600.80,332.46 1603.69,332.47 1606.58,332.47 1609.47,332.48 1612.36,332.48 1615.24,332.49 1618.13,332.49 1621.02,332.50 1623.91,332.50 1626.79,332.50 1629.68,332.51 1632.57,332.51 1635.46,332.52 1638.35,332.52 1641.23,332.52 1644.12,332.53 1647.01,332.53 1649.90,332.54 1652.79,332.54 1655.67,332.54 1658.56,332.55 1661.45,332.55 1664.34,332.55 1667.22,332.55 1670.11,332.56 1673.00,332.56" fill="none" stroke="#49cfbc" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1068.00,302.00 1068.00,486.00" fill="none" stroke="#4e4b41" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 7"/>
+<text x="1078.0" y="312" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="11" font-weight="400" fill="#a8a18a">扰动施加</text>
+<rect x="876" y="402" width="354" height="37" rx="8" fill="#161b24" stroke="#283548"/>
+<text x="898" y="414" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#b1bdce">运行后显示实际曲线与完整指标</text>
+<polyline points="829.00,541.00 851.00,541.00" fill="none" stroke="#a1a8b5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="859" y="533" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#9ca3b0">参考</text>
+<polyline points="959.00,541.00 981.00,541.00" fill="none" stroke="#2878ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="989" y="533" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#9ca3b0">PI</text>
+<polyline points="1081.00,541.00 1103.00,541.00" fill="none" stroke="#49cfbc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1111" y="533" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#9ca3b0">抗饱和 PID</text>
+<polyline points="399.00,573.00 1737.00,573.00" fill="none" stroke="#262930" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="409" y="589" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#9ca3b0">RMSE</text>
+<text x="565" y="586" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#8993a5">—</text>
+<polyline points="654.00,586.00 654.00,616.00" fill="none" stroke="#292d34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="675" y="589" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#9ca3b0">IAE</text>
+<text x="831" y="586" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#8993a5">—</text>
+<polyline points="920.00,586.00 920.00,616.00" fill="none" stroke="#292d34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="941" y="589" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#9ca3b0">输入变化量</text>
+<text x="1097" y="586" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#8993a5">—</text>
+<polyline points="1186.00,586.00 1186.00,616.00" fill="none" stroke="#292d34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1207" y="589" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#9ca3b0">饱和比例</text>
+<text x="1363" y="586" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#8993a5">—</text>
+<polyline points="1452.00,586.00 1452.00,616.00" fill="none" stroke="#292d34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1473" y="589" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#9ca3b0">恢复状态</text>
+<text x="1629" y="586" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#8993a5">—</text>
+<polyline points="368.00,635.00 1767.00,635.00" fill="none" stroke="#2b2e34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="811.00,636.00 811.00,1019.00" fill="none" stroke="#2b2e34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1265.00,636.00 1265.00,1019.00" fill="none" stroke="#2b2e34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="403" y="661" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#f2f3f5">对象与控制器</text>
+<text x="846" y="661" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#f2f3f5">参考与扰动</text>
+<text x="1300" y="661" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#f2f3f5">实验条件</text>
+<polyline points="403.00,703.00 777.00,703.00" fill="none" stroke="#2b2e34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="846.00,703.00 1231.00,703.00" fill="none" stroke="#2b2e34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1300.00,703.00 1730.00,703.00" fill="none" stroke="#2b2e34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="403" y="725" width="183" height="40" rx="9" fill="#141c2b" stroke="#2c61ae"/>
+<text x="418" y="736.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#2878ff">一阶惯性</text>
+<rect x="599" y="725" width="178" height="40" rx="9" fill="#1c1e22" stroke="#2b2e34"/>
+<text x="614" y="736.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">二阶振荡</text>
+<text x="403" y="786" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">对象增益</text>
+<rect x="403" y="814" width="180" height="40" rx="7" fill="#1a1c20" stroke="#272a30"/>
+<text x="416" y="826" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">1.0</text>
+<text x="598" y="786" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">时间常数 / s</text>
+<rect x="598" y="814" width="179" height="40" rx="7" fill="#1a1c20" stroke="#272a30"/>
+<text x="611" y="826" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">1.0</text>
+<text x="403" y="879" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">参与对比的控制器</text>
+<rect x="403" y="909" width="180" height="42" rx="9" fill="#141c2b" stroke="#2c61ae"/>
+<text x="418" y="921.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#2878ff">PI</text>
+<rect x="598" y="909" width="179" height="42" rx="9" fill="#141c2b" stroke="#2c61ae"/>
+<text x="613" y="921.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#2878ff">抗饱和 PID</text>
+<rect x="403" y="963" width="180" height="42" rx="9" fill="#1c1e22" stroke="#2b2e34"/>
+<text x="418" y="975.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">二自由度 PID</text>
+<rect x="598" y="963" width="179" height="42" rx="9" fill="#1c1e22" stroke="#2b2e34"/>
+<text x="613" y="975.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">LADRC</text>
+<text x="846" y="730" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">参考波形</text>
+<rect x="846" y="762" width="119" height="42" rx="9" fill="#141c2b" stroke="#2c61ae"/>
+<polyline points="861.85,785.60 864.40,785.60 864.40,776.25 872.05,776.25 872.05,785.60 879.70,785.60" fill="none" stroke="#2878ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="891" y="774.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#2878ff">阶跃</text>
+<rect x="978" y="762" width="119" height="42" rx="9" fill="#1c1e22" stroke="#2b2e34"/>
+<polyline points="993.00,781.35 993.85,779.67 994.70,778.13 995.55,776.85 996.40,775.94 997.25,775.46 998.10,775.46 998.95,775.94 999.80,776.85 1000.65,778.13 1001.50,779.67 1002.35,781.35 1003.20,783.03 1004.05,784.57 1004.90,785.85 1005.75,786.76 1006.60,787.24 1007.45,787.24 1008.30,786.76 1009.15,785.85 1010.00,784.57 1010.85,783.03 1011.70,781.35" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1023" y="774.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">正弦</text>
+<rect x="1110" y="762" width="121" height="42" rx="9" fill="#1c1e22" stroke="#2b2e34"/>
+<polyline points="1125.85,788.15 1130.10,788.15 1140.30,775.40 1144.55,775.40" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1155" y="774.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">斜坡</text>
+<text x="846" y="825" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">参考幅值 / unit</text>
+<rect x="846" y="853" width="184" height="40" rx="7" fill="#1a1c20" stroke="#272a30"/>
+<text x="859" y="865" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">1.0</text>
+<text x="1047" y="825" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">起始时刻 / s</text>
+<rect x="1047" y="853" width="184" height="40" rx="7" fill="#1a1c20" stroke="#272a30"/>
+<text x="1060" y="865" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">0.5</text>
+<text x="846" y="921" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#f2f3f5">阶跃扰动</text>
+<rect x="1187" y="917" width="44" height="23" rx="12" fill="#2878ff" stroke="none"/>
+<circle cx="1219" cy="928.5" r="8.5" fill="#f4f5f7" stroke="none" stroke-width="1"/>
+<rect x="846" y="956" width="385" height="49" rx="8" fill="#1a1c20" stroke="#272a30"/>
+<text x="860" y="972" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#f2f3f5">幅值  0.2 unit</text>
+<text x="1050" y="972" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#f2f3f5">施加时刻  6.0 s</text>
+<text x="1300" y="727" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">采样周期 / s</text>
+<rect x="1300" y="755" width="202" height="40" rx="7" fill="#1a1c20" stroke="#272a30"/>
+<text x="1313" y="767" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">0.01</text>
+<text x="1518" y="727" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">仿真时长 / s</text>
+<rect x="1518" y="755" width="212" height="40" rx="7" fill="#1a1c20" stroke="#272a30"/>
+<text x="1531" y="767" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">12.0</text>
+<text x="1300" y="818" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">输入限幅 / unit</text>
+<rect x="1300" y="846" width="202" height="40" rx="7" fill="#1a1c20" stroke="#272a30"/>
+<text x="1313" y="858" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">± 3.0</text>
+<text x="1518" y="818" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">测量延迟 / s</text>
+<rect x="1518" y="846" width="212" height="40" rx="7" fill="#1a1c20" stroke="#272a30"/>
+<text x="1531" y="858" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">0.00</text>
+<text x="1300" y="917" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#9ca3b0">噪声标准差</text>
+<text x="1664" y="917" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#f2f3f5">0.00</text>
+<polyline points="1300.00,956.00 1730.00,956.00" fill="none" stroke="#353a44" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1303" cy="956" r="7" fill="#2878ff" stroke="#bfd1f5" stroke-width="1"/>
+<text x="1300" y="989" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#7ca8f2">高级设置：评价窗口与恢复判据</text>
+<polyline points="368.00,1020.00 1767.00,1020.00" fill="none" stroke="#2b2e34" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="408" cy="1054" r="4" fill="#49cfbc" stroke="none" stroke-width="1"/>
+<text x="423" y="1044" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#f2f3f5">准备就绪</text>
+<text x="523" y="1047" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#9ca3b0">2 个控制器  ×  1 个场景</text>
+<rect x="1263" y="1034" width="153" height="40" rx="9" fill="#1c1e22" stroke="#2b2e34"/>
+<polyline points="1280.55,1054.90 1280.55,1060.85 1295.85,1060.85 1295.85,1054.90" fill="none" stroke="#646c7a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1288.20,1056.60 1288.20,1044.70" fill="none" stroke="#646c7a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1283.95,1048.95 1288.20,1044.70 1292.45,1048.95" fill="none" stroke="#646c7a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1308" y="1045.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#646c7a">导出报告</text>
+<rect x="1432" y="1034" width="121" height="40" rx="9" fill="#1c1e22" stroke="#2b2e34"/>
+<text x="1447" y="1045.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#f2f3f5">保存配置</text>
+<rect x="1569" y="1034" width="168" height="40" rx="9" fill="#2878ff" stroke="none"/>
+<polyline points="1587.40,1044.70 1601.85,1053.20 1587.40,1061.70 1587.40,1044.70" fill="none" stroke="#f2f3f5" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1614" y="1045.0" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#f2f3f5">开始对比</text>
+</svg>

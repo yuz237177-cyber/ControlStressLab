@@ -1,7 +1,7 @@
 # ControlStressLab
 
 [![tests](https://github.com/yuz237177-cyber/ControlStressLab/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/yuz237177-cyber/ControlStressLab/actions/workflows/tests.yml)
-[![version](https://img.shields.io/badge/version-0.3.0-blue)](https://github.com/yuz237177-cyber/ControlStressLab/releases/tag/v0.3.0)
+[![version](https://img.shields.io/badge/version-0.4.0-blue)](https://github.com/yuz237177-cyber/ControlStressLab/releases/tag/v0.4.0)
 
 **面向单输入单输出系统的控制器压力测试、参数整定与性能评估工具。**
 
@@ -9,7 +9,26 @@ Reproducible SISO controller stress testing, budgeted tuning, and frozen held-ou
 
 配置被控对象与信号，选择控制方案，在相同条件下比较误差、控制动作、饱和与恢复行为；结果可以追溯到配置、轨迹、随机种子和源码指纹。项目以动力学类型组织，电机是可选应用案例。
 
-> **v0.3.0 的全部公开结果来自合成仿真，尚未进行硬件验证。** 可复现不等于模型代表真实设备，也不构成稳定性证明。
+> **全部公开结果来自合成仿真，尚未进行硬件验证。** 可复现不等于模型代表真实设备，也不构成稳定性证明。
+
+## v0.4：桌面实验工作台
+
+已实现 Windows 独立窗口：深色界面、加粗字体、大面积响应图。可配置一阶/二阶对象和4种控制方案，调整波形、噪声、测量延迟与限幅，运行后查看输出/误差/实际输入及逐次指标，并保存完整数据、PNG/SVG、HTML和ZIP。预算页接入既有v0.3冻结测试协议。
+
+![桌面工作台实际运行截图](docs/design/v0.4-gui-running.png)
+
+从源码使用：
+
+```sh
+python -m pip install -e ".[gui]"
+python run_gui.py
+```
+
+Windows也可双击仓库根目录的 `Start-ControlStressLab.cmd`。**v0.4.0提供Python包与源码启动器，需要先安装Python和桌面依赖；本次不提供免Python的便携EXE。**
+
+[下载v0.4.0](https://github.com/yuz237177-cyber/ControlStressLab/releases/tag/v0.4.0) · [完整GUI示例数据、图表与源码](https://github.com/yuz237177-cyber/ControlStressLab/releases/download/v0.4.0/ControlStressLab-v0.4.0-GUI-evidence.zip)
+
+[使用说明与保存位置](docs/GUI_GUIDE.md) · [GUI本机验收记录](docs/GUI_VERIFICATION.md) · [设计与发布范围](docs/V0_4_GUI_PLAN.md)
 
 ## v0.3：调参之后真的更好吗？
 
@@ -107,6 +126,8 @@ python scripts/check_coverage_reference.py --suite outputs/my-benchmark --output
 ## 保存和复现
 
 [全部历史成果](reports/README.md)保留本轮8组PNG/SVG、384条测试与48条训练CSV，以及此前各轮所有报告和图片。
+
+早期案例仍可查看：[历史电机示例](docs/examples/README.md)、[九张图表与说明](docs/examples/gallery/README.md)及[离线图表浏览页](docs/examples/gallery/index.html)（下载后本机打开）。
 
 ```sh
 python scripts/archive_results.py --source outputs/my-benchmark --destination reports/my-benchmark

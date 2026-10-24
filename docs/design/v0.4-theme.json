@@ -1,0 +1,45 @@
+{
+  "schema": "visual-design-1.0",
+  "status": "proposed_not_implemented",
+  "name": "ControlStressLab Dark",
+  "colors": {
+    "window": "#0B0C0E",
+    "surface": "#121315",
+    "control": "#1C1E22",
+    "control_hover": "#252830",
+    "input": "#1A1C20",
+    "border": "#2B2E34",
+    "text": "#F2F3F5",
+    "text_secondary": "#B3BAC7",
+    "text_disabled": "#646C7A",
+    "accent": "#2878FF",
+    "selected_surface": "#141C2B",
+    "selected_border": "#2C61AE",
+    "positive": "#49CFBC",
+    "warning": "#E5B46C",
+    "negative": "#EF7C83"
+  },
+  "chart": {
+    "surface": "#121315",
+    "grid": "#242831",
+    "reference": "#A1A8B5",
+    "controller_palette": ["#2878FF", "#49CFBC", "#E5AA62", "#AC8CEC"],
+    "reference_style": "dashed",
+    "export_theme_separate_from_desktop": true
+  },
+  "typography": {"control_weight": 700, "label_weight": 700, "value_weight": 700, "heading_weight": 700, "chart_tick_weight": 700},
+  "spacing": {"base": 8, "panel_padding": 28, "control_gap": 12},
+  "radius": {"window": 13, "surface": 16, "control": 8},
+  "layout": {
+    "reference_canvas": [1800, 1120],
+    "navigation": "top",
+    "left_rail": "experiment_profiles",
+    "hero": "response_chart",
+    "reference_plot_size": [1250, 360],
+    "response_workspace_share": 0.67,
+    "compact_parameter_fields": true,
+    "lower_columns": ["plant_and_controllers", "reference_and_disturbance", "experiment_conditions"],
+    "bottom": "job_status_and_actions",
+    "fixed_canvas_dimensions_in_product": false
+  }
+}

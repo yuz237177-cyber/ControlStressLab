@@ -55,7 +55,7 @@ def summarize(records):
     return result
 
 
-def execute(output, config=None, *, plots=False):
+def execute(output, config=None, *, plots=False, progress=None, should_cancel=None):
     config = validate_config(DEFAULT_CONFIG if config is None else config)
     cases = heldout_cases(config)
     groups = len(config["models"])*len(config["controllers"])
@@ -79,6 +79,13 @@ def execute(output, config=None, *, plots=False):
     def event(name, **details):
         with (output / "events.jsonl").open("a", encoding="utf8", newline="\n") as stream:
             stream.write(json.dumps(dict(event=name, **details), allow_nan=False)+"\n")
+        if progress: progress(dict(event="phase", stage=name, written=written, expected=expected, failed=failed))
+
+    def checkpoint(stage):
+        if should_cancel and should_cancel():
+            from .experiment import Cancelled
+            raise Cancelled("用户请求取消；已完成记录保留")
+        if progress: progress(dict(event="progress", stage=stage, written=written, expected=expected, failed=failed))
 
     def save_input(model, case_id, s, factor):
         name = f"inputs/{model}__{case_id}.json"
@@ -116,6 +123,7 @@ def execute(output, config=None, *, plots=False):
             for name in config["controllers"]:
                 candidates, best_runs, baseline_runs = [], None, None
                 for index, params in enumerate(candidate_parameters(model, name, config)):
+                    checkpoint("训练 "+model+" / "+name+f" / {index+1}")
                     runs = [simulate(plant_for(model), controller_for(name, params), s) for s in scenarios]
                     metrics = [metrics_for(run, spec) for run in runs]
                     entry = dict(candidate_index=index, parameters=params, assessment=assess_candidate(metrics, config),
@@ -165,6 +173,7 @@ def execute(output, config=None, *, plots=False):
                     selection = selections[model+"__"+name]
                     for phase, params, index in (("baseline", selection["baseline_parameters"], 0),
                                                 ("tuned", selection["parameters"], selection["candidate_index"])):
+                        checkpoint("冻结测试 "+model+" / "+name+" / "+phase)
                         run = simulate(plant_for(model, case["factor"]), controller_for(name, params), s)
                         record = save_run(model, name, phase, case, run, info, candidate_index=index)
                         records.append(record)
@@ -179,6 +188,7 @@ def execute(output, config=None, *, plots=False):
                 "normalized_iae", "normalized_rmse", "input_variation_rate", "saturation_fraction", "recovery_time_s", "recovery_status")
         write_csv(output / "summary.csv", [{k: r.get(k, r["metrics"].get(k)) for k in keys} for r in records])
         if plots:
+            checkpoint("保存图表与报告")
             from .benchmark_plots import build
             build(output, records, training, summary, config)
         images = "".join(f'<a href="figures/{p.name}"><img src="figures/{p.name}" loading="lazy"></a>' for p in sorted((output / "figures").glob("*.png")))

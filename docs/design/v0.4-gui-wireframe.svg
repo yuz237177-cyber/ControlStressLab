@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1040" viewBox="0 0 1520 1040">
+<title>ControlStressLab v0.4 Windows GUI concept</title>
+<desc>Design wireframe only. Curves are illustrative placeholders, not simulation results.</desc>
+<rect x="0" y="0" width="1520" height="1040" rx="0" fill="#f4f6f8" stroke="none"/>
+<rect x="0" y="0" width="1520" height="74" rx="0" fill="#fff" stroke="none"/>
+<rect x="22" y="18" width="38" height="38" rx="9" fill="#087f82" stroke="none"/>
+<text x="30" y="28" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700" fill="#fff">CS</text>
+<text x="74" y="19" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="700" fill="#243447">ControlStressLab</text>
+<text x="289" y="25" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="17" font-weight="400" fill="#64748b">v0.4 · 桌面实验工作台</text>
+<rect x="1201" y="19" width="288" height="36" rx="18" fill="#e8f4f1" stroke="none"/>
+<text x="1220" y="28" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#08736e">界面设计草图 · 尚未实现</text>
+<rect x="0" y="75" width="178" height="965" rx="0" fill="#eef2f6" stroke="none"/>
+<text x="20" y="102" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#7c8a9d">实验工作区</text>
+<rect x="12" y="135" width="154" height="48" rx="8" fill="#dceeed" stroke="none"/>
+<text x="30" y="150" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#087f82">实验对比</text>
+<text x="30" y="215" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#243447">预算整定</text>
+<text x="30" y="245" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#7c8a9d">现有 v0.3 协议</text>
+<text x="30" y="301" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#243447">历史实验</text>
+<polyline points="18.00,887.00 159.00,887.00" fill="none" stroke="#dfe5eb" stroke-width="1"/>
+<text x="28" y="908" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#64748b">帮助与示例</text>
+<text x="20" y="990" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#64748b">本地运行 · 合成仿真</text>
+<rect x="198" y="96" width="322" height="846" rx="10" fill="#fff" stroke="none"/>
+<text x="218" y="114" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700" fill="#243447">实验配置</text>
+<text x="218" y="145" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#7c8a9d">参数草稿，开始时冻结实际配置</text>
+<text x="218" y="177" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">1  被控对象</text>
+<rect x="218" y="201" width="280" height="34" rx="6" fill="#f8fafc" stroke="#dce3ea"/>
+<text x="228" y="208" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">一阶惯性</text>
+<polyline points="476.00,215.00 481.00,220.00 486.00,215.00" fill="none" stroke="#64748b" stroke-width="2"/>
+<text x="218" y="247" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">增益 / unit</text>
+<rect x="218" y="271" width="132" height="34" rx="6" fill="#f8fafc" stroke="#dce3ea"/>
+<text x="228" y="278" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">1.0</text>
+<text x="366" y="247" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">时间常数 / s</text>
+<rect x="366" y="271" width="132" height="34" rx="6" fill="#f8fafc" stroke="#dce3ea"/>
+<text x="376" y="278" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">1.0</text>
+<text x="218" y="324" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700" fill="#243447">2  控制器</text>
+<rect x="218" y="353" width="15" height="15" rx="3" fill="#087f82" stroke="none"/>
+<text x="240" y="351" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">PI</text>
+<rect x="316" y="353" width="15" height="15" rx="3" fill="#087f82" stroke="none"/>
+<text x="338" y="351" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">抗饱和 PID</text>
+<text x="218" y="382" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#087f82">参数设置  ›</text>
+<text x="218" y="421" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">3  参考信号</text>
+<rect x="218" y="445" width="280" height="34" rx="6" fill="#f8fafc" stroke="#dce3ea"/>
+<text x="228" y="452" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">阶跃       幅值 1.0       0.5 s 起</text>
+<polyline points="476.00,459.00 481.00,464.00 486.00,459.00" fill="none" stroke="#64748b" stroke-width="2"/>
+<text x="218" y="492" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">扰动信号</text>
+<rect x="218" y="516" width="280" height="34" rx="6" fill="#f8fafc" stroke="#dce3ea"/>
+<text x="228" y="523" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">阶跃       幅值 0.2       6.0 s 起</text>
+<polyline points="476.00,530.00 481.00,535.00 486.00,530.00" fill="none" stroke="#64748b" stroke-width="2"/>
+<text x="218" y="570" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700" fill="#243447">4  实验条件</text>
+<text x="218" y="598" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">采样 / s</text>
+<rect x="218" y="622" width="132" height="34" rx="6" fill="#f8fafc" stroke="#dce3ea"/>
+<text x="228" y="629" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">0.01</text>
+<text x="366" y="598" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">时长 / s</text>
+<rect x="366" y="622" width="132" height="34" rx="6" fill="#f8fafc" stroke="#dce3ea"/>
+<text x="376" y="629" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">12.0</text>
+<text x="218" y="670" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">输入限幅 / unit</text>
+<rect x="218" y="694" width="132" height="34" rx="6" fill="#f8fafc" stroke="#dce3ea"/>
+<text x="228" y="701" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">± 3.0</text>
+<text x="366" y="670" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">测量延迟 / s</text>
+<rect x="366" y="694" width="132" height="34" rx="6" fill="#f8fafc" stroke="#dce3ea"/>
+<text x="376" y="701" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">0.00</text>
+<text x="218" y="747" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">噪声标准差  0.00    ·    种子  42</text>
+<text x="218" y="784" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#087f82">高级设置：评价窗口与恢复判据  ›</text>
+<polyline points="218.00,820.00 499.00,820.00" fill="none" stroke="#dfe5eb" stroke-width="1"/>
+<rect x="218" y="846" width="280" height="40" rx="7" fill="#087f82" stroke="none"/>
+<text x="232" y="856" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="700" fill="#fff">开始对比</text>
+<text x="218" y="906" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#7c8a9d">保存全部轨迹、指标与实际配置</text>
+<text x="546" y="107" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="700" fill="#243447">对比结果</text>
+<text x="546" y="140" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#7c8a9d">尚未运行 · 下方曲线仅为布局占位</text>
+<rect x="1313" y="109" width="184" height="40" rx="7" fill="#edf1f5" stroke="none"/>
+<text x="1327" y="119" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#6f7f91">打开历史实验</text>
+<rect x="545" y="181" width="953" height="352" rx="10" fill="#fff" stroke="none"/>
+<text x="565" y="199" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#087f82">输出与参考</text>
+<text x="722" y="199" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#7c8a9d">跟踪误差</text>
+<text x="862" y="199" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#7c8a9d">实际输入</text>
+<text x="1318" y="202" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#7c8a9d">缩放  ·  平移</text>
+<polyline points="562.00,228.00 1480.00,228.00" fill="none" stroke="#dfe5eb" stroke-width="1"/>
+<polyline points="604.00,267.00 1460.00,267.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<polyline points="604.00,309.00 1460.00,309.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<polyline points="604.00,351.00 1460.00,351.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<polyline points="604.00,393.00 1460.00,393.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<polyline points="604.00,435.00 1460.00,435.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<polyline points="604.00,252.00 604.00,456.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<polyline points="746.00,252.00 746.00,456.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<polyline points="888.00,252.00 888.00,456.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<polyline points="1030.00,252.00 1030.00,456.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<polyline points="1172.00,252.00 1172.00,456.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<polyline points="1314.00,252.00 1314.00,456.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<polyline points="1456.00,252.00 1456.00,456.00" fill="none" stroke="#e9edf2" stroke-width="1"/>
+<text x="565" y="258" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#7c8a9d">输出</text>
+<text x="1400" y="468" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="12" font-weight="400" fill="#7c8a9d">时间 / s</text>
+<polyline points="604.00,440.00 646.00,440.00 646.00,284.00 1460.00,284.00" fill="none" stroke="#a4aebc" stroke-width="2" stroke-dasharray="6 6"/>
+<polyline points="646.00,440.00 654.22,425.35 662.44,411.91 670.67,399.76 678.89,388.91 687.11,379.38 695.33,371.13 703.56,364.09 711.78,358.20 720.00,353.34 728.22,349.39 736.44,346.24 744.67,343.74 752.89,341.77 761.11,340.18 769.33,338.85 777.56,337.67 785.78,336.54 794.00,335.38 802.22,334.11 810.44,332.68 818.67,331.06 826.89,329.24 835.11,327.19 843.33,324.95 851.56,322.53 859.78,319.97 868.00,317.30 876.22,314.56 884.44,311.81 892.67,309.10 900.89,306.46 909.11,303.94 917.33,301.58 925.56,299.41 933.78,297.44 942.00,295.71 950.22,294.21 958.44,292.96 966.67,291.93 974.89,291.13 983.11,290.54 991.33,290.13 999.56,289.87 1007.78,289.76 1016.00,289.74 1024.22,289.81 1032.44,289.92 1040.67,290.06 1048.89,290.19 1057.11,290.31 1065.33,290.39 1073.56,290.42 1081.78,290.39 1090.00,290.30 1098.22,290.15 1106.44,289.92 1114.67,289.64 1122.89,289.31 1131.11,288.93 1139.33,288.51 1147.56,288.07 1155.78,287.62 1164.00,287.17 1172.22,286.73 1180.44,286.31 1188.67,285.92 1196.89,285.56 1205.11,285.25 1213.33,284.97 1221.56,284.75 1229.78,284.57 1238.00,284.44 1246.22,284.36 1254.44,284.31 1262.67,284.30 1270.89,284.32 1279.11,284.36 1287.33,284.43 1295.56,284.50 1303.78,284.58 1312.00,284.66 1320.22,284.73 1328.44,284.80 1336.67,284.86 1344.89,284.90 1353.11,284.92 1361.33,284.93 1369.56,284.92 1377.78,284.90 1386.00,284.86 1394.22,284.80 1402.44,284.74 1410.67,284.67 1418.89,284.59 1427.11,284.51 1435.33,284.42 1443.56,284.34 1451.78,284.26 1460.00,284.19" fill="none" stroke="#89b6ce" stroke-width="3"/>
+<polyline points="646.00,440.00 654.22,421.57 662.44,405.05 670.67,390.36 678.89,377.38 687.11,366.01 695.33,356.13 703.56,347.62 711.78,340.36 720.00,334.22 728.22,329.07 736.44,324.78 744.67,321.23 752.89,318.29 761.11,315.85 769.33,313.81 777.56,312.07 785.78,310.54 794.00,309.16 802.22,307.85 810.44,306.58 818.67,305.30 826.89,304.00 835.11,302.65 843.33,301.25 851.56,299.80 859.78,298.32 868.00,296.82 876.22,295.32 884.44,293.84 892.67,292.40 900.89,291.02 909.11,289.73 917.33,288.54 925.56,287.47 933.78,286.53 942.00,285.72 950.22,285.05 958.44,284.51 966.67,284.12 974.89,283.85 983.11,283.69 991.33,283.64 999.56,283.67 1007.78,283.78 1016.00,283.94 1024.22,284.15 1032.44,284.37 1040.67,284.60 1048.89,284.83 1057.11,285.04 1065.33,285.22 1073.56,285.37 1081.78,285.48 1090.00,285.55 1098.22,285.57 1106.44,285.55 1114.67,285.49 1122.89,285.40 1131.11,285.27 1139.33,285.12 1147.56,284.95 1155.78,284.77 1164.00,284.59 1172.22,284.40 1180.44,284.23 1188.67,284.07 1196.89,283.92 1205.11,283.80 1213.33,283.70 1221.56,283.62 1229.78,283.56 1238.00,283.54 1246.22,283.53 1254.44,283.54 1262.67,283.57 1270.89,283.62 1279.11,283.68 1287.33,283.75 1295.56,283.82 1303.78,283.90 1312.00,283.97 1320.22,284.04 1328.44,284.10 1336.67,284.15 1344.89,284.20 1353.11,284.23 1361.33,284.26 1369.56,284.27 1377.78,284.27 1386.00,284.26 1394.22,284.25 1402.44,284.22 1410.67,284.19 1418.89,284.16 1427.11,284.12 1435.33,284.08 1443.56,284.05 1451.78,284.01 1460.00,283.98" fill="none" stroke="#83c3b9" stroke-width="3"/>
+<rect x="845" y="338" width="433" height="45" rx="8" fill="#ffffff" stroke="#e3e8ed"/>
+<text x="867" y="351" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="400" fill="#76869a">布局示意，开始运行后显示仿真结果</text>
+<text x="690" y="492" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#7c8a9d">— 参考（示意）      — PI（示意）      — 抗饱和 PID（示意）</text>
+<rect x="545" y="551" width="953" height="208" rx="10" fill="#fff" stroke="none"/>
+<text x="565" y="569" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700" fill="#243447">分指标比较</text>
+<text x="1230" y="573" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#7c8a9d">评价窗口：0.5—12.0 s</text>
+<text x="567" y="616" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">控制器</text>
+<text x="783" y="616" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">RMSE</text>
+<text x="920" y="616" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">IAE</text>
+<text x="1066" y="616" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">输入变化量</text>
+<text x="1223" y="616" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">饱和比例</text>
+<text x="1380" y="616" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#65758a">恢复状态</text>
+<polyline points="563.00,644.00 1480.00,644.00" fill="none" stroke="#dfe5eb" stroke-width="1"/>
+<text x="567" y="660" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">PI</text>
+<text x="783" y="660" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#98a3b3">—</text>
+<text x="920" y="660" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#98a3b3">—</text>
+<text x="1066" y="660" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#98a3b3">—</text>
+<text x="1223" y="660" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#98a3b3">—</text>
+<text x="1380" y="660" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#98a3b3">待运行</text>
+<text x="567" y="704" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#243447">抗饱和 PID</text>
+<text x="783" y="704" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#98a3b3">—</text>
+<text x="920" y="704" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#98a3b3">—</text>
+<text x="1066" y="704" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#98a3b3">—</text>
+<text x="1223" y="704" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#98a3b3">—</text>
+<text x="1380" y="704" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#98a3b3">待运行</text>
+<rect x="546" y="783" width="179" height="40" rx="7" fill="#edf1f5" stroke="none"/>
+<text x="560" y="793" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#6f7f91">导出完整报告</text>
+<rect x="741" y="783" width="142" height="40" rx="7" fill="#edf1f5" stroke="none"/>
+<text x="755" y="793" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#6f7f91">另存图片</text>
+<rect x="899" y="783" width="142" height="40" rx="7" fill="#edf1f5" stroke="none"/>
+<text x="913" y="793" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#6f7f91">实验详情</text>
+<text x="546" y="847" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#65758a">结果自动保存在新的实验目录；关闭后仍可重新打开。</text>
+<text x="546" y="880" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#7c8a9d">不以综合总分替代误差与控制动作的分别比较。</text>
+<rect x="198" y="960" width="1300" height="59" rx="10" fill="#fff" stroke="none"/>
+<text x="218" y="979" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="16" font-weight="700" fill="#087f82">准备就绪</text>
+<text x="332" y="980" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="14" font-weight="400" fill="#7c8a9d">请检查配置并开始对比</text>
+<rect x="808" y="984" width="377" height="10" rx="5" fill="#e7ecf1" stroke="none"/>
+<text x="1211" y="980" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="13" font-weight="400" fill="#98a3b3">0 / 0</text>
+<rect x="1342" y="969" width="137" height="40" rx="7" fill="#edf1f5" stroke="none"/>
+<text x="1356" y="979" dominant-baseline="text-before-edge" font-family="Microsoft YaHei, sans-serif" font-size="15" font-weight="400" fill="#6f7f91">取消运行</text>
+</svg>
