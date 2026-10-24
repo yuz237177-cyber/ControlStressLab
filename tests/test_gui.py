@@ -116,7 +116,7 @@ class DesktopChecks(unittest.TestCase):
         cancelled = self.w.job_output
         QTest.mouseClick(self.w.run_button, Qt.MouseButton.LeftButton)
         self.wait_job()
-        self.assertEqual(json.loads((cancelled/"status.json").read_text())["state"], "interrupted")
+        self.assertEqual(json.loads((cancelled/"status.json").read_text(encoding="utf8"))["state"], "interrupted")
         self.assertIsNone(self.w.loaded)
         self.assertFalse(self.errors)
         QTest.mouseClick(self.w.run_button, Qt.MouseButton.LeftButton)
