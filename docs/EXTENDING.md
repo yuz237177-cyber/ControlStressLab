@@ -3,10 +3,11 @@
 先在仓库执行 `python -m pip install -e .`，或在自己的源码环境中设置 src 路径。
 
 ```python
-from controlstresslab import DCMotor, PID, Scenario, simulate
+from controlstresslab import FirstOrder, PID, Scenario, StepSignal, simulate
 from controlstresslab.metrics import evaluate
 
-run = simulate(DCMotor(), PID(anti_windup=True), Scenario())
+scenario = Scenario(reference=StepSignal(((0, 0), (0.5, 1))), voltage_limit=3, recovery_band=0.02)
+run = simulate(FirstOrder(), PID(kp=1.5, ki=1, anti_windup=True), scenario)
 print(evaluate(run))
 ```
 
@@ -56,6 +57,13 @@ LADRC的阶次、b0和带宽需要与对象匹配，不应把某对象的参数�
 
 协议中的 u、output 和 disturbance 为一般标量，数学执行可用于其他对象。
 兼容内核仍保留Scenario的voltage_limit参数及原电机轨迹/指标字段名；它在数学执行中表示一般输入限幅。
-基础演示报告继续采用电机单位。`controlstresslab-coverage`另行导出通用列名，并在配置/报告中记录每类对象的单位、尺度和限幅。
+基础演示报告继续采用电机单位。`controlstresslab-coverage`与`controlstresslab-benchmark`导出通用列名，并在配置/报告中记录每类对象的单位、尺度和限幅。
 使用自定义对象时仍需明确单位，不能直接把旧电机列名当作新对象的物理量；任意执行器与任意自定义报告尚未通用化。
 见 [覆盖扩展设计](COVERAGE_EXPANSION_DESIGN.md) 和 [轨迹协议](EXPERIMENT_PROTOCOL.md)。
+
+## 预算化整定
+
+`controlstresslab-benchmark --config configs/benchmark-v0.3.json --output outputs/my-benchmark`加载严格JSON配置。
+当前协议内置一阶与二阶对象、4种控制方案及固定搜索范围/场景；可以选择子集、预算、种子、参数因子和训练约束。
+这还不是任意优化器/用户定义搜索空间的通用插件接口。修改协议定义应另起版本并冻结新的测试集。
+见[设计](BENCHMARK_DESIGN.md)；Python入口为`controlstresslab.benchmark.execute(output, config, plots=False)`。

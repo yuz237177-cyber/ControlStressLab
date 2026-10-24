@@ -1,6 +1,6 @@
 """Controller stress tests. Demo parameters are synthetic, not measured."""
 
-__version__ = "0.1.2"
+__version__ = "0.3.0"
 
 from .controllers import PID
 from .models import DCMotor, FirstOrder

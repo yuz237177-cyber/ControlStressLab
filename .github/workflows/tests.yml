@@ -23,6 +23,9 @@ jobs:
         working-directory: ${{ runner.temp }}
       - run: controlstresslab-coverage --models first_order,mass_spring_damper --scenarios reference_sine,disturbance_prbs --output installed-coverage
         working-directory: ${{ runner.temp }}
+      - name: Installed budgeted benchmark outside source directory
+        run: controlstresslab-benchmark --config "${{ github.workspace }}/configs/benchmark-ci.json" --output installed-benchmark
+        working-directory: ${{ runner.temp }}
       - run: python scripts/build_readme_preview.py
       - run: python -m pip install ".[charts]"
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
@@ -39,4 +42,10 @@ jobs:
       - run: controlstresslab-coverage --models first_order,mass_spring_damper --scenarios reference_sine,disturbance_prbs,measurement_noise_delay --output outputs/ci-coverage --plots
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
       - run: python scripts/check_coverage_reference.py --suite outputs/ci-coverage --output outputs/ci-coverage-reference.json
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: controlstresslab-benchmark --config configs/benchmark-ci.json --output outputs/ci-benchmark --plots
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: python scripts/check_coverage_reference.py --suite outputs/ci-benchmark --output outputs/ci-benchmark-reference.json
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: python scripts/check_benchmark_evidence.py --suite outputs/ci-benchmark --output outputs/ci-benchmark-evidence.json
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'

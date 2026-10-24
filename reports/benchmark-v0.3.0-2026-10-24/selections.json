@@ -1,0 +1,194 @@
+{
+  "first_order__PI": {
+    "candidate_index": 11,
+    "parameters": {
+      "kp": 3.4410962507654856,
+      "ki": 5.31974289139747,
+      "kd": 0,
+      "anti_windup": false,
+      "derivative_filter_s": 0.03
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.016759536269034255,
+      "worst_variation_rate": 0.05863178434965552,
+      "worst_saturation_fraction": 0.008695652173913044
+    },
+    "baseline_parameters": {
+      "kp": 1.5,
+      "ki": 1,
+      "kd": 0,
+      "anti_windup": false,
+      "derivative_filter_s": 0.03
+    },
+    "candidate_count": 32
+  },
+  "first_order__PID_aw": {
+    "candidate_index": 11,
+    "parameters": {
+      "kp": 3.4410962507654856,
+      "ki": 5.31974289139747,
+      "kd": 0.018146303668833047,
+      "anti_windup": true,
+      "derivative_filter_s": 0.03
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.016989519388507276,
+      "worst_variation_rate": 0.05836896499755712,
+      "worst_saturation_fraction": 0.004347826086956522
+    },
+    "baseline_parameters": {
+      "kp": 1.5,
+      "ki": 1,
+      "kd": 0.1,
+      "anti_windup": true,
+      "derivative_filter_s": 0.03
+    },
+    "candidate_count": 32
+  },
+  "first_order__TwoDOF_PID": {
+    "candidate_index": 11,
+    "parameters": {
+      "kp": 3.4410962507654856,
+      "ki": 5.31974289139747,
+      "kd": 0.018146303668833047,
+      "anti_windup": true,
+      "derivative_filter_s": 0.03,
+      "beta": 0.8333426088202456
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.020148732723596692,
+      "worst_variation_rate": 0.05583247511973032,
+      "worst_saturation_fraction": 0.0
+    },
+    "baseline_parameters": {
+      "kp": 1.5,
+      "ki": 1,
+      "kd": 0.1,
+      "anti_windup": true,
+      "derivative_filter_s": 0.03,
+      "beta": 0.6
+    },
+    "candidate_count": 32
+  },
+  "first_order__LADRC": {
+    "candidate_index": 26,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 5.761108630758492,
+      "observer_bandwidth": 20.0
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.013046164288441192,
+      "worst_variation_rate": 0.05797101449275353,
+      "worst_saturation_fraction": 0.015652173913043476
+    },
+    "baseline_parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 2.5,
+      "observer_bandwidth": 10
+    },
+    "candidate_count": 32
+  },
+  "second_order__PI": {
+    "candidate_index": 8,
+    "parameters": {
+      "kp": 5.187247323721453,
+      "ki": 1.7241639662773325,
+      "kd": 0,
+      "anti_windup": false,
+      "derivative_filter_s": 0.03
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.14015916256739686,
+      "worst_variation_rate": 0.22599762853225777,
+      "worst_saturation_fraction": 0.0
+    },
+    "baseline_parameters": {
+      "kp": 6,
+      "ki": 3,
+      "kd": 0,
+      "anti_windup": false,
+      "derivative_filter_s": 0.03
+    },
+    "candidate_count": 32
+  },
+  "second_order__PID_aw": {
+    "candidate_index": 19,
+    "parameters": {
+      "kp": 2.656111509111598,
+      "ki": 6.478483364611269,
+      "kd": 1.727105937038184,
+      "anti_windup": true,
+      "derivative_filter_s": 0.03
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.05856186404305932,
+      "worst_variation_rate": 0.0354869244173771,
+      "worst_saturation_fraction": 0.0
+    },
+    "baseline_parameters": {
+      "kp": 6,
+      "ki": 3,
+      "kd": 3,
+      "anti_windup": true,
+      "derivative_filter_s": 0.03
+    },
+    "candidate_count": 32
+  },
+  "second_order__TwoDOF_PID": {
+    "candidate_index": 19,
+    "parameters": {
+      "kp": 2.656111509111598,
+      "ki": 6.478483364611269,
+      "kd": 1.727105937038184,
+      "anti_windup": true,
+      "derivative_filter_s": 0.03,
+      "beta": 0.4040519884209747
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.06676785505479672,
+      "worst_variation_rate": 0.035088125949936516,
+      "worst_saturation_fraction": 0.0
+    },
+    "baseline_parameters": {
+      "kp": 6,
+      "ki": 3,
+      "kd": 3,
+      "anti_windup": true,
+      "derivative_filter_s": 0.03,
+      "beta": 0.6
+    },
+    "candidate_count": 32
+  },
+  "second_order__LADRC": {
+    "candidate_index": 28,
+    "parameters": {
+      "relative_degree": 2,
+      "b0": 1,
+      "control_bandwidth": 3.9502690822725564,
+      "observer_bandwidth": 12.295875794910378
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.03783409078618962,
+      "worst_variation_rate": 0.10301852588599447,
+      "worst_saturation_fraction": 0.005217391304347826
+    },
+    "baseline_parameters": {
+      "relative_degree": 2,
+      "b0": 1,
+      "control_bandwidth": 2.5,
+      "observer_bandwidth": 10
+    },
+    "candidate_count": 32
+  }
+}

@@ -1,0 +1,4 @@
+{"event": "training_started", "expected_runs": 768}
+{"event": "selection_frozen", "selection_sha256": "04481136778493b2cb7836c4d6a1828f7932dc4ad5daec1886322ba3e2656741", "selected_groups": 8}
+{"event": "heldout_started", "selection_sha256": "04481136778493b2cb7836c4d6a1828f7932dc4ad5daec1886322ba3e2656741", "expected_runs": 384}
+{"event": "benchmark_completed", "written_runs": 1152, "failed_runs": 0}

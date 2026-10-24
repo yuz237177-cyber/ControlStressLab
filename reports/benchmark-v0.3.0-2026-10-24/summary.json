@@ -1,0 +1,610 @@
+[
+  {
+    "model": "first_order",
+    "controller": "PI",
+    "phase": "baseline",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.1917649885210563,
+        "normalized_rmse": 0.21626879966077803,
+        "input_variation_rate": 0.21335526817046122,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.1883557711288054,
+        "normalized_rmse": 0.20899525800010568,
+        "input_variation_rate": 0.21247326055852353,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.03963778736088075,
+        "normalized_rmse": 0.04560713900266145,
+        "input_variation_rate": 0.07926945116375034,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.08111436850086204,
+        "normalized_rmse": 0.18038498157520858,
+        "input_variation_rate": 1.1400069041103902,
+        "saturation_fraction": 0.0
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.12521822887790113,
+    "normalized_rmse": 0.16281404455968843,
+    "input_variation_rate": 0.4112762210007813,
+    "saturation_fraction": 0.0
+  },
+  {
+    "model": "first_order",
+    "controller": "PI",
+    "phase": "tuned",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.13044585409608697,
+        "normalized_rmse": 0.1446276007876093,
+        "input_variation_rate": 0.4115468414232606,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.11478065010131205,
+        "normalized_rmse": 0.13761146623687456,
+        "input_variation_rate": 0.4096355003376571,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.028332830025126363,
+        "normalized_rmse": 0.03180562704445908,
+        "input_variation_rate": 0.14870186929597295,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.028370572011457054,
+        "normalized_rmse": 0.10973726301776472,
+        "input_variation_rate": 2.573615321372936,
+        "saturation_fraction": 0.022898550724637683
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.0754824765584956,
+    "normalized_rmse": 0.10594548927167692,
+    "input_variation_rate": 0.8858748831074567,
+    "saturation_fraction": 0.005724637681159421
+  },
+  {
+    "model": "first_order",
+    "controller": "PID_aw",
+    "phase": "baseline",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.19868552564658412,
+        "normalized_rmse": 0.22395584626607512,
+        "input_variation_rate": 0.2040777512231117,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.19468359042834682,
+        "normalized_rmse": 0.21594766526617545,
+        "input_variation_rate": 0.20240657391122366,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.03740922378414915,
+        "normalized_rmse": 0.043255278652119235,
+        "input_variation_rate": 0.0812948955380437,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.08145916863701563,
+        "normalized_rmse": 0.1846577468410956,
+        "input_variation_rate": 3.6044992728517236,
+        "saturation_fraction": 0.0
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.12805937712402393,
+    "normalized_rmse": 0.16695413425636635,
+    "input_variation_rate": 1.0230696233810257,
+    "saturation_fraction": 0.0
+  },
+  {
+    "model": "first_order",
+    "controller": "PID_aw",
+    "phase": "tuned",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.1321960602970602,
+        "normalized_rmse": 0.14657428453221938,
+        "input_variation_rate": 0.41084238183313343,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.11608065922160732,
+        "normalized_rmse": 0.13920607793929962,
+        "input_variation_rate": 0.4081181510148861,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.028124775312696564,
+        "normalized_rmse": 0.031599630526851386,
+        "input_variation_rate": 0.14802846417211335,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.027874792834257534,
+        "normalized_rmse": 0.11198396630477056,
+        "input_variation_rate": 3.0458702379940954,
+        "saturation_fraction": 0.010724637681159421
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.0760690719164054,
+    "normalized_rmse": 0.10734098982578524,
+    "input_variation_rate": 1.003214808753557,
+    "saturation_fraction": 0.0026811594202898552
+  },
+  {
+    "model": "first_order",
+    "controller": "TwoDOF_PID",
+    "phase": "baseline",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.2281665107560079,
+        "normalized_rmse": 0.26462926785418706,
+        "input_variation_rate": 0.13220823423126768,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.23330334350629955,
+        "normalized_rmse": 0.2624174770491738,
+        "input_variation_rate": 0.1329324928606535,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.03891393079496517,
+        "normalized_rmse": 0.045897700147769845,
+        "input_variation_rate": 0.08131924760554049,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.13308473826234726,
+        "normalized_rmse": 0.24622606867405444,
+        "input_variation_rate": 3.604511366321015,
+        "saturation_fraction": 0.0
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.15836713082990497,
+    "normalized_rmse": 0.20479262843129628,
+    "input_variation_rate": 0.9877428352546191,
+    "saturation_fraction": 0.0
+  },
+  {
+    "model": "first_order",
+    "controller": "TwoDOF_PID",
+    "phase": "tuned",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.14800736784392404,
+        "normalized_rmse": 0.16356292206061476,
+        "input_variation_rate": 0.3654245225019883,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.1321557744919621,
+        "normalized_rmse": 0.15344616537605085,
+        "input_variation_rate": 0.36015345377776037,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.028125013866371187,
+        "normalized_rmse": 0.03159976115503525,
+        "input_variation_rate": 0.14802858726786655,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.0304583185345116,
+        "normalized_rmse": 0.11611359439423313,
+        "input_variation_rate": 3.0682160128606846,
+        "saturation_fraction": 0.004830917874396135
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.08468661868419224,
+    "normalized_rmse": 0.1161806107464835,
+    "input_variation_rate": 0.985455644102075,
+    "saturation_fraction": 0.0012077294685990338
+  },
+  {
+    "model": "first_order",
+    "controller": "LADRC",
+    "phase": "baseline",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.1752878746760568,
+        "normalized_rmse": 0.19399925144894728,
+        "input_variation_rate": 0.2937965379546937,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.1615141492693063,
+        "normalized_rmse": 0.181578474337487,
+        "input_variation_rate": 0.28880169070179135,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.020840078912107807,
+        "normalized_rmse": 0.023276036872104236,
+        "input_variation_rate": 0.19480261114055344,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.04067620472086106,
+        "normalized_rmse": 0.13171808678093944,
+        "input_variation_rate": 0.891895691317423,
+        "saturation_fraction": 0.0
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.099579576894583,
+    "normalized_rmse": 0.1326429623598695,
+    "input_variation_rate": 0.41732413277861535,
+    "saturation_fraction": 0.0
+  },
+  {
+    "model": "first_order",
+    "controller": "LADRC",
+    "phase": "tuned",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.09717595573530864,
+        "normalized_rmse": 0.10743932667057203,
+        "input_variation_rate": 0.41644267288840603,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.09115227814323952,
+        "normalized_rmse": 0.10751449726419864,
+        "input_variation_rate": 0.4355490608479105,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.008991814743963593,
+        "normalized_rmse": 0.011362383659378757,
+        "input_variation_rate": 0.23057966468685265,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.07395585129273705,
+        "normalized_rmse": 0.14316108671219277,
+        "input_variation_rate": 5.445252390396203,
+        "saturation_fraction": 0.1191304347826087
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.0678189749788122,
+    "normalized_rmse": 0.09236932357658555,
+    "input_variation_rate": 1.631955947204843,
+    "saturation_fraction": 0.029782608695652173
+  },
+  {
+    "model": "second_order",
+    "controller": "PI",
+    "phase": "baseline",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.24556720846857735,
+        "normalized_rmse": 0.29273253532748583,
+        "input_variation_rate": 0.36385950728129274,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.310359116711685,
+        "normalized_rmse": 0.42196484604200624,
+        "input_variation_rate": 0.528505342605031,
+        "saturation_fraction": 0.01971014492753623
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.22355521153875457,
+        "normalized_rmse": 0.25880136942266224,
+        "input_variation_rate": 0.4096956326830472,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.6159959728627872,
+        "normalized_rmse": 0.7075146905687428,
+        "input_variation_rate": 1.607417877741157,
+        "saturation_fraction": 0.06434782608695652
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.34886937739545104,
+    "normalized_rmse": 0.4202533603402243,
+    "input_variation_rate": 0.727369590077632,
+    "saturation_fraction": 0.021014492753623187
+  },
+  {
+    "model": "second_order",
+    "controller": "PI",
+    "phase": "tuned",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.26986032287712153,
+        "normalized_rmse": 0.32224907994077717,
+        "input_variation_rate": 0.3106005693577293,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.2983187080955633,
+        "normalized_rmse": 0.3929623724835296,
+        "input_variation_rate": 0.4105575014720215,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.19147560809235428,
+        "normalized_rmse": 0.22668321783066744,
+        "input_variation_rate": 0.2744024907323844,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.36181593853107774,
+        "normalized_rmse": 0.4309298198199159,
+        "input_variation_rate": 1.2641609156065043,
+        "saturation_fraction": 0.0
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.2803676443990292,
+    "normalized_rmse": 0.3432061225187225,
+    "input_variation_rate": 0.5649303692921599,
+    "saturation_fraction": 0.0
+  },
+  {
+    "model": "second_order",
+    "controller": "PID_aw",
+    "phase": "baseline",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.23346983187081904,
+        "normalized_rmse": 0.26128885234154126,
+        "input_variation_rate": 0.10445950582364517,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.22010806129281327,
+        "normalized_rmse": 0.24849371452787059,
+        "input_variation_rate": 0.15522744704154118,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.06121982114682329,
+        "normalized_rmse": 0.07319680426755483,
+        "input_variation_rate": 0.24435736803767671,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.10843982904087174,
+        "normalized_rmse": 0.20382130634933876,
+        "input_variation_rate": 23.589352837029903,
+        "saturation_fraction": 0.000966183574879227
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.15580938583783183,
+    "normalized_rmse": 0.19670016937157636,
+    "input_variation_rate": 6.023349289483192,
+    "saturation_fraction": 0.00024154589371980676
+  },
+  {
+    "model": "second_order",
+    "controller": "PID_aw",
+    "phase": "tuned",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.40548078665897536,
+        "normalized_rmse": 0.4513985762849848,
+        "input_variation_rate": 0.1635942705454316,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.2751066558685457,
+        "normalized_rmse": 0.33444156362510385,
+        "input_variation_rate": 0.1577399988087894,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.10995722898891493,
+        "normalized_rmse": 0.1320109742530193,
+        "input_variation_rate": 0.16328627254665629,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.10632979705423411,
+        "normalized_rmse": 0.22425663356470357,
+        "input_variation_rate": 13.409833981432769,
+        "saturation_fraction": 0.0
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.22421861714266753,
+    "normalized_rmse": 0.28552693693195286,
+    "input_variation_rate": 3.4736136308334116,
+    "saturation_fraction": 0.0
+  },
+  {
+    "model": "second_order",
+    "controller": "TwoDOF_PID",
+    "phase": "baseline",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.2484766272509461,
+        "normalized_rmse": 0.2876805566187496,
+        "input_variation_rate": 0.06592311062823501,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.2503428613727786,
+        "normalized_rmse": 0.28249033782330174,
+        "input_variation_rate": 0.09900496052960982,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.06902155330095458,
+        "normalized_rmse": 0.08521572192455094,
+        "input_variation_rate": 0.24442585832971023,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.17643115690724298,
+        "normalized_rmse": 0.27198172615538047,
+        "input_variation_rate": 23.590704051282543,
+        "saturation_fraction": 0.0003864734299516908
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.18606804970798058,
+    "normalized_rmse": 0.2318420856304957,
+    "input_variation_rate": 6.0000144951925245,
+    "saturation_fraction": 9.66183574879227e-05
+  },
+  {
+    "model": "second_order",
+    "controller": "TwoDOF_PID",
+    "phase": "tuned",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.4025418168473498,
+        "normalized_rmse": 0.44649608289549386,
+        "input_variation_rate": 0.1291742625651206,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.2907443359973973,
+        "normalized_rmse": 0.33948481060075975,
+        "input_variation_rate": 0.11947162054647487,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.1118261106407873,
+        "normalized_rmse": 0.1334373985352943,
+        "input_variation_rate": 0.16336057487344624,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.10864462602882213,
+        "normalized_rmse": 0.24344135654971208,
+        "input_variation_rate": 13.41051176915188,
+        "saturation_fraction": 0.0
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.22843922237858913,
+    "normalized_rmse": 0.290714912145315,
+    "input_variation_rate": 3.4556295567842303,
+    "saturation_fraction": 0.0
+  },
+  {
+    "model": "second_order",
+    "controller": "LADRC",
+    "phase": "baseline",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.2555362304606664,
+        "normalized_rmse": 0.28729332747060976,
+        "input_variation_rate": 0.06193690530797558,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.24716848437055605,
+        "normalized_rmse": 0.2741307397076175,
+        "input_variation_rate": 0.0984602950811609,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.03615566130106405,
+        "normalized_rmse": 0.0418993703709159,
+        "input_variation_rate": 0.40680449435292015,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.09469310753241454,
+        "normalized_rmse": 0.22288887457401582,
+        "input_variation_rate": 4.821351882920141,
+        "saturation_fraction": 0.0
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.15838837091617528,
+    "normalized_rmse": 0.20655307803078973,
+    "input_variation_rate": 1.3471383944155495,
+    "saturation_fraction": 0.0
+  },
+  {
+    "model": "second_order",
+    "controller": "LADRC",
+    "phase": "tuned",
+    "runs": 24,
+    "failed": 0,
+    "families": {
+      "sine": {
+        "normalized_iae": 0.22018271711889906,
+        "normalized_rmse": 0.2435616616406877,
+        "input_variation_rate": 0.10097444607083234,
+        "saturation_fraction": 0.0
+      },
+      "chirp": {
+        "normalized_iae": 0.2031220403878191,
+        "normalized_rmse": 0.22865778153379038,
+        "input_variation_rate": 0.16031671058124555,
+        "saturation_fraction": 0.0
+      },
+      "binary_disturbance": {
+        "normalized_iae": 0.0242408882746171,
+        "normalized_rmse": 0.027874076802494215,
+        "input_variation_rate": 0.4653221169349934,
+        "saturation_fraction": 0.0
+      },
+      "noise_delay": {
+        "normalized_iae": 0.08105521182758536,
+        "normalized_rmse": 0.18306441277016494,
+        "input_variation_rate": 10.309311886767125,
+        "saturation_fraction": 0.11178743961352658
+      }
+    },
+    "comparable": true,
+    "normalized_iae": 0.13215021440223015,
+    "normalized_rmse": 0.1707894831867843,
+    "input_variation_rate": 2.758981290088549,
+    "saturation_fraction": 0.027946859903381645
+  }
+]

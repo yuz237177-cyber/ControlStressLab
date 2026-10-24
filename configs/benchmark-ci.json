@@ -1,0 +1,11 @@
+{
+  "protocol": "budgeted-siso-1.0",
+  "models": ["first_order", "second_order"],
+  "controllers": ["PI", "PID_aw", "TwoDOF_PID", "LADRC"],
+  "candidate_budget": 4,
+  "search_seed": 9173,
+  "heldout_seeds": [101],
+  "parameter_factors": [1.0],
+  "max_training_variation_rate": 0.6,
+  "max_training_saturation_fraction": 0.25
+}

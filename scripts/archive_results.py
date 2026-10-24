@@ -16,7 +16,8 @@ def archive(source: Path, destination: Path) -> Path:
         raise ValueError("archive source and destination must stay inside this project")
     if destination == source or destination.is_relative_to(source):
         raise ValueError("archive destination must be outside the source directory")
-    zipped = destination.with_suffix(".zip")
+    # Directory names may contain semantic versions such as v0.3.0.
+    zipped = destination.with_name(destination.name+".zip")
     if destination.exists() or zipped.exists():
         raise FileExistsError("archive destination or ZIP already exists; choose a new name")
     if any(p.is_symlink() for p in source.rglob("*")):

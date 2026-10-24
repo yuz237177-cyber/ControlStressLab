@@ -1,5 +1,17 @@
 # 已保存的实验成果
 
+## v0.3：预算化整定与冻结测试
+
+- [完整报告](benchmark-v0.3.0-2026-10-24/report.html)
+- [完整ZIP](benchmark-v0.3.0-2026-10-24.zip)
+- [设计](../docs/BENCHMARK_DESIGN.md)与[实际结果](../docs/BENCHMARK_RESULTS.md)
+- [独立产物/CSV指标审计](benchmark-evidence-v0.3.0-2026-10-24.json)
+- [独立SciPy核对](benchmark-reference-v0.3.0-2026-10-24.json)
+
+768次训练、384次冻结测试；保存全部候选日志、384条测试与48条训练CSV、54组输入、匹配源码快照及校验值。
+8组PNG/SVG涵盖训练搜索、误差/动作取舍、各测试族、响应、噪声控制动作和参数敏感性。
+训练改善而测试退化的结果如实保留；全部为合成仿真。此前所有图片、报告和ZIP继续保留。
+
 ## 波形、算法与对象覆盖
 
 - [完整报告](coverage-expansion-2026-10-24/report.html)

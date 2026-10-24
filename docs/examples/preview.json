@@ -1,16 +1,28 @@
 {
-  "project_version": "0.1.2",
+  "project_version": "0.3.0",
   "evidence": "synthetic_assumption",
   "hardware_validated": false,
   "source_hash_encoding": "UTF-8 with LF newlines",
   "source_files_sha256": {
-    "__init__.py": "27e7155194e264a555175244baefb325eb1fc78bc3e237faeaf5da38feeeb858",
+    "__init__.py": "acd76a8cadb765a52bd661f15a9175eb03470bb0193cb250d94f635702c35f05",
+    "benchmark.py": "f669901b8c3b9d082571bf2f2bedeff555e343476ce58572a74ff22e991938fc",
+    "benchmark_design.py": "ad79baab5e604b0165070370f8842eabd1adfb914ff76a8cd688a814b84590c2",
+    "benchmark_plots.py": "69f8db20bd331508dd4adfb07a01bdce21d7da00de53759287cb45b4845f29dc",
     "cli.py": "6141ed1d6e287ec218d27548e93d94a82c55070716c634204ab539ffe6c7f1d4",
     "controllers.py": "3f325b4e9318197adf1d9103cb3813ce8a684f9c4a974f4744fa7fa6e55e4a0e",
-    "metrics.py": "bb6d78c408698d0b12616c8c2558cee4ba5087450f219b73e87d2a31d94bc8b3",
+    "coverage.py": "ccbaffdcbf72bad4a48c91a0fb218e91b5343a507c3cbfcea8f4230f16f0c491",
+    "coverage_plots.py": "c573d3cc3bf7c0025de207c9495b6cd654020ab9a8a6037333e7bc3df62154b7",
+    "extended_controllers.py": "59c8db40ed91622c475b949907bfe35b7c79646408372e46a5be8f95d9297fdb",
+    "extended_models.py": "d75612a62d80e4a52bb7c24f9d305c4b19e8da4cbafac7a50a14de1211cf6a7c",
+    "metrics.py": "394a4e445845444e3507cb3fd5d7092d5ddd6a86287f1206f376f1e3538684e9",
     "models.py": "9cd3284fbd6beefbac52d3a5aa81a74c1c31e1de0031d433e38ef2895e950f27",
     "reporting.py": "f8e15bec2c4f8be5cc55a7c804908f5be4e0bf48a415d9c30a944e38f65a0ad0",
-    "simulation.py": "74e93b46832fd700a819ef066c556ce87c3588d8c53b94dc2b1c8bfce4ff9891"
+    "signals.py": "feed52900a32c94efff5690d889d3e888b6c30bcaffde1b1d8cd10766a0ce9cb",
+    "simulation.py": "c07fb45d66279331342bd72a3271ff6c1e4d963f91a369f08f6a8db7cfaf3c98",
+    "stress_grid.py": "f4cfe5ee17269233a283644fda3e581ea2ae7a9f17a91752c2322304eb0b8809",
+    "stress_grid_plots.py": "238a6d2dc8874331b41e5470284e49e57e4f402c4879198454b48cd0b3ec102b",
+    "uncertainty.py": "979519bdc92abbaa791c399185a20ac8f0591c56905fe33acfb04b7fcab38da9",
+    "uncertainty_plots.py": "22179a6e6dee3074a1488a3fd6d4da18b8b71b4f31f550e4c0e8c0957231ddcd"
   },
   "runs": [
     {
@@ -51,7 +63,8 @@
         "recovery_start_s": 4.0,
         "recovery_band": 1.2,
         "recovery_dwell_s": 0.5,
-        "evidence": "synthetic_assumption"
+        "evidence": "synthetic_assumption",
+        "recovery_mode": "settling"
       },
       "controller_name": "pid",
       "controller": {
@@ -133,7 +146,8 @@
         "recovery_start_s": 4.0,
         "recovery_band": 1.2,
         "recovery_dwell_s": 0.5,
-        "evidence": "synthetic_assumption"
+        "evidence": "synthetic_assumption",
+        "recovery_mode": "settling"
       },
       "controller_name": "pid_antiwindup",
       "controller": {
@@ -215,7 +229,8 @@
         "recovery_start_s": 4.0,
         "recovery_band": 1.2,
         "recovery_dwell_s": 0.5,
-        "evidence": "synthetic_assumption"
+        "evidence": "synthetic_assumption",
+        "recovery_mode": "settling"
       },
       "controller_name": "pid",
       "controller": {
@@ -297,7 +312,8 @@
         "recovery_start_s": 4.0,
         "recovery_band": 1.2,
         "recovery_dwell_s": 0.5,
-        "evidence": "synthetic_assumption"
+        "evidence": "synthetic_assumption",
+        "recovery_mode": "settling"
       },
       "controller_name": "pid_antiwindup",
       "controller": {

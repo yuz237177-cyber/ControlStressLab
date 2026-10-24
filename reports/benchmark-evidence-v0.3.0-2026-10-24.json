@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "selected_groups": 8,
+  "training_runs": 768,
+  "heldout_runs": 384,
+  "raw_traces_checked": 432,
+  "paired_inputs_checked": 48,
+  "max_metric_abs_error": 3.552713678800501e-15,
+  "selection_sha256": "04481136778493b2cb7836c4d6a1828f7932dc4ad5daec1886322ba3e2656741",
+  "audit_script_sha256": "0bb539b8601f6ae1cfa670f7ff214c4758bd808531ed7dcf7cc37f3751658427",
+  "scope": "artifact consistency, training-only selection and CSV metric recomputation; not a hardware validation"
+}

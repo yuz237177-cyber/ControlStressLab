@@ -33,7 +33,7 @@ def plant_system(record):
         a = [[-p["friction_Nm_s"]/j, p["torque_Nm_A"]/j], [-p["back_emf_V_s"]/l, -p["resistance_ohm"]/l]]
         b = [[0, -1/j], [1/l, 0]]
         initial = [p["initial_output"], p["initial_current_A"]]
-    elif name == "mass_spring_damper":
+    elif name in ("mass_spring_damper", "second_order"):
         m = p["mass_kg"]
         a = [[0, 1], [-p["stiffness_N_m"]/m, -p["damping_N_s_m"]/m]]
         b = [[0, 0], [1/m, 1/m]]
@@ -107,7 +107,8 @@ def main():
             observer = check([float(r["requested_input"]) for r in rows[:-1]], u[:, 0])
         results.append(dict(case_id=record["case_id"], plant=plant, adrc_requests=observer,
                             passed=plant["passed"] and (observer is None or observer["passed"])))
-    expected = status["expected_runs"]
+    manifest = json.loads((args.suite / "manifest.json").read_text(encoding="utf8"))
+    expected = manifest["raw_trace_runs"] if manifest.get("schema_version") == "benchmark-1.0" else status["expected_runs"]
     if len(results) != expected: raise ValueError("record count mismatch")
     result = dict(environment=dict(python=platform.python_version(), numpy=np.__version__, scipy=scipy.__version__),
                   suite=str(args.suite), expected_runs=expected, plant_replays=len(results),

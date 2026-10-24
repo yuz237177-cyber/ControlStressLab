@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "controlstresslab"
-version = "0.1.2"
+version = "0.3.0"
 description = "Reproducible SISO controller stress tests with explicit evidence boundaries"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -20,6 +20,7 @@ controlstresslab = "controlstresslab.cli:main"
 controlstresslab-uncertainty = "controlstresslab.uncertainty:main"
 controlstresslab-stress-grid = "controlstresslab.stress_grid:main"
 controlstresslab-coverage = "controlstresslab.coverage:main"
+controlstresslab-benchmark = "controlstresslab.benchmark:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

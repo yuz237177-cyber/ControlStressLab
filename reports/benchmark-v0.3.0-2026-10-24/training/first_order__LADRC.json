@@ -1,0 +1,2562 @@
+[
+  {
+    "candidate_index": 0,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 2.5,
+      "observer_bandwidth": 10
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.029984852391122654,
+      "worst_variation_rate": 0.04347826086378798,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.14578058608830896,
+          "iae": 0.49999999988940846,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.4999999998006854,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 2.0,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.14578058608830896,
+          "normalized_iae": 0.04347826085994856,
+          "normalized_input_variation": 0.4999999999335618,
+          "input_variation_rate": 0.04347826086378798
+        },
+        "failure": null,
+        "trajectory_sha256": "8f413f354d1310d0dd9ccb08208b168c9d174988cb8db691464887e535afb1f7"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.06879822152636117,
+          "iae": 0.4999999671349192,
+          "max_abs_error": 0.12494549629110407,
+          "input_total_variation": 1.2524034286584667,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.9500000000000002,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.06879822152636117,
+          "normalized_iae": 0.0434782580117321,
+          "normalized_input_variation": 0.4174678095528222,
+          "input_variation_rate": 0.03630154865676715
+        },
+        "failure": null,
+        "trajectory_sha256": "1637a9c85b7a4d77fd97036c1926cf6bbff043e668eabc0bfc75a8e37a856f0d"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.006509349763057296,
+          "iae": 0.017988229810123817,
+          "max_abs_error": 0.022527745027861368,
+          "input_total_variation": 0.22404914193773662,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.40000000000000036,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.006509349763057296,
+          "normalized_iae": 0.002998038301687303,
+          "normalized_input_variation": 0.07468304731257887,
+          "input_variation_rate": 0.012447174552096478
+        },
+        "failure": null,
+        "trajectory_sha256": "998709e997ef0348a622f57269df0cb2b7d9ed22362b1257b95ef1475d9685d3"
+      }
+    ]
+  },
+  {
+    "candidate_index": 1,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 2.2274102134249616,
+      "observer_bandwidth": 7.178618717690834
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.03658010737750284,
+      "worst_variation_rate": 0.03557710732825703,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.15796070907273513,
+          "iae": 0.603437366839898,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.2274102028248675,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 2.49,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.15796070907273513,
+          "normalized_iae": 0.05247281450781722,
+          "normalized_input_variation": 0.40913673427495584,
+          "input_variation_rate": 0.03557710732825703
+        },
+        "failure": null,
+        "trajectory_sha256": "bb3def5cf8005024e5903cad68725d46d8ce61ca3854ca572e74fa59589c62c9"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.08145040954536086,
+          "iae": 0.6034363997950745,
+          "max_abs_error": 0.15053861579166705,
+          "input_total_variation": 1.2004448418362512,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.3100000000000005,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.08145040954536086,
+          "normalized_iae": 0.052472730416962994,
+          "normalized_input_variation": 0.40014828061208374,
+          "input_variation_rate": 0.03479550266192032
+        },
+        "failure": null,
+        "trajectory_sha256": "1fed2003cd02c681fe55d97d77069378fe73a25778083c2e702da40c19fbb0de"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.009294627578544653,
+          "iae": 0.028768663246369966,
+          "max_abs_error": 0.028771531702294295,
+          "input_total_variation": 0.21719396215202902,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.6900000000000004,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.009294627578544653,
+          "normalized_iae": 0.004794777207728328,
+          "normalized_input_variation": 0.07239798738400967,
+          "input_variation_rate": 0.012066331230668277
+        },
+        "failure": null,
+        "trajectory_sha256": "c6d4f3cacb13ce2d6797c00a189666518c8d02915f4bdbf617150c5832f9f59b"
+      }
+    ]
+  },
+  {
+    "candidate_index": 2,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 0.9434038883471398,
+      "observer_bandwidth": 3.3829055299316875
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.10541445329875765,
+      "worst_variation_rate": 0.028862065114706743,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.2673459707601302,
+          "iae": 1.7788013574809949,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.5453656131711919,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 7.51,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.2673459707601302,
+          "normalized_iae": 0.15467837891139086,
+          "normalized_input_variation": 0.18178853772373063,
+          "input_variation_rate": 0.015807698932498317
+        },
+        "failure": null,
+        "trajectory_sha256": "aefb98cc51d3d32c1b39badafc83608365be00d9df9c89ca30bab661e32b0b57"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.19889103749407377,
+          "iae": 1.7669829738135525,
+          "max_abs_error": 0.3877236824184749,
+          "input_total_variation": 0.9957412464573826,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 5.84,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.19889103749407377,
+          "normalized_iae": 0.15365069337509152,
+          "normalized_input_variation": 0.33191374881912755,
+          "input_variation_rate": 0.028862065114706743
+        },
+        "failure": null,
+        "trajectory_sha256": "a3f54bfc11921fca2740db85c1e75191031509a45222a975ed0b1f8930820aa7"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.010775459827682639,
+          "iae": 0.04748572565874357,
+          "max_abs_error": 0.055085750382925625,
+          "input_total_variation": 0.17218997410330084,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.17999999999999972,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.010775459827682639,
+          "normalized_iae": 0.007914287609790596,
+          "normalized_input_variation": 0.05739665803443361,
+          "input_variation_rate": 0.009566109672405601
+        },
+        "failure": null,
+        "trajectory_sha256": "b659c008a588f640bfee20b3d0ae1da47df918bcc4e864778a8dbcd3ed0af0af"
+      }
+    ]
+  },
+  {
+    "candidate_index": 3,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 1.224990657106478,
+      "observer_bandwidth": 4.704120202798959
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.07391777133557945,
+      "worst_variation_rate": 0.029247891060057592,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.22293389588339865,
+          "iae": 1.2183874020029952,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.489214871402609,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 5.0600000000000005,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.22293389588339865,
+          "normalized_iae": 0.10594673060895611,
+          "normalized_input_variation": 0.16307162380086968,
+          "input_variation_rate": 0.014180141200075625
+        },
+        "failure": null,
+        "trajectory_sha256": "8f4617af0b2e797f7cdfda34abb56f6a61e2519b4c225ba1f6ba283ee08e0fd6"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.14873698942086608,
+          "iae": 1.2172588477393027,
+          "max_abs_error": 0.2898945905420165,
+          "input_total_variation": 1.009052241571987,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 3.5299999999999994,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.14873698942086608,
+          "normalized_iae": 0.10584859545559154,
+          "normalized_input_variation": 0.3363507471906623,
+          "input_variation_rate": 0.029247891060057592
+        },
+        "failure": null,
+        "trajectory_sha256": "c75bacbe1c3000ca5832cd61068f373ccf790a7519e516447ca69294bd66c19f"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.014136543029481757,
+          "iae": 0.059747927653144094,
+          "max_abs_error": 0.033217843658963186,
+          "input_total_variation": 0.19634172356181234,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.37,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.014136543029481757,
+          "normalized_iae": 0.009957987942190683,
+          "normalized_input_variation": 0.06544724118727079,
+          "input_variation_rate": 0.010907873531211797
+        },
+        "failure": null,
+        "trajectory_sha256": "ba54232647c51779b3a30fb58f53af0d532bd177f24ad29aff4a77bbb869385e"
+      }
+    ]
+  },
+  {
+    "candidate_index": 4,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 5.979476391667135,
+      "observer_bandwidth": 14.138457247857438
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.01338277586556291,
+      "worst_variation_rate": 0.057971014492753555,
+      "worst_saturation_fraction": 0.015652173913043476
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.10854515676953122,
+          "iae": 0.24482087302323324,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.9999999999999976,
+          "saturation_fraction": 0.015652173913043476,
+          "recovery_time_s": 0.8600000000000001,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.10854515676953122,
+          "normalized_iae": 0.021288771567237675,
+          "normalized_input_variation": 0.6666666666666659,
+          "input_variation_rate": 0.057971014492753555
+        },
+        "failure": null,
+        "trajectory_sha256": "182a05096f6caddccb47b1fe63583f2530435ef07aa3987ff91796952ba6fdbd"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.029558397177418823,
+          "iae": 0.20589860608394842,
+          "max_abs_error": 0.051474651322198195,
+          "input_total_variation": 1.399554862124422,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.20000000000000018,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.029558397177418823,
+          "normalized_iae": 0.017904226615995514,
+          "normalized_input_variation": 0.46651828737480733,
+          "input_variation_rate": 0.04056680759780933
+        },
+        "failure": null,
+        "trajectory_sha256": "e1f70bcd77421bc82a42933260f89d5ebf2321f978b000c30fad5f6f914007e5"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.003007981407990413,
+          "iae": 0.005731976480733241,
+          "max_abs_error": 0.014278789254510427,
+          "input_total_variation": 0.25202853623563026,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.0,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.003007981407990413,
+          "normalized_iae": 0.0009553294134555402,
+          "normalized_input_variation": 0.08400951207854342,
+          "input_variation_rate": 0.014001585346423902
+        },
+        "failure": null,
+        "trajectory_sha256": "00539e4ad8b5bcdb0736e5b0a0e4fa2a9db7aa325d07a7609ca5e516bcdb6a24"
+      }
+    ]
+  },
+  {
+    "candidate_index": 5,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 4.387360721747586,
+      "observer_bandwidth": 17.559691133797813
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.016180212587663025,
+      "worst_variation_rate": 0.057971014492753534,
+      "worst_saturation_fraction": 0.007826086956521738
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.11309276288822176,
+          "iae": 0.2798917674633052,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.999999999999997,
+          "saturation_fraction": 0.007826086956521738,
+          "recovery_time_s": 1.04,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.11309276288822176,
+          "normalized_iae": 0.02433841456202654,
+          "normalized_input_variation": 0.6666666666666656,
+          "input_variation_rate": 0.057971014492753534
+        },
+        "failure": null,
+        "trajectory_sha256": "ea9c746e027c1a320223a583a169327e587c2db4c40820d1f9ef0fe07328eea5"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.03807646318088756,
+          "iae": 0.2671309118722716,
+          "max_abs_error": 0.06678271365139343,
+          "input_total_variation": 1.3689386308772964,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.3200000000000003,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.03807646318088756,
+          "normalized_iae": 0.023228774945414924,
+          "normalized_input_variation": 0.4563128769590988,
+          "input_variation_rate": 0.03967938060513902
+        },
+        "failure": null,
+        "trajectory_sha256": "65775e9a729bf9b0ef83eb037b6887f97571ec2a099ba3867444a513769a3c0a"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.002886076271987548,
+          "iae": 0.0058406895332856505,
+          "max_abs_error": 0.013276710453587803,
+          "input_total_variation": 0.241318344446791,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.0,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.002886076271987548,
+          "normalized_iae": 0.0009734482555476084,
+          "normalized_input_variation": 0.08043944814893034,
+          "input_variation_rate": 0.01340657469148839
+        },
+        "failure": null,
+        "trajectory_sha256": "a75abf7b3aaf0f8a6ce351a8f890c6207767380652930ba11d815bb2e0fd7f59"
+      }
+    ]
+  },
+  {
+    "candidate_index": 6,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 4.804551638579097,
+      "observer_bandwidth": 15.402332454098719
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.015380240541976889,
+      "worst_variation_rate": 0.057971014492753506,
+      "worst_saturation_fraction": 0.010434782608695651
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.11152860315393356,
+          "iae": 0.2692644571010958,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.999999999999996,
+          "saturation_fraction": 0.010434782608695651,
+          "recovery_time_s": 0.99,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.11152860315393356,
+          "normalized_iae": 0.023414300617486592,
+          "normalized_input_variation": 0.6666666666666653,
+          "input_variation_rate": 0.057971014492753506
+        },
+        "failure": null,
+        "trajectory_sha256": "dba8961b9fe2a8c6425320cf4e4da2c096a8cbb8b91cf77b9d1c3b6685bee2c6"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.03561227175892171,
+          "iae": 0.24937780405431906,
+          "max_abs_error": 0.06234444542648787,
+          "input_total_variation": 1.37781523112058,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.29000000000000004,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.03561227175892171,
+          "normalized_iae": 0.021685026439506004,
+          "normalized_input_variation": 0.45927174370686,
+          "input_variation_rate": 0.03993667336581391
+        },
+        "failure": null,
+        "trajectory_sha256": "96a2a0ec31bbfe3b2d30995486dd95112c80ca1044a965564717ccba55471e4e"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.0031119001729559828,
+          "iae": 0.006248367413628402,
+          "max_abs_error": 0.014260679743472782,
+          "input_total_variation": 0.24523574151143213,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.0,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.0031119001729559828,
+          "normalized_iae": 0.001041394568938067,
+          "normalized_input_variation": 0.08174524717047738,
+          "input_variation_rate": 0.01362420786174623
+        },
+        "failure": null,
+        "trajectory_sha256": "2ce7965517a78fc5ce399720181d53cc437262f709ae722740f05205792e50ad"
+      }
+    ]
+  },
+  {
+    "candidate_index": 7,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 2.2793749884700567,
+      "observer_bandwidth": 8.531800068593428
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.03406321755508597,
+      "worst_variation_rate": 0.037083332924346575,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.1541479328485941,
+          "iae": 0.5652973183355249,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.2793749858899568,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 2.29,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.1541479328485941,
+          "normalized_iae": 0.04915628855091521,
+          "normalized_input_variation": 0.4264583286299856,
+          "input_variation_rate": 0.037083332924346575
+        },
+        "failure": null,
+        "trajectory_sha256": "905f6941dda62361f4968711beb71eba818e9368f9480f384916ff9bac9f5ea8"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.07692610246660338,
+          "iae": 0.5652970397662991,
+          "max_abs_error": 0.14115624650957825,
+          "input_total_variation": 1.2196282702250378,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.1600000000000001,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.07692610246660338,
+          "normalized_iae": 0.049156264327504265,
+          "normalized_input_variation": 0.4065427567416793,
+          "input_variation_rate": 0.03535154406449385
+        },
+        "failure": null,
+        "trajectory_sha256": "a0f190f5fc20ce996fd4fe4fc9cf11fa451446d3ecc12fbab8d99fd32dcd0038"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.007876054021059458,
+          "iae": 0.0232625987210306,
+          "max_abs_error": 0.025586607269528994,
+          "input_total_variation": 0.2197992108611856,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.54,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.007876054021059458,
+          "normalized_iae": 0.003877099786838433,
+          "normalized_input_variation": 0.0732664036203952,
+          "input_variation_rate": 0.012211067270065866
+        },
+        "failure": null,
+        "trajectory_sha256": "30b5ce8ee81d62475937de5af30a541a1acf7be6db6a6c497d12b2aefb516cbd"
+      }
+    ]
+  },
+  {
+    "candidate_index": 8,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 2.661810913133821,
+      "observer_bandwidth": 5.473114226769933
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.03414167261612001,
+      "worst_variation_rate": 0.04816843196444314,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.14799621312870145,
+          "iae": 0.5563509853393268,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.6618109027732884,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 2.43,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.14799621312870145,
+          "normalized_iae": 0.04837834655124581,
+          "normalized_input_variation": 0.5539369675910961,
+          "input_variation_rate": 0.04816843196444314
+        },
+        "failure": null,
+        "trajectory_sha256": "364ed5c54c4b27e3bec69de99983da10b9c894a2e0dbbdebe41b96b293c2ed22"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.07510003861431128,
+          "iae": 0.5563500476617336,
+          "max_abs_error": 0.13878832571334487,
+          "input_total_variation": 1.2240161352248342,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.25,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.07510003861431128,
+          "normalized_iae": 0.04837826501406379,
+          "normalized_input_variation": 0.40800537840827805,
+          "input_variation_rate": 0.035478728557241566
+        },
+        "failure": null,
+        "trajectory_sha256": "b26d57b7bc524a8eff6319cd0d355b1816123c53e138b6a5ce200bf146fd1c14"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.010834158347698427,
+          "iae": 0.03401043769830263,
+          "max_abs_error": 0.03268646285322996,
+          "input_total_variation": 0.2187239913059742,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.8300000000000001,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.010834158347698427,
+          "normalized_iae": 0.005668406283050438,
+          "normalized_input_variation": 0.0729079971019914,
+          "input_variation_rate": 0.012151332850331901
+        },
+        "failure": null,
+        "trajectory_sha256": "9fac11851347c3d9d01e348490c4f9764fe65592a4ca8a6af3eb13bfee4729de"
+      }
+    ]
+  },
+  {
+    "candidate_index": 9,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 0.6512239479149264,
+      "observer_bandwidth": 2.4792725288108044
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.17588531843940303,
+      "worst_variation_rate": 0.027945658734451415,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.3428498630363352,
+          "iae": 2.861371595203278,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.5965337264186736,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": null,
+          "recovery_status": "not_recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.3428498630363352,
+          "normalized_iae": 0.24881492132202415,
+          "normalized_input_variation": 0.19884457547289122,
+          "input_variation_rate": 0.017290832649816627
+        },
+        "failure": null,
+        "trajectory_sha256": "fa9fd6bf897ba0ece0b38593f93903413653b5ffeb469a5adcf131913b525649"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.28246334890648284,
+          "iae": 2.7783778332385958,
+          "max_abs_error": 0.5226383335641918,
+          "input_total_variation": 0.9641252263385738,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": null,
+          "recovery_status": "not_recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.28246334890648284,
+          "normalized_iae": 0.24159807245553006,
+          "normalized_input_variation": 0.32137507544619126,
+          "input_variation_rate": 0.027945658734451415
+        },
+        "failure": null,
+        "trajectory_sha256": "66eee33cd53a7f3d27b31dd315526fb3933b9a6bac24d4d69d7fe461d9dbcbf7"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.04729096702989812,
+          "iae": 0.22345776924392918,
+          "max_abs_error": 0.16565978214469945,
+          "input_total_variation": 0.14019796746856705,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 4.120000000000001,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.04729096702989812,
+          "normalized_iae": 0.037242961540654866,
+          "normalized_input_variation": 0.046732655822855684,
+          "input_variation_rate": 0.007788775970475947
+        },
+        "failure": null,
+        "trajectory_sha256": "48a9e251a5b8c7cae7af0fb787f6079946e8f540e37c6b6e93888aa5e7124119"
+      }
+    ]
+  },
+  {
+    "candidate_index": 10,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 2.322204225355351,
+      "observer_bandwidth": 4.999990106269507
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.040178410280535114,
+      "worst_variation_rate": 0.03832475791002704,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.1600588984995755,
+          "iae": 0.6528757880911665,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.3222041478959328,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 2.85,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.1600588984995755,
+          "normalized_iae": 0.05677180766010144,
+          "normalized_input_variation": 0.44073471596531094,
+          "input_variation_rate": 0.03832475791002704
+        },
+        "failure": null,
+        "trajectory_sha256": "e237e03e3b429257df7f22243049885e9e02bb2735bd1506c7b1138b1af6c8a5"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.0866787889112228,
+          "iae": 0.65286906844402,
+          "max_abs_error": 0.16236010104131204,
+          "input_total_variation": 1.1755472892979604,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.58,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.0866787889112228,
+          "normalized_iae": 0.05677122334295826,
+          "normalized_input_variation": 0.3918490964326535,
+          "input_variation_rate": 0.03407383447240465
+        },
+        "failure": null,
+        "trajectory_sha256": "cdf6067da31aa02fe0482f05be2432a1a6b9732d7ccb8d20d656b63fcd37c08c"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.012478808698924392,
+          "iae": 0.04195319903127391,
+          "max_abs_error": 0.03547004864977232,
+          "input_total_variation": 0.21195200036003614,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.9900000000000002,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.012478808698924392,
+          "normalized_iae": 0.0069921998385456515,
+          "normalized_input_variation": 0.07065066678667871,
+          "input_variation_rate": 0.011775111131113118
+        },
+        "failure": null,
+        "trajectory_sha256": "ee865dc5c7c4fd398fc540e7772a5b000ff6c495de6e9f59bed68b842fee2f1d"
+      }
+    ]
+  },
+  {
+    "candidate_index": 11,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 1.5226775120120046,
+      "observer_bandwidth": 4.926560967193896
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.05958027652271413,
+      "worst_variation_rate": 0.03004968454315265,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.1985362167711609,
+          "iae": 0.9745280243552625,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.5840803460577569,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 4.09,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.1985362167711609,
+          "normalized_iae": 0.08474156733524021,
+          "normalized_input_variation": 0.19469344868591898,
+          "input_variation_rate": 0.01692986510312339
+        },
+        "failure": null,
+        "trajectory_sha256": "7a57ccb000cb2f273708222671900998cf6ede211616fc5e254bca562d20cd24"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.12343356200818582,
+          "iae": 0.9743091046178212,
+          "max_abs_error": 0.23777423264331887,
+          "input_total_variation": 1.0367141167387666,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 2.66,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.12343356200818582,
+          "normalized_iae": 0.08472253083633227,
+          "normalized_input_variation": 0.3455713722462555,
+          "input_variation_rate": 0.03004968454315265
+        },
+        "failure": null,
+        "trajectory_sha256": "b9fd9507d4b59055bd431dc0e1bfb858b17485a423848e8adbc6e31982f220d9"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.01436866078398175,
+          "iae": 0.055660388379419376,
+          "max_abs_error": 0.0363769916139538,
+          "input_total_variation": 0.19959245588913221,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.2700000000000005,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.01436866078398175,
+          "normalized_iae": 0.009276731396569897,
+          "normalized_input_variation": 0.06653081862971073,
+          "input_variation_rate": 0.011088469771618455
+        },
+        "failure": null,
+        "trajectory_sha256": "a1336468ff9af48ceda26286be0576b2b766712b474b1f2ded1c99fba51df9ea"
+      }
+    ]
+  },
+  {
+    "candidate_index": 12,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 1.228253455836283,
+      "observer_bandwidth": 3.112525447839482
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.0879390915714271,
+      "worst_variation_rate": 0.029282603451763783,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.23703224397568054,
+          "iae": 1.4489795277027766,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.6496064096807096,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 6.3100000000000005,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.23703224397568054,
+          "normalized_iae": 0.12599821980024145,
+          "normalized_input_variation": 0.21653546989356987,
+          "input_variation_rate": 0.018829171295093032
+        },
+        "failure": null,
+        "trajectory_sha256": "e93653bba696aabd37e14b096ed665f9bc9412c91e928a8061acb4aab18a09f2"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.168214398102786,
+          "iae": 1.4441331650997662,
+          "max_abs_error": 0.3294000063755995,
+          "input_total_variation": 1.0102498190858504,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 4.700000000000001,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.168214398102786,
+          "normalized_iae": 0.12557679696519705,
+          "normalized_input_variation": 0.3367499396952835,
+          "input_variation_rate": 0.029282603451763783
+        },
+        "failure": null,
+        "trajectory_sha256": "93fb6fc847db0baad6d8a64007af7f200d16ec52fb39456bb091c759c2dbc9a4"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.015731013712216274,
+          "iae": 0.07345354769305663,
+          "max_abs_error": 0.03283459618045392,
+          "input_total_variation": 0.1862429176727497,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.7199999999999998,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.015731013712216274,
+          "normalized_iae": 0.012242257948842773,
+          "normalized_input_variation": 0.062080972557583235,
+          "input_variation_rate": 0.010346828759597205
+        },
+        "failure": null,
+        "trajectory_sha256": "5fa189301ad7bf9bd591c643dc67715320658fcd277ffab852e05d2231ddfbbe"
+      }
+    ]
+  },
+  {
+    "candidate_index": 13,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 1.4225502053793153,
+      "observer_bandwidth": 5.084004776731477
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.06267342372563196,
+      "worst_variation_rate": 0.02973377662981418,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.20472398691850785,
+          "iae": 1.0281546426865227,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.5237468148171377,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 4.28,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.20472398691850785,
+          "normalized_iae": 0.08940475153795849,
+          "normalized_input_variation": 0.17458227160571257,
+          "input_variation_rate": 0.01518106709614892
+        },
+        "failure": null,
+        "trajectory_sha256": "a3286175405c4975f037b7caa623b849806185d9c8545e716ff457e730b5cafb"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.1293371912802898,
+          "iae": 1.027840667093487,
+          "max_abs_error": 0.2498460750397995,
+          "input_total_variation": 1.0258152937285892,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 2.83,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.1293371912802898,
+          "normalized_iae": 0.08937744931247713,
+          "normalized_input_variation": 0.34193843124286305,
+          "input_variation_rate": 0.02973377662981418
+        },
+        "failure": null,
+        "trajectory_sha256": "05a4f4b9a20c8116eb6ff4488081bdfe0f324e693be8cbf82d3817e992c5c9eb"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.014081043892289353,
+          "iae": 0.05542842195876157,
+          "max_abs_error": 0.03524261749503865,
+          "input_total_variation": 0.19923261207028364,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.2599999999999998,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.014081043892289353,
+          "normalized_iae": 0.009238070326460261,
+          "normalized_input_variation": 0.06641087069009455,
+          "input_variation_rate": 0.011068478448349092
+        },
+        "failure": null,
+        "trajectory_sha256": "67f4e8c28be5be7cadc76a6ca3046a47572fd496943a2a0fedf1e2f26b8c6871"
+      }
+    ]
+  },
+  {
+    "candidate_index": 14,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 2.4072477853617076,
+      "observer_bandwidth": 6.952712688426776
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.0343414100985299,
+      "worst_variation_rate": 0.040789790740955276,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.15235391407134832,
+          "iae": 0.5655952907360936,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.407247780562957,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 2.35,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.15235391407134832,
+          "normalized_iae": 0.04918219919444292,
+          "normalized_input_variation": 0.4690825935209857,
+          "input_variation_rate": 0.040789790740955276
+        },
+        "failure": null,
+        "trajectory_sha256": "aea5dd1602d991fec70fbd904a3281d36a3e603e89dfc24b3978895279abbe7a"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.07670992301970449,
+          "iae": 0.565594815537816,
+          "max_abs_error": 0.14118096617705922,
+          "input_total_variation": 1.2194410350508118,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.2000000000000002,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.07670992301970449,
+          "normalized_iae": 0.049182157872853564,
+          "normalized_input_variation": 0.40648034501693725,
+          "input_variation_rate": 0.03534611695799454
+        },
+        "failure": null,
+        "trajectory_sha256": "1e18256eaf583c05938963a6d9d868d61579ac3da2c5ea72e00a4cf8388ac268"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.00920806170631246,
+          "iae": 0.027959239369759248,
+          "max_abs_error": 0.028886327708557147,
+          "input_total_variation": 0.21958934057114154,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.6799999999999997,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.00920806170631246,
+          "normalized_iae": 0.004659873228293208,
+          "normalized_input_variation": 0.07319644685704718,
+          "input_variation_rate": 0.012199407809507864
+        },
+        "failure": null,
+        "trajectory_sha256": "0505bec04c8c1c7179980e67048e0687a5f47f9129e70c28ac593c8a4cc45ddc"
+      }
+    ]
+  },
+  {
+    "candidate_index": 15,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 0.9680139848665571,
+      "observer_bandwidth": 4.222871305592227
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.09461964100352094,
+      "worst_variation_rate": 0.028931802992964148,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.2548965994894975,
+          "iae": 1.5864487885989784,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.4876634894977727,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 6.5600000000000005,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.2548965994894975,
+          "normalized_iae": 0.13795206857382422,
+          "normalized_input_variation": 0.16255449649925757,
+          "input_variation_rate": 0.014135173608631093
+        },
+        "failure": null,
+        "trajectory_sha256": "1ee7362972d571c9b58e4c3ca9a84d9309513d7c3ab35f75a5c4eaf0fdbf6143"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.18339734100922483,
+          "iae": 1.5806579974215864,
+          "max_abs_error": 0.3588658193305604,
+          "input_total_variation": 0.998147203257263,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 4.9399999999999995,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.18339734100922483,
+          "normalized_iae": 0.13744852151492057,
+          "normalized_input_variation": 0.3327157344190877,
+          "input_variation_rate": 0.028931802992964148
+        },
+        "failure": null,
+        "trajectory_sha256": "9445bb415d6883ffd9de7c22ab238173cb2227d4307e03ef5f47745c9265e632"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.010975097056022417,
+          "iae": 0.050749997530908156,
+          "max_abs_error": 0.03707283840291087,
+          "input_total_variation": 0.18412297478706008,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.0099999999999998,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.010975097056022417,
+          "normalized_iae": 0.008458332921818025,
+          "normalized_input_variation": 0.06137432492902003,
+          "input_variation_rate": 0.01022905415483667
+        },
+        "failure": null,
+        "trajectory_sha256": "efc13a388d78694bc8e696fdb4bf6e0b0640d4839f1364af1d9de84f10cb9416"
+      }
+    ]
+  },
+  {
+    "candidate_index": 16,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 1.7960573792043877,
+      "observer_bandwidth": 5.854732497560303
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.04793709312964855,
+      "worst_variation_rate": 0.03214003186368894,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.1792252755382179,
+          "iae": 0.7861437829801804,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.7960571505127567,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 3.27,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.1792252755382179,
+          "normalized_iae": 0.0683603289547983,
+          "normalized_input_variation": 0.2653523835042522,
+          "input_variation_rate": 0.023074120304717585
+        },
+        "failure": null,
+        "trajectory_sha256": "c35b93a93e2e1d48760f1185ac7fe768f379fc747186be7382e3d3b53b6d3dc9"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.10287521921887217,
+          "iae": 0.7861178035186781,
+          "max_abs_error": 0.19468566570836,
+          "input_total_variation": 1.1088310992972683,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.9500000000000002,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.10287521921887217,
+          "normalized_iae": 0.0683580698711894,
+          "normalized_input_variation": 0.3696103664324228,
+          "input_variation_rate": 0.03214003186368894
+        },
+        "failure": null,
+        "trajectory_sha256": "c7633183ec5bbda647df9b32c61a0e749ada7ae87b571abe520f0eff835eb9c5"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.012138462991258847,
+          "iae": 0.04255728337774765,
+          "max_abs_error": 0.03361852178948532,
+          "input_total_variation": 0.20613367037666874,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.9900000000000002,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.012138462991258847,
+          "normalized_iae": 0.007092880562957941,
+          "normalized_input_variation": 0.06871122345888958,
+          "input_variation_rate": 0.011451870576481596
+        },
+        "failure": null,
+        "trajectory_sha256": "bc124bd3d1d6944fddc5145f19210a5ee21d493c7b107786580eacbf9c452744"
+      }
+    ]
+  },
+  {
+    "candidate_index": 17,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 1.4225573367764217,
+      "observer_bandwidth": 3.0388539190563795
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.07873744722081859,
+      "worst_variation_rate": 0.029764120190140558,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.22079843269558694,
+          "iae": 1.2831809449458291,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.7538649221773845,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 5.71,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.22079843269558694,
+          "normalized_iae": 0.11158095173441993,
+          "normalized_input_variation": 0.2512883073924615,
+          "input_variation_rate": 0.02185115716456187
+        },
+        "failure": null,
+        "trajectory_sha256": "fee9d09e5190e72b5db8adc04e0fd85d79e7c272d6a03ea9acd5cc5a0f87925c"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.15203674870981704,
+          "iae": 1.2804648447778457,
+          "max_abs_error": 0.2976678418003391,
+          "input_total_variation": 1.0268621465598493,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 4.120000000000001,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.15203674870981704,
+          "normalized_iae": 0.11134476911111701,
+          "normalized_input_variation": 0.3422873821866164,
+          "input_variation_rate": 0.029764120190140558
+        },
+        "failure": null,
+        "trajectory_sha256": "9896e22ee8e9c1a4f1841286fb0e2322fb04012be39fe0c19cf78683cf43751c"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.01766410049869081,
+          "iae": 0.07971972490151284,
+          "max_abs_error": 0.038449934093288674,
+          "input_total_variation": 0.19157355615047789,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.8399999999999999,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.01766410049869081,
+          "normalized_iae": 0.013286620816918808,
+          "normalized_input_variation": 0.0638578520501593,
+          "input_variation_rate": 0.010642975341693216
+        },
+        "failure": null,
+        "trajectory_sha256": "82e779e3f734d5118664b23557a99c00c21d129f3505b43963a2b0438269a919"
+      }
+    ]
+  },
+  {
+    "candidate_index": 18,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 0.5060526845275055,
+      "observer_bandwidth": 1.018365361143606
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.3621625120641108,
+      "worst_variation_rate": 0.02234101787695516,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.49299818646526083,
+          "iae": 5.22474041821591,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.5863029643058918,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": null,
+          "recovery_status": "not_recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.49299818646526083,
+          "normalized_iae": 0.45432525375790517,
+          "normalized_input_variation": 0.19543432143529726,
+          "input_variation_rate": 0.016994288820460633
+        },
+        "failure": null,
+        "trajectory_sha256": "32020eb54fdaff7279326ac4b7939b3bf96d7761169e34036bca0b815870a0d7"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.43926075842048723,
+          "iae": 4.743137876625545,
+          "max_abs_error": 0.6780196006367409,
+          "input_total_variation": 0.770765116754953,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": null,
+          "recovery_status": "not_recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.43926075842048723,
+          "normalized_iae": 0.41244677188048223,
+          "normalized_input_variation": 0.25692170558498434,
+          "input_variation_rate": 0.02234101787695516
+        },
+        "failure": null,
+        "trajectory_sha256": "48ab29639f07e53e7b3af156ba8d93c427f0bb5657151eadc130fa1fe4e26309"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.2289487838457434,
+          "iae": 1.3182930633236702,
+          "max_abs_error": 0.4281030281841607,
+          "input_total_variation": 0.12162904812704545,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": null,
+          "recovery_status": "not_recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.2289487838457434,
+          "normalized_iae": 0.21971551055394503,
+          "normalized_input_variation": 0.04054301604234848,
+          "input_variation_rate": 0.006757169340391413
+        },
+        "failure": null,
+        "trajectory_sha256": "5fa8d99c3e7e2462d15ead7b209aa42157db6f7946245c199ac530699d27b3fc"
+      }
+    ]
+  },
+  {
+    "candidate_index": 19,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 1.7522124275714903,
+      "observer_bandwidth": 6.184877074777289
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.048147011442613234,
+      "worst_variation_rate": 0.03206352790771371,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.18048692738748992,
+          "iae": 0.7913970517261983,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.7522122027335021,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 3.27,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.18048692738748992,
+          "normalized_iae": 0.0688171349327129,
+          "normalized_input_variation": 0.25073740091116736,
+          "input_variation_rate": 0.02180325225314499
+        },
+        "failure": null,
+        "trajectory_sha256": "810cac8fbe2a4c5e308a1069032eaa46f556cd82f6a55ab4c5a2f28ba696839c"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.10361960556797918,
+          "iae": 0.7913720340298773,
+          "max_abs_error": 0.1960241749953573,
+          "input_total_variation": 1.1061917128161232,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.9500000000000002,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.10361960556797918,
+          "normalized_iae": 0.0688149594808589,
+          "normalized_input_variation": 0.3687305709387077,
+          "input_variation_rate": 0.03206352790771371
+        },
+        "failure": null,
+        "trajectory_sha256": "3b8b3043ab2f5865794171769282b2d49c8a85779bb13725f6cdfdafff0b2335"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.011702457243079294,
+          "iae": 0.04085363948560741,
+          "max_abs_error": 0.03262458420701897,
+          "input_total_variation": 0.20618141814391533,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.9500000000000002,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.011702457243079294,
+          "normalized_iae": 0.006808939914267902,
+          "normalized_input_variation": 0.0687271393813051,
+          "input_variation_rate": 0.011454523230217518
+        },
+        "failure": null,
+        "trajectory_sha256": "51c4c6ae852f8d1cdb07a9a9b169d416e7ab8bd7e69d220230c2acbaabff4eed"
+      }
+    ]
+  },
+  {
+    "candidate_index": 20,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 1.1706330790119346,
+      "observer_bandwidth": 2.9056511997425276
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.0945608818862339,
+      "worst_variation_rate": 0.029159560631930533,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.24603951103455599,
+          "iae": 1.567743059166244,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.6534487168554493,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 6.86,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.24603951103455599,
+          "normalized_iae": 0.13632548340576034,
+          "normalized_input_variation": 0.21781623895181643,
+          "input_variation_rate": 0.018940542517549255
+        },
+        "failure": null,
+        "trajectory_sha256": "bb2fbb1ca2ebe2148c9fcad6faa35fbe93ed974a2f11ce2aa9ffcc8730adfc9c"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.17850113591941383,
+          "iae": 1.560113499887733,
+          "max_abs_error": 0.34909535192185037,
+          "input_total_variation": 1.0060048418016034,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 5.210000000000001,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.17850113591941383,
+          "normalized_iae": 0.13566204346849853,
+          "normalized_input_variation": 0.33533494726720114,
+          "input_variation_rate": 0.029159560631930533
+        },
+        "failure": null,
+        "trajectory_sha256": "23a4db1ad1f1bbd2de7b1df5b67d057a01e1871c1db5f5a5509112cc55fc3614"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.014693097081334892,
+          "iae": 0.07017071270665697,
+          "max_abs_error": 0.04182584263550371,
+          "input_total_variation": 0.18019076565797776,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.63,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.014693097081334892,
+          "normalized_iae": 0.011695118784442828,
+          "normalized_input_variation": 0.06006358855265925,
+          "input_variation_rate": 0.010010598092109876
+        },
+        "failure": null,
+        "trajectory_sha256": "25eb66b41482489a953463711e5d445f27967e34c6c3f399e7624d0e42ef4d96"
+      }
+    ]
+  },
+  {
+    "candidate_index": 21,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 3.2147016646326803,
+      "observer_bandwidth": 12.902141568051764
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.022382238618443864,
+      "worst_variation_rate": 0.057971014492750474,
+      "worst_saturation_fraction": 0.0017391304347826088
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.12754425813709105,
+          "iae": 0.3761022987838287,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.9999999999998912,
+          "saturation_fraction": 0.0017391304347826088,
+          "recovery_time_s": 1.48,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.12754425813709105,
+          "normalized_iae": 0.03270454772033293,
+          "normalized_input_variation": 0.6666666666666304,
+          "input_variation_rate": 0.057971014492750474
+        },
+        "failure": null,
+        "trajectory_sha256": "3fdaaabd7fbfedf1ea43e5fdc2a9fc19aa23cfd999d3f578f6c6da937bf8ba13"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.052646031136494985,
+          "iae": 0.3752981504651797,
+          "max_abs_error": 0.09382208082860977,
+          "input_total_variation": 1.314847150748124,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.5899999999999999,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.052646031136494985,
+          "normalized_iae": 0.03263462177958085,
+          "normalized_input_variation": 0.43828238358270805,
+          "input_variation_rate": 0.038111511615887654
+        },
+        "failure": null,
+        "trajectory_sha256": "6edfb86e3247a27bd77b4427357af052741cfb92f0ff357b1b972b7b200ade0f"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.004522825048782101,
+          "iae": 0.010845278132506882,
+          "max_abs_error": 0.01781404923450136,
+          "input_total_variation": 0.23295465251804703,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.0,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.004522825048782101,
+          "normalized_iae": 0.0018075463554178136,
+          "normalized_input_variation": 0.077651550839349,
+          "input_variation_rate": 0.012941925139891501
+        },
+        "failure": null,
+        "trajectory_sha256": "b484dec58ad6b14b2dc75114ae0fe7944c8a8ea7a8c152f0f58a1da32ea3b84d"
+      }
+    ]
+  },
+  {
+    "candidate_index": 22,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 3.8926100829642367,
+      "observer_bandwidth": 14.42995759984442
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.018460033931944266,
+      "worst_variation_rate": 0.057971014492753555,
+      "worst_saturation_fraction": 0.005217391304347826
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.11795022370934513,
+          "iae": 0.3140755821907334,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.9999999999999976,
+          "saturation_fraction": 0.005217391304347826,
+          "recovery_time_s": 1.21,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.11795022370934513,
+          "normalized_iae": 0.027310920190498557,
+          "normalized_input_variation": 0.6666666666666659,
+          "input_variation_rate": 0.057971014492753555
+        },
+        "failure": null,
+        "trajectory_sha256": "326f26add7430cc31f9f89a847d3ab82066dc083af46bbbfc52666df30b3955b"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.043533901597008866,
+          "iae": 0.30730563540479655,
+          "max_abs_error": 0.07682624134602156,
+          "input_total_variation": 1.348850603983118,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.41999999999999993,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.043533901597008866,
+          "normalized_iae": 0.026722229165634482,
+          "normalized_input_variation": 0.44961686799437267,
+          "input_variation_rate": 0.039097118956032406
+        },
+        "failure": null,
+        "trajectory_sha256": "117e9d679c3020dc8c47274095c26d29bf5dbcac2b1618fffd634a3238f21772"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.003690475637253201,
+          "iae": 0.00808171463819853,
+          "max_abs_error": 0.0157360740105168,
+          "input_total_variation": 0.23890488753760042,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.0,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.003690475637253201,
+          "normalized_iae": 0.0013469524396997551,
+          "normalized_input_variation": 0.07963496251253348,
+          "input_variation_rate": 0.013272493752088914
+        },
+        "failure": null,
+        "trajectory_sha256": "08ca605c4d14e07bfeaa918db1faaf940f1aeceeb7a00047415d14b7e7cf9b94"
+      }
+    ]
+  },
+  {
+    "candidate_index": 23,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 0.8593168059844031,
+      "observer_bandwidth": 3.4866478978120448
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.11244921267796036,
+      "worst_variation_rate": 0.028811120562974336,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.2789494219005772,
+          "iae": 1.915471830500767,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.5329389225345897,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 8.02,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.2789494219005772,
+          "normalized_iae": 0.16656276786963192,
+          "normalized_input_variation": 0.1776463075115299,
+          "input_variation_rate": 0.015447505001002601
+        },
+        "failure": null,
+        "trajectory_sha256": "783d0ad629a29ce33cc292b5c9acfa423ce006d95eea1f7436228dd14ee60c70"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.21093418730625604,
+          "iae": 1.8993780545003367,
+          "max_abs_error": 0.40979317957154227,
+          "input_total_variation": 0.9939836594226146,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 6.33,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.21093418730625604,
+          "normalized_iae": 0.1651633090869858,
+          "normalized_input_variation": 0.33132788647420486,
+          "input_variation_rate": 0.028811120562974336
+        },
+        "failure": null,
+        "trajectory_sha256": "3f65a92f92e41f2d5af9e2c7d1e824fb5c8125211e256704133ecbc4812e90aa"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.010207420842456775,
+          "iae": 0.033729366463580004,
+          "max_abs_error": 0.06610067445490564,
+          "input_total_variation": 0.16496916205471157,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.25,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.010207420842456775,
+          "normalized_iae": 0.005621561077263334,
+          "normalized_input_variation": 0.054989720684903855,
+          "input_variation_rate": 0.009164953447483975
+        },
+        "failure": null,
+        "trajectory_sha256": "bfd5d85b0905d22e12aacec8fb724f342760673e40de012cbebeb029a8682384"
+      }
+    ]
+  },
+  {
+    "candidate_index": 24,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 0.5141203477712564,
+      "observer_bandwidth": 2.184279211326478
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.23738398826852522,
+      "worst_variation_rate": 0.026661916907019897,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.39724458340397595,
+          "iae": 3.6726786242254517,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.6090107731771991,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": null,
+          "recovery_status": "not_recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.39724458340397595,
+          "normalized_iae": 0.3193633586283001,
+          "normalized_input_variation": 0.20300359105906637,
+          "input_variation_rate": 0.01765248617904925
+        },
+        "failure": null,
+        "trajectory_sha256": "45a08f4fec7f9ff195f83bfd305b269797b2665de8dbf0c98d30d21e2473cb9d"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.34041874373858144,
+          "iae": 3.495455103536843,
+          "max_abs_error": 0.5982006791023544,
+          "input_total_variation": 0.9198361332921864,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": null,
+          "recovery_status": "not_recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.34041874373858144,
+          "normalized_iae": 0.3039526176988559,
+          "normalized_input_variation": 0.3066120444307288,
+          "input_variation_rate": 0.026661916907019897
+        },
+        "failure": null,
+        "trajectory_sha256": "4df76fe9c8452ebe822b9731a7c4dbbe253679c1153275d6a5f7200275957273"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.09975661196757118,
+          "iae": 0.5330159308705175,
+          "max_abs_error": 0.2539415013158328,
+          "input_total_variation": 0.14494485745431274,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": null,
+          "recovery_status": "not_recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.09975661196757118,
+          "normalized_iae": 0.08883598847841957,
+          "normalized_input_variation": 0.04831495248477091,
+          "input_variation_rate": 0.008052492080795151
+        },
+        "failure": null,
+        "trajectory_sha256": "7c0228c61da57e447acaaeab69d0b2066f9e38e21d2df642667ee647ddf5d763"
+      }
+    ]
+  },
+  {
+    "candidate_index": 25,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 0.9874110516956286,
+      "observer_bandwidth": 2.96281883963472
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.10753614233271049,
+      "worst_variation_rate": 0.028853884426403922,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.2674554873697722,
+          "iae": 1.8134284633549784,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.5905090964293118,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 7.790000000000001,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.2674554873697722,
+          "normalized_iae": 0.1576894315960851,
+          "normalized_input_variation": 0.19683636547643726,
+          "input_variation_rate": 0.01711620569360324
+        },
+        "failure": null,
+        "trajectory_sha256": "7c5281661d6fb4733ba4e5775e0a7741ca3d17caabb7536b688ea61d4a27e966"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.2005885943661175,
+          "iae": 1.7991918079255698,
+          "max_abs_error": 0.39028837918400094,
+          "input_total_variation": 0.9954590127109354,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 6.109999999999999,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.2005885943661175,
+          "normalized_iae": 0.1564514615587452,
+          "normalized_input_variation": 0.3318196709036451,
+          "input_variation_rate": 0.028853884426403922
+        },
+        "failure": null,
+        "trajectory_sha256": "df9ad834ffbb67690c317b10780e049e9795647e47a768453947d4afbac2953c"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.011650024725010514,
+          "iae": 0.050805203059807,
+          "max_abs_error": 0.060537599833478506,
+          "input_total_variation": 0.1680356343318371,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.20999999999999996,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.011650024725010514,
+          "normalized_iae": 0.008467533843301166,
+          "normalized_input_variation": 0.05601187811061237,
+          "input_variation_rate": 0.009335313018435395
+        },
+        "failure": null,
+        "trajectory_sha256": "e1261ffc07a9fb84ba3c3e50f306f2b32ed94dcefb7f86cd5e580871c12c02b3"
+      }
+    ]
+  },
+  {
+    "candidate_index": 26,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 5.761108630758492,
+      "observer_bandwidth": 20.0
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.013046164288441192,
+      "worst_variation_rate": 0.05797101449275353,
+      "worst_saturation_fraction": 0.015652173913043476
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.10804759910895746,
+          "iae": 0.23904504993494377,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.9999999999999964,
+          "saturation_fraction": 0.015652173913043476,
+          "recovery_time_s": 0.81,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.10804759910895746,
+          "normalized_iae": 0.02078652608129946,
+          "normalized_input_variation": 0.6666666666666655,
+          "input_variation_rate": 0.05797101449275353
+        },
+        "failure": null,
+        "trajectory_sha256": "3babb2b4d705e65edec8c040655b15f37b6d64497b4ed28ecbcd8e154bd8233b"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.02925377478402187,
+          "iae": 0.2034354727538229,
+          "max_abs_error": 0.05085886813845708,
+          "input_total_variation": 1.4007864298740407,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.1900000000000004,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.02925377478402187,
+          "normalized_iae": 0.01769004110902808,
+          "normalized_input_variation": 0.46692880995801356,
+          "input_variation_rate": 0.04060250521374031
+        },
+        "failure": null,
+        "trajectory_sha256": "b7a5d70f5ef14070666669aa05a6e13d8cca153880d0f55fb0ace1fa1531197a"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.002214696633189508,
+          "iae": 0.003971554049976228,
+          "max_abs_error": 0.011299663914433378,
+          "input_total_variation": 0.2483366701402956,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.0,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.002214696633189508,
+          "normalized_iae": 0.0006619256749960381,
+          "normalized_input_variation": 0.0827788900467652,
+          "input_variation_rate": 0.013796481674460867
+        },
+        "failure": null,
+        "trajectory_sha256": "02ae0d0fe5bc22ece1c2f59a28f2d41b443de45b3604e9144a9116675e29611c"
+      }
+    ]
+  },
+  {
+    "candidate_index": 27,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 4.234156460771056,
+      "observer_bandwidth": 11.863352081259173
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.017860389254212378,
+      "worst_variation_rate": 0.05797101449275354,
+      "worst_saturation_fraction": 0.006956521739130435
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.11609186031868321,
+          "iae": 0.30510127290894623,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.9999999999999971,
+          "saturation_fraction": 0.006956521739130435,
+          "recovery_time_s": 1.18,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.11609186031868321,
+          "normalized_iae": 0.02653054547034315,
+          "normalized_input_variation": 0.6666666666666657,
+          "input_variation_rate": 0.05797101449275354
+        },
+        "failure": null,
+        "trajectory_sha256": "210788a2455b01820028ae269152545ef39c3381fc3c828b60ffcf3ae1b34a2b"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.04155028060513329,
+          "iae": 0.2930957164993099,
+          "max_abs_error": 0.07327379725175909,
+          "input_total_variation": 1.3559557103702384,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.40000000000000036,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.04155028060513329,
+          "normalized_iae": 0.02548658404341825,
+          "normalized_input_variation": 0.45198523679007946,
+          "input_variation_rate": 0.03930306406870256
+        },
+        "failure": null,
+        "trajectory_sha256": "0c677eb38d77149e0a7789320fad0c1a6a229b5aff347db5548d6a4e06035584"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.004237197515963017,
+          "iae": 0.009384229493254412,
+          "max_abs_error": 0.01765244738473415,
+          "input_total_variation": 0.24220564306375503,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.0,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.004237197515963017,
+          "normalized_iae": 0.0015640382488757354,
+          "normalized_input_variation": 0.08073521435458501,
+          "input_variation_rate": 0.013455869059097502
+        },
+        "failure": null,
+        "trajectory_sha256": "87f13ffa332b16df6ccfb83a75f682c22c6f9409083e30da7afcb6aab123dc6e"
+      }
+    ]
+  },
+  {
+    "candidate_index": 28,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 2.6065812416034744,
+      "observer_bandwidth": 11.79464320920689
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.02781038755759528,
+      "worst_variation_rate": 0.04656757221949536,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.14153083179735884,
+          "iae": 0.4658866431504078,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.60658124157259,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.8399999999999999,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.14153083179735884,
+          "normalized_iae": 0.04051188201307894,
+          "normalized_input_variation": 0.5355270805241966,
+          "input_variation_rate": 0.04656757221949536
+        },
+        "failure": null,
+        "trajectory_sha256": "bc3f0a679bc7f2c94039ec7cd5ecc15767e63d30010c2130fc21e99923b203f2"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.06450033109249269,
+          "iae": 0.4658866358252166,
+          "max_abs_error": 0.11644676633147621,
+          "input_total_variation": 1.2695060443477384,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.8399999999999999,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.06450033109249269,
+          "normalized_iae": 0.04051188137610579,
+          "normalized_input_variation": 0.42316868144924613,
+          "input_variation_rate": 0.036797276647760536
+        },
+        "failure": null,
+        "trajectory_sha256": "c53abe9f31b559fd3a9424a69aeec67dad4966d5335fafc9476a9c02ccecf4da"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.005476461042122016,
+          "iae": 0.014444395701606662,
+          "max_abs_error": 0.01989847171075798,
+          "input_total_variation": 0.22579284405498368,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.0,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.005476461042122016,
+          "normalized_iae": 0.00240739928360111,
+          "normalized_input_variation": 0.07526428135166123,
+          "input_variation_rate": 0.012544046891943538
+        },
+        "failure": null,
+        "trajectory_sha256": "cc815d354f29739a316d84fecea29e2f852282b3e383e9329b66c4cf0d079d22"
+      }
+    ]
+  },
+  {
+    "candidate_index": 29,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 0.7625018237800528,
+      "observer_bandwidth": 3.0854036743885325
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.13276022257902273,
+      "worst_variation_rate": 0.028597232950203996,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.30288751108893747,
+          "iae": 2.2541447242434027,
+          "max_abs_error": 1.0,
+          "input_total_variation": 0.5595440158894183,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 9.51,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.30288751108893747,
+          "normalized_iae": 0.19601258471681762,
+          "normalized_input_variation": 0.18651467196313942,
+          "input_variation_rate": 0.016218667127229514
+        },
+        "failure": null,
+        "trajectory_sha256": "f37eed51e74f530c22434d2bf2c7027aed5f3439856aab5c8d75f5782ae57a93"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.23777524226020377,
+          "iae": 2.220853246868735,
+          "max_abs_error": 0.45557501908808573,
+          "input_total_variation": 0.9866045367820379,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": null,
+          "recovery_status": "not_recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.23777524226020377,
+          "normalized_iae": 0.19311767364075957,
+          "normalized_input_variation": 0.32886817892734593,
+          "input_variation_rate": 0.028597232950203996
+        },
+        "failure": null,
+        "trajectory_sha256": "7caf1a058d2013d02492a58e0daa09cda56819d730de0cae7bb5ac55ff466be5"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.018199861712820755,
+          "iae": 0.05490245627694577,
+          "max_abs_error": 0.09961554412617146,
+          "input_total_variation": 0.14907393705103267,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.5800000000000001,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.018199861712820755,
+          "normalized_iae": 0.009150409379490961,
+          "normalized_input_variation": 0.04969131235034422,
+          "input_variation_rate": 0.008281885391724036
+        },
+        "failure": null,
+        "trajectory_sha256": "3b7392858cc16ec2a14b280d4046c849c63ade90704be11bc02a06a2fa4e0123"
+      }
+    ]
+  },
+  {
+    "candidate_index": 30,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 2.5608426010120477,
+      "observer_bandwidth": 6.579393952232078
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.03300992128099372,
+      "worst_variation_rate": 0.04524181442752926,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.14839398555453334,
+          "iae": 0.5423002019592577,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.5608425977497595,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 2.29,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.14839398555453334,
+          "normalized_iae": 0.04715653930080501,
+          "normalized_input_variation": 0.5202808659165865,
+          "input_variation_rate": 0.04524181442752926
+        },
+        "failure": null,
+        "trajectory_sha256": "2f0570857a86ebbf701e7a24971b72d78d636177c64083118df5da699a328e8a"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.07370796887077372,
+          "iae": 0.5422998641312159,
+          "max_abs_error": 0.13539552868141902,
+          "input_total_variation": 1.2311224416258753,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.1500000000000004,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.07370796887077372,
+          "normalized_iae": 0.047156509924453555,
+          "normalized_input_variation": 0.4103741472086251,
+          "input_variation_rate": 0.03568470845292392
+        },
+        "failure": null,
+        "trajectory_sha256": "fa60e1cbfba25ca7533e5964e6b1625c955d1fa81155b3a2a40eca14e302d27d"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.009381198052634859,
+          "iae": 0.028300287706335553,
+          "max_abs_error": 0.029488920607366742,
+          "input_total_variation": 0.22096240509532705,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.6900000000000004,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.009381198052634859,
+          "normalized_iae": 0.004716714617722592,
+          "normalized_input_variation": 0.07365413503177569,
+          "input_variation_rate": 0.012275689171962615
+        },
+        "failure": null,
+        "trajectory_sha256": "7f6ae40d4979757bdbd8476556478582aecb7834945aa91083ccbf5e96b50592"
+      }
+    ]
+  },
+  {
+    "candidate_index": 31,
+    "parameters": {
+      "relative_degree": 1,
+      "b0": 1,
+      "control_bandwidth": 2.180132163441245,
+      "observer_bandwidth": 9.00891742042275
+    },
+    "assessment": {
+      "feasible": true,
+      "objective": 0.035052383979450895,
+      "worst_variation_rate": 0.035096491817106674,
+      "worst_saturation_fraction": 0.0
+    },
+    "training": [
+      {
+        "scenario": "step",
+        "metrics": {
+          "rmse": 0.15699253396544643,
+          "iae": 0.5828387594735926,
+          "max_abs_error": 1.0,
+          "input_total_variation": 1.1801321597710812,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 2.35,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.15699253396544643,
+          "normalized_iae": 0.05068163125857327,
+          "normalized_input_variation": 0.3933773865903604,
+          "input_variation_rate": 0.03420672926872699
+        },
+        "failure": null,
+        "trajectory_sha256": "a590c0b37b9c962b594c6decf6442cbcc4d2388fbc1032f885fd5aae3314b759"
+      },
+      {
+        "scenario": "ramp",
+        "metrics": {
+          "rmse": 0.07916654295930542,
+          "iae": 0.5828383807145071,
+          "max_abs_error": 0.14551059916574938,
+          "input_total_variation": 1.2108289676901802,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 1.2000000000000002,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.07916654295930542,
+          "normalized_iae": 0.05068159832300062,
+          "normalized_input_variation": 0.40360965589672676,
+          "input_variation_rate": 0.035096491817106674
+        },
+        "failure": null,
+        "trajectory_sha256": "8e934dcf04b60f86f69ed59fc2f467deef69784ddf0b42e33d86284397fafd52"
+      },
+      {
+        "scenario": "disturbance_step",
+        "metrics": {
+          "rmse": 0.007665545114139983,
+          "iae": 0.02276353414067276,
+          "max_abs_error": 0.024886993277879466,
+          "input_total_variation": 0.21856170929019203,
+          "saturation_fraction": 0.0,
+          "recovery_time_s": 0.5200000000000005,
+          "recovery_status": "recovered_in_observation_window",
+          "status": "completed",
+          "reason": "",
+          "metric_source": "model_state",
+          "normalized_rmse": 0.007665545114139983,
+          "normalized_iae": 0.0037939223567787935,
+          "normalized_input_variation": 0.07285390309673068,
+          "input_variation_rate": 0.012142317182788446
+        },
+        "failure": null,
+        "trajectory_sha256": "3cbb51153b61517350dcd09ed13b0479250e8c466e59dc494cbea1481cd3dc03"
+      }
+    ]
+  }
+]

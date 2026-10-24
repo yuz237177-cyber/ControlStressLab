@@ -1,0 +1,4768 @@
+{
+  "environment": {
+    "python": "3.9.13",
+    "numpy": "1.21.5",
+    "scipy": "1.9.1"
+  },
+  "suite": "outputs\\benchmark-v030-release",
+  "expected_runs": 432,
+  "plant_replays": 432,
+  "adrc_request_replays": 108,
+  "failed": 0,
+  "cases": [
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.620059037582572e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.659739592076221e-15,
+        "max_tolerance_fraction": 8.019450218866844e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.829050372499463e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.325873406851315e-15,
+        "max_tolerance_fraction": 8.325623491250567e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.835153104212633e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.659739592076221e-15,
+        "max_tolerance_fraction": 7.872436199506893e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.0272667402412134e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.547918011776346e-15,
+        "max_tolerance_fraction": 8.67987814569685e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 3.835314993673127e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.547918011776346e-15,
+        "max_tolerance_fraction": 8.67987814569685e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.551914400963142e-15,
+        "max_tolerance_fraction": 4.139326975900451e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.547918011776346e-15,
+        "max_tolerance_fraction": 8.67987814569685e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.327471962526033e-15,
+        "max_tolerance_fraction": 6.651200540658637e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-15,
+        "max_tolerance_fraction": 7.666372774830607e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.643366172950762e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.103828801926284e-15,
+        "max_tolerance_fraction": 8.118009444946831e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.648776744185008e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-15,
+        "max_tolerance_fraction": 7.717759855517474e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3314683517128287e-15,
+        "max_tolerance_fraction": 2.1609571631273002e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.770761894538737e-15,
+        "max_tolerance_fraction": 7.988744721010818e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.3306690738754696e-15,
+        "max_tolerance_fraction": 3.074373056079504e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.215650382226158e-15,
+        "max_tolerance_fraction": 7.448271980325864e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.551914400963142e-15,
+        "max_tolerance_fraction": 4.202180563259805e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.66053886991358e-15,
+        "max_tolerance_fraction": 7.332788541037049e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.825954177637205e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.769962616701378e-15,
+        "max_tolerance_fraction": 8.823408194641684e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.421204125894787e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.880984919163893e-15,
+        "max_tolerance_fraction": 9.036937371934531e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.6230450933857385e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.103828801926284e-15,
+        "max_tolerance_fraction": 8.277836545259785e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.107825191113079e-15,
+        "max_tolerance_fraction": 3.7361687333612747e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.880984919163893e-15,
+        "max_tolerance_fraction": 9.00687925357129e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.230304882183243e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.769962616701378e-15,
+        "max_tolerance_fraction": 8.922852491750732e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.2293947014476237e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 1.0436096431476471e-14,
+        "max_tolerance_fraction": 9.587641976112072e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.853828949816768e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.325873406851315e-15,
+        "max_tolerance_fraction": 8.486444979492726e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.995204332975845e-15,
+        "max_tolerance_fraction": 5.455881127740777e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.992806499463768e-15,
+        "max_tolerance_fraction": 8.22083390316232e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.106226635438361e-15,
+        "max_tolerance_fraction": 5.554032702491298e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.659739592076221e-15,
+        "max_tolerance_fraction": 7.882527442661606e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 1.9414994911268993e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.438494264988549e-15,
+        "max_tolerance_fraction": 6.841109262409173e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.7315378967262597e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.103828801926284e-15,
+        "max_tolerance_fraction": 8.290567485078729e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__baseline__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.551914400963142e-15,
+        "max_tolerance_fraction": 4.205860003860604e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.659739592076221e-15,
+        "max_tolerance_fraction": 8.072152137374087e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.620033513329147e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.659739592076221e-15,
+        "max_tolerance_fraction": 8.039867868867763e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.8258926757443893e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.882583474838611e-15,
+        "max_tolerance_fraction": 7.300906607677418e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.619712103466499e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 1.0103029524088925e-14,
+        "max_tolerance_fraction": 9.362107251096173e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.9968028886505635e-15,
+        "max_tolerance_fraction": 3.636279482108026e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-15,
+        "max_tolerance_fraction": 7.68544241725673e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.3298697960381105e-15,
+        "max_tolerance_fraction": 3.943558085513424e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.438494264988549e-15,
+        "max_tolerance_fraction": 6.899369390171182e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.0324313624372055e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 1.0325074129013956e-14,
+        "max_tolerance_fraction": 9.530493298497398e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.253501009983864e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.652044488973234e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.853338136965602e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.5503158452884236e-15,
+        "max_tolerance_fraction": 6.067771082035037e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.328271240363392e-15,
+        "max_tolerance_fraction": 5.764427479649222e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.105427357601002e-15,
+        "max_tolerance_fraction": 6.590741932702371e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.8351669421049234e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 5.10702591327572e-15,
+        "max_tolerance_fraction": 4.667670584550438e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.6637359812630166e-15,
+        "max_tolerance_fraction": 3.4748376156545555e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 5.995204332975845e-15,
+        "max_tolerance_fraction": 5.521076583568644e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.551914400963142e-15,
+        "max_tolerance_fraction": 4.22145876458119e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.328271240363392e-15,
+        "max_tolerance_fraction": 6.013813593759902e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3314683517128287e-15,
+        "max_tolerance_fraction": 2.1730562890936825e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.105427357601002e-15,
+        "max_tolerance_fraction": 5.945230779183014e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.55351295663786e-15,
+        "max_tolerance_fraction": 2.334376145385036e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.855627177060342e-15,
+        "max_tolerance_fraction": 6.80907082028862e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.398731607371947e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 9.103828801926284e-15,
+        "max_tolerance_fraction": 8.12928010756826e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.9968028886505635e-15,
+        "max_tolerance_fraction": 3.6321495202505047e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-15,
+        "max_tolerance_fraction": 7.749441868910423e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.774758283725532e-15,
+        "max_tolerance_fraction": 3.43248083311724e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.771561172376096e-15,
+        "max_tolerance_fraction": 7.194323218067638e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.2320460595404477e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.994405055138486e-15,
+        "max_tolerance_fraction": 6.431504136469422e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.661338147750939e-15,
+        "max_tolerance_fraction": 6.049546879594231e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.216449660063518e-15,
+        "max_tolerance_fraction": 6.846974252442811e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.646077215260768e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.327471962526033e-15,
+        "max_tolerance_fraction": 6.711741277924024e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.661338147750939e-15,
+        "max_tolerance_fraction": 6.055624672000101e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.930596063102737e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 1.996963145761425e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 5.551115123125783e-15,
+        "max_tolerance_fraction": 4.967009493526088e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.9976021664879227e-15,
+        "max_tolerance_fraction": 2.77457145300116e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 5.662137425588298e-15,
+        "max_tolerance_fraction": 5.599644589396709e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__LADRC__tuned__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.171118631971756e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.16009748874462e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.617816932515382e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.613949394122637e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.6241220145526917e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 3.8500138339490577e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.10702591327572e-15,
+        "max_tolerance_fraction": 4.646502862438882e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.6637359812630166e-15,
+        "max_tolerance_fraction": 3.348250680490841e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.843919499428961e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.852978909069831e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.328271240363392e-15,
+        "max_tolerance_fraction": 5.769377024724061e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.887379141862766e-15,
+        "max_tolerance_fraction": 1.782064219315929e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.7146657171777253e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.6629367034256575e-15,
+        "max_tolerance_fraction": 4.34266012537576e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7755575615628914e-15,
+        "max_tolerance_fraction": 2.5249777118106767e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.433510418862668e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.220446049250313e-15,
+        "max_tolerance_fraction": 2.023878999403152e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.6637359812630166e-15,
+        "max_tolerance_fraction": 3.330868914221491e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 3.835998622157742e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.2303265209006643e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.88418203051333e-15,
+        "max_tolerance_fraction": 5.350335124936778e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.328271240363392e-15,
+        "max_tolerance_fraction": 5.759854411703319e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.856233026412823e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.887379141862766e-15,
+        "max_tolerance_fraction": 1.754020560938249e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.9976021664879227e-15,
+        "max_tolerance_fraction": 2.846528326310095e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__baseline__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.131518287109987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.215479753514981e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.2238315106418027e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.63483470064657e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.0325232521964796e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.551115123125783e-15,
+        "max_tolerance_fraction": 5.033313437050039e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.10702591327572e-15,
+        "max_tolerance_fraction": 4.6186964229076213e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.851981771717996e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.244273072304852e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.773159728050814e-15,
+        "max_tolerance_fraction": 5.246414005799749e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.8886264744750045e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.931572871503221e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.10702591327572e-15,
+        "max_tolerance_fraction": 4.732953906990191e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.6245960475296377e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.422539890531987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.9976021664879227e-15,
+        "max_tolerance_fraction": 2.7251342667283086e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.774758283725532e-15,
+        "max_tolerance_fraction": 3.431918206666492e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.107825191113079e-15,
+        "max_tolerance_fraction": 3.7350085582515613e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.9968028886505635e-15,
+        "max_tolerance_fraction": 3.633858305173425e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.661338147750939e-15,
+        "max_tolerance_fraction": 6.051857796370539e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.328271240363392e-15,
+        "max_tolerance_fraction": 5.753988907606019e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.653100333094846e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 1.9507364335810752e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.219646771412954e-15,
+        "max_tolerance_fraction": 3.0372741862435157e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PI__tuned__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.773959005888173e-15,
+        "max_tolerance_fraction": 4.5268311134495757e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.774758283725532e-15,
+        "max_tolerance_fraction": 3.416338762398238e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7755575615628914e-15,
+        "max_tolerance_fraction": 2.5346959302723265e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.3306690738754696e-15,
+        "max_tolerance_fraction": 3.033070830765446e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.0255139516036064e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.6629367034256575e-15,
+        "max_tolerance_fraction": 4.220227813963484e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 3.831545685605436e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.244458101834131e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.645175772672572e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.551115123125783e-15,
+        "max_tolerance_fraction": 5.064920796464908e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.887379141862766e-15,
+        "max_tolerance_fraction": 1.767593093821693e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.367409048720814e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.773959005888173e-15,
+        "max_tolerance_fraction": 4.407991379786635e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7755575615628914e-15,
+        "max_tolerance_fraction": 2.524256903393213e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4424906541753444e-15,
+        "max_tolerance_fraction": 2.222306148854698e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.55351295663786e-15,
+        "max_tolerance_fraction": 2.3435683421380154e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.03746670865046e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.774758283725532e-15,
+        "max_tolerance_fraction": 3.431968364254898e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.2301167678784935e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.661338147750939e-15,
+        "max_tolerance_fraction": 6.057069614596474e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.5503158452884236e-15,
+        "max_tolerance_fraction": 5.955211044690456e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.328271240363392e-15,
+        "max_tolerance_fraction": 5.758053919092221e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.8700268265119632e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.940054645586305e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__baseline__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.884981308350689e-15,
+        "max_tolerance_fraction": 4.563732445182829e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.4322054520305703e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.620035778629353e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.9968028886505635e-15,
+        "max_tolerance_fraction": 3.621664071329496e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.2170868595816005e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.0274065467752065e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.9968028886505635e-15,
+        "max_tolerance_fraction": 3.640408412928055e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.853895076095203e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.105427357601002e-15,
+        "max_tolerance_fraction": 6.440141338415563e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.853895076095203e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3314683517128287e-15,
+        "max_tolerance_fraction": 2.1491940261308943e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.221354340483311e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.6629367034256575e-15,
+        "max_tolerance_fraction": 4.397646431861312e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7755575615628914e-15,
+        "max_tolerance_fraction": 2.5240379927631726e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7755575615628914e-15,
+        "max_tolerance_fraction": 2.5240701242456847e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.82675701854097e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.884981308350689e-15,
+        "max_tolerance_fraction": 4.4404954282943143e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.885780586188048e-15,
+        "max_tolerance_fraction": 3.532605058211402e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 3.8370599160259745e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.853360070762442e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.328271240363392e-15,
+        "max_tolerance_fraction": 5.755097305106388e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.258073738026612e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4424906541753444e-15,
+        "max_tolerance_fraction": 2.3086197229354162e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.54964274154942e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__PID_aw__tuned__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.6629367034256575e-15,
+        "max_tolerance_fraction": 4.3171300254389566e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.635207650743971e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.4160193925928185e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.8329688910241115e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.241650585613501e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 3.854667562939244e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.0320585485036964e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.626097134785036e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.640397918444578e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.633506079713143e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.887379141862766e-15,
+        "max_tolerance_fraction": 1.7808408018809573e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.492228777278766e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.1886038266271163e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.426937693850766e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4424906541753444e-15,
+        "max_tolerance_fraction": 2.2232981450427688e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.9976021664879227e-15,
+        "max_tolerance_fraction": 2.726583600999497e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.9968028886505635e-15,
+        "max_tolerance_fraction": 3.633870274829985e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.774758283725532e-15,
+        "max_tolerance_fraction": 3.4319696936299636e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 3.8352967675209997e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.662137425588298e-15,
+        "max_tolerance_fraction": 5.149441784634331e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.662137425588298e-15,
+        "max_tolerance_fraction": 5.148713594222583e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.106226635438361e-15,
+        "max_tolerance_fraction": 5.552317562766083e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.871057054848837e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.9976021664879227e-15,
+        "max_tolerance_fraction": 2.821478951907127e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__baseline__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.9968028886505635e-15,
+        "max_tolerance_fraction": 3.750474865846676e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.6255906902105417e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.4416913763379853e-15,
+        "max_tolerance_fraction": 3.1396063793361265e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.3306690738754696e-15,
+        "max_tolerance_fraction": 3.0116192168802455e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.9968028886505635e-15,
+        "max_tolerance_fraction": 3.6307513853326535e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.024542209986625e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 3.8156669828165993e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.661338147750939e-15,
+        "max_tolerance_fraction": 6.080753786220928e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.105427357601002e-15,
+        "max_tolerance_fraction": 6.487224433281059e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.772360450213455e-15,
+        "max_tolerance_fraction": 6.174060514564649e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4424906541753444e-15,
+        "max_tolerance_fraction": 2.2258071423844064e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.55351295663786e-15,
+        "max_tolerance_fraction": 2.426218567075738e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.10702591327572e-15,
+        "max_tolerance_fraction": 4.756347632979768e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.4224269701370205e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.422987915132869e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.623535893272801e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.0369560736995386e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.229752569888514e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.037027595381051e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.88418203051333e-15,
+        "max_tolerance_fraction": 5.351003827083239e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.853133660948868e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.995204332975845e-15,
+        "max_tolerance_fraction": 5.45207852703519e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3314683517128287e-15,
+        "max_tolerance_fraction": 2.1780193795359408e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.745349178998585e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__first_order__TwoDOF_PID__tuned__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.440892098500626e-15,
+        "max_tolerance_fraction": 4.2255170669479686e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1102230246251565e-15,
+        "max_tolerance_fraction": 1.0596476351964276e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.8191672047105385e-14,
+        "max_tolerance_fraction": 3.003462120391436e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 9.992007221626409e-16,
+        "max_tolerance_fraction": 9.502907168823585e-08
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.9968028886505635e-14,
+        "max_tolerance_fraction": 3.349799012070008e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1657341758564144e-15,
+        "max_tolerance_fraction": 1.1120329958923304e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.3076653355456074e-14,
+        "max_tolerance_fraction": 3.725095221925803e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.0539125955565396e-15,
+        "max_tolerance_fraction": 1.973793409748813e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.04121180963557e-14,
+        "max_tolerance_fraction": 3.582076097730525e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.0539125955565396e-15,
+        "max_tolerance_fraction": 1.973793409748813e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.75175454539567e-14,
+        "max_tolerance_fraction": 4.1054781642913115e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.0539125955565396e-15,
+        "max_tolerance_fraction": 1.973793409748813e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-14,
+        "max_tolerance_fraction": 2.908046609897826e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3919869338258384e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.1300296516055823e-14,
+        "max_tolerance_fraction": 3.6384611891210576e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3919869338258384e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.952393967665557e-14,
+        "max_tolerance_fraction": 3.250890210253528e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3919869338258384e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.085620730620576e-14,
+        "max_tolerance_fraction": 3.406054647710818e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 8.881784197001252e-16,
+        "max_tolerance_fraction": 8.64808427582797e-08
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.241851231905457e-14,
+        "max_tolerance_fraction": 2.866069340164209e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.8318679906315083e-15,
+        "max_tolerance_fraction": 1.7679379318712708e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.907985046680551e-14,
+        "max_tolerance_fraction": 3.388582384847385e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1102230246251565e-15,
+        "max_tolerance_fraction": 1.0798018043266014e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.597122599785507e-14,
+        "max_tolerance_fraction": 3.2647964923095635e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7763568394002505e-15,
+        "max_tolerance_fraction": 1.6905568705588284e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-14,
+        "max_tolerance_fraction": 2.922055606855839e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3739159104510484e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.68594044175552e-14,
+        "max_tolerance_fraction": 3.033382361285011e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1102230246251565e-15,
+        "max_tolerance_fraction": 1.0554110830129763e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.263256414560601e-14,
+        "max_tolerance_fraction": 3.532805645263968e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.558220627926431e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.707345624410664e-14,
+        "max_tolerance_fraction": 4.010558244799378e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1649348980190553e-15,
+        "max_tolerance_fraction": 2.0815199629890954e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.241051954068098e-14,
+        "max_tolerance_fraction": 3.636835082589882e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.275957200481571e-15,
+        "max_tolerance_fraction": 2.189503515491562e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.5075054799781356e-14,
+        "max_tolerance_fraction": 3.884479295945176e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7208456881689926e-15,
+        "max_tolerance_fraction": 1.6550294908258237e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.39648317751562e-14,
+        "max_tolerance_fraction": 3.7613602277445766e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2212453270876722e-15,
+        "max_tolerance_fraction": 1.1816975715250341e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.574118861455645e-14,
+        "max_tolerance_fraction": 3.7597326366590704e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3322676295501878e-15,
+        "max_tolerance_fraction": 1.2810200891429466e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.085620730620576e-14,
+        "max_tolerance_fraction": 3.4661094511538786e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3322676295501878e-15,
+        "max_tolerance_fraction": 1.2981667939101032e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.241851231905457e-14,
+        "max_tolerance_fraction": 2.873180394958638e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7200464103316335e-15,
+        "max_tolerance_fraction": 2.637101990392898e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.019806626980426e-14,
+        "max_tolerance_fraction": 2.7560624419464587e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__baseline__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1102230246251565e-15,
+        "max_tolerance_fraction": 1.07365046429807e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 2.842170943040401e-14,
+        "max_tolerance_fraction": 2.5212405618272515e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2212453270876722e-15,
+        "max_tolerance_fraction": 1.1608793574471685e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-14,
+        "max_tolerance_fraction": 7.353343621510629e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2212453270876722e-15,
+        "max_tolerance_fraction": 1.162260301421221e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.505107646466058e-14,
+        "max_tolerance_fraction": 6.585784024120644e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1102230246251565e-15,
+        "max_tolerance_fraction": 1.057409356892101e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.105427357601002e-14,
+        "max_tolerance_fraction": 6.059530267799679e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.9681013510943325e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.171241461241152e-14,
+        "max_tolerance_fraction": 6.4665698424453425e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.9681013510943325e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.949196856316121e-14,
+        "max_tolerance_fraction": 6.611956155869957e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.9681013510943325e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.171241461241152e-14,
+        "max_tolerance_fraction": 6.4665698424453425e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.9115997527160687e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.705747068735946e-14,
+        "max_tolerance_fraction": 5.911237249465586e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.9115997527160687e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.994405055138486e-14,
+        "max_tolerance_fraction": 6.078337489372105e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.9115997527160687e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.105427357601002e-14,
+        "max_tolerance_fraction": 5.610774482843426e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1657341758564144e-15,
+        "max_tolerance_fraction": 1.1393872277161619e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 5.773159728050814e-14,
+        "max_tolerance_fraction": 5.0689975840247865e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7200464103316335e-15,
+        "max_tolerance_fraction": 2.6278592266725647e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.016609515630989e-14,
+        "max_tolerance_fraction": 6.810618843225295e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.0539125955565396e-15,
+        "max_tolerance_fraction": 1.9865498526059085e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 5.562217353372034e-14,
+        "max_tolerance_fraction": 5.0593250539393664e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4988010832439613e-15,
+        "max_tolerance_fraction": 1.434555406247862e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.705747068735946e-14,
+        "max_tolerance_fraction": 5.95354774014111e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 2.0325599821144875e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.105427357601002e-14,
+        "max_tolerance_fraction": 6.310730375040382e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.609823385706477e-15,
+        "max_tolerance_fraction": 1.543404584822016e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.549516567451064e-14,
+        "max_tolerance_fraction": 6.652182484131401e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.5411301482222416e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.194245199571014e-14,
+        "max_tolerance_fraction": 6.326557989208861e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.164135620181696e-15,
+        "max_tolerance_fraction": 3.020255980882601e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.838973831690964e-14,
+        "max_tolerance_fraction": 6.329900398709313e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.220446049250313e-15,
+        "max_tolerance_fraction": 2.157135410488573e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.460698725481052e-14,
+        "max_tolerance_fraction": 6.680618223696746e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4424906541753444e-15,
+        "max_tolerance_fraction": 2.3484115837024564e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.661338147750939e-14,
+        "max_tolerance_fraction": 6.065913032694826e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3877787807814457e-15,
+        "max_tolerance_fraction": 1.3281056395444166e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.682743330406083e-14,
+        "max_tolerance_fraction": 6.453492179709818e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 2.0089736390464624e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 7.549516567451064e-14,
+        "max_tolerance_fraction": 6.443333403785597e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.412050689110049e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 5.995204332975845e-14,
+        "max_tolerance_fraction": 5.327006239695601e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.55351295663786e-15,
+        "max_tolerance_fraction": 2.4849281646761864e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.75175454539567e-14,
+        "max_tolerance_fraction": 4.4239113521631654e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__LADRC__tuned__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.8318679906315083e-15,
+        "max_tolerance_fraction": 1.7645552656986611e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.929390229335695e-14,
+        "max_tolerance_fraction": 4.309087847613783e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.3846555029365367e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3314683517128287e-15,
+        "max_tolerance_fraction": 2.2402336355243702e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3314683517128287e-15,
+        "max_tolerance_fraction": 2.2402336355243702e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.3298697960381105e-15,
+        "max_tolerance_fraction": 4.1165968771554913e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.773959005888173e-15,
+        "max_tolerance_fraction": 4.5381914730283577e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.9960036108132044e-15,
+        "max_tolerance_fraction": 4.798920582600708e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.43044453933987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.43044453933987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.43044453933987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.497202527569243e-15,
+        "max_tolerance_fraction": 3.4258750193087125e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1102230246251565e-14,
+        "max_tolerance_fraction": 1.0808792368231415e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.5016074201598144e-15,
+        "max_tolerance_fraction": 4.494695358830244e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.3306690738754696e-15,
+        "max_tolerance_fraction": 3.239280748920326e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.552713678800501e-15,
+        "max_tolerance_fraction": 3.3315098816659854e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.496403249731884e-15,
+        "max_tolerance_fraction": 4.372513711948179e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2656542480726785e-14,
+        "max_tolerance_fraction": 1.2104430315650944e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2101430968414206e-14,
+        "max_tolerance_fraction": 1.1775919577063947e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2323475573339238e-14,
+        "max_tolerance_fraction": 1.170708464749949e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.662137425588298e-15,
+        "max_tolerance_fraction": 5.204018649822855e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.885780586188048e-15,
+        "max_tolerance_fraction": 3.779335530033189e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.9404924595819466e-15,
+        "max_tolerance_fraction": 4.801820848852568e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 2.0749365434594902e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.0325074129013956e-14,
+        "max_tolerance_fraction": 1.0022733233020164e-06
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__baseline__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 3.0847663967289484e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7755575615628914e-15,
+        "max_tolerance_fraction": 2.6461450826406314e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7755575615628914e-15,
+        "max_tolerance_fraction": 2.6461450826406314e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7755575615628914e-15,
+        "max_tolerance_fraction": 2.6461450826406314e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.385380947269368e-15,
+        "max_tolerance_fraction": 4.1847906298567446e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.385380947269368e-15,
+        "max_tolerance_fraction": 4.1847906298567446e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.385380947269368e-15,
+        "max_tolerance_fraction": 4.1847906298567446e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3314683517128287e-15,
+        "max_tolerance_fraction": 2.2088543706024e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3314683517128287e-15,
+        "max_tolerance_fraction": 2.2088543706024e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3314683517128287e-15,
+        "max_tolerance_fraction": 2.2088543706024e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.3861802251067274e-15,
+        "max_tolerance_fraction": 3.274670472628025e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-15,
+        "max_tolerance_fraction": 8.114072195128504e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.83026943495679e-15,
+        "max_tolerance_fraction": 3.7391802853962187e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 3.010935221772926e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.609024107869118e-15,
+        "max_tolerance_fraction": 2.5506123385296343e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.3029134982598407e-15,
+        "max_tolerance_fraction": 3.229454058044621e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.106226635438361e-15,
+        "max_tolerance_fraction": 5.915140278930839e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.106226635438361e-15,
+        "max_tolerance_fraction": 5.799457290215895e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.914590797439643e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7755575615628914e-15,
+        "max_tolerance_fraction": 2.6241752318100486e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.6637359812630166e-15,
+        "max_tolerance_fraction": 3.4867450847650935e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.6637359812630166e-15,
+        "max_tolerance_fraction": 3.5284185081691247e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.220446049250313e-15,
+        "max_tolerance_fraction": 2.1316473192708608e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 9.658940314238862e-15,
+        "max_tolerance_fraction": 9.415968412003088e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PI__tuned__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.885780586188048e-15,
+        "max_tolerance_fraction": 3.695171786979781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2212453270876722e-15,
+        "max_tolerance_fraction": 1.1666894614086401e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.0547118733938987e-15,
+        "max_tolerance_fraction": 1.0059536113039411e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.27675647831893e-15,
+        "max_tolerance_fraction": 1.2207524919584703e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.9976021664879227e-15,
+        "max_tolerance_fraction": 2.8491786567629035e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.942091015256665e-15,
+        "max_tolerance_fraction": 2.8171476443210536e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.942091015256665e-15,
+        "max_tolerance_fraction": 2.8171476443210536e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6016180812828427e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6016180812828427e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6016180812828427e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7208456881689926e-15,
+        "max_tolerance_fraction": 1.6765063954737523e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.497202527569243e-15,
+        "max_tolerance_fraction": 3.3991934674808356e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6015459117134316e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 8.881784197001252e-16,
+        "max_tolerance_fraction": 8.515149984813789e-08
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2212453270876722e-15,
+        "max_tolerance_fraction": 1.1658755507132923e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1657341758564144e-15,
+        "max_tolerance_fraction": 1.1184091318258117e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.97563338177256e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.0531133177191805e-15,
+        "max_tolerance_fraction": 2.919736510178782e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7200464103316335e-15,
+        "max_tolerance_fraction": 2.603658742714446e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.55351295663786e-15,
+        "max_tolerance_fraction": 2.452697966484978e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1649348980190553e-15,
+        "max_tolerance_fraction": 2.0787795230990266e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.598810212832831e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3600232051658168e-15,
+        "max_tolerance_fraction": 1.3331365376599168e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.497202527569243e-15,
+        "max_tolerance_fraction": 3.389308667036827e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__baseline__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.559378809576747e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.8318679906315083e-15,
+        "max_tolerance_fraction": 1.7598553432064147e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7763568394002505e-15,
+        "max_tolerance_fraction": 1.700275960022227e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.5543122344752192e-15,
+        "max_tolerance_fraction": 1.4771243429100262e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 3.9658190408047405e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 3.9658190408047405e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 3.9658190408047405e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.8901058721119012e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.400635272187211e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.6645352591003757e-15,
+        "max_tolerance_fraction": 2.5080713692477373e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.8041124150158794e-15,
+        "max_tolerance_fraction": 1.7633274097179373e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.9119376061289586e-15,
+        "max_tolerance_fraction": 5.807117491013111e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.5951463200613034e-15,
+        "max_tolerance_fraction": 2.5640326341538906e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7763568394002505e-15,
+        "max_tolerance_fraction": 1.6927818934439964e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3322676295501878e-15,
+        "max_tolerance_fraction": 1.2688527738560964e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 2.0046935546492094e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.218847493575595e-15,
+        "max_tolerance_fraction": 4.0085513663681355e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.3298697960381105e-15,
+        "max_tolerance_fraction": 4.1220359445072345e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.329070518200751e-15,
+        "max_tolerance_fraction": 5.070702420686769e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.1086244689504383e-15,
+        "max_tolerance_fraction": 2.9317943383690475e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4424906541753444e-15,
+        "max_tolerance_fraction": 2.3026512811120446e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.9976021664879227e-15,
+        "max_tolerance_fraction": 2.8259538376803033e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.7486012637846216e-15,
+        "max_tolerance_fraction": 1.7144645175376163e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.161737786669619e-15,
+        "max_tolerance_fraction": 5.9356850156754e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__PID_aw__tuned__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.773959005888173e-15,
+        "max_tolerance_fraction": 4.544442223689242e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3322676295501878e-15,
+        "max_tolerance_fraction": 1.2666776837691967e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2212453270876722e-15,
+        "max_tolerance_fraction": 1.159716721567168e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1657341758564144e-15,
+        "max_tolerance_fraction": 1.1151765055153396e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.220446049250313e-15,
+        "max_tolerance_fraction": 2.1143943410988167e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.9314177298756619e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.9314177298756619e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1102230246251565e-15,
+        "max_tolerance_fraction": 1.0786492610548222e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3869795029440866e-15,
+        "max_tolerance_fraction": 2.2994514211211555e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1379786002407855e-15,
+        "max_tolerance_fraction": 1.111304762626679e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.27675647831893e-15,
+        "max_tolerance_fraction": 1.2185272794216307e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 8.326672684688674e-16,
+        "max_tolerance_fraction": 7.937777332039618e-08
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.0547118733938987e-15,
+        "max_tolerance_fraction": 1.0179532085087627e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.275957200481571e-15,
+        "max_tolerance_fraction": 2.2008038644736232e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.911904428744615e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.609823385706477e-15,
+        "max_tolerance_fraction": 1.5563625265460055e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3322676295501878e-15,
+        "max_tolerance_fraction": 1.2931954112591798e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1657341758564144e-15,
+        "max_tolerance_fraction": 1.1308885730200617e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.609823385706477e-15,
+        "max_tolerance_fraction": 1.5616175433630625e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2212453270876722e-15,
+        "max_tolerance_fraction": 1.1910987877438565e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.886579864025407e-15,
+        "max_tolerance_fraction": 2.8152618707940705e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__baseline__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3885726621870433e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__binary_disturbance__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1657341758564144e-15,
+        "max_tolerance_fraction": 1.1205983843562364e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__binary_disturbance__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.8318679906315083e-15,
+        "max_tolerance_fraction": 1.7546790535894135e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__binary_disturbance__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.27675647831893e-15,
+        "max_tolerance_fraction": 1.2165589573064755e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__binary_disturbance__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.219646771412954e-15,
+        "max_tolerance_fraction": 3.0357999203487377e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__binary_disturbance__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.6637359812630166e-15,
+        "max_tolerance_fraction": 3.464840360129534e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__binary_disturbance__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.219646771412954e-15,
+        "max_tolerance_fraction": 3.05504326032122e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__binary_disturbance__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 2.0001499250968032e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__binary_disturbance__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.7200464103316335e-15,
+        "max_tolerance_fraction": 2.6141445790523346e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__binary_disturbance__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.887379141862766e-15,
+        "max_tolerance_fraction": 1.8038144612488332e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__chirp__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.609823385706477e-15,
+        "max_tolerance_fraction": 1.5668691901385624e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__chirp__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.052314039881821e-15,
+        "max_tolerance_fraction": 3.918946138854035e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__chirp__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.4088268244800315e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__noise_delay__factor0.65__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.3322676295501878e-15,
+        "max_tolerance_fraction": 1.2700842556142964e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__noise_delay__factor0.65__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.1102230246251565e-15,
+        "max_tolerance_fraction": 1.0581506880595568e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__noise_delay__factor0.65__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.2212453270876722e-15,
+        "max_tolerance_fraction": 1.1630587300800789e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__noise_delay__factor1.5__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.3298697960381105e-15,
+        "max_tolerance_fraction": 4.1106758670168566e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__noise_delay__factor1.5__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 3.4416913763379853e-15,
+        "max_tolerance_fraction": 3.308550595784759e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__noise_delay__factor1.5__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 4.884981308350689e-15,
+        "max_tolerance_fraction": 4.646039933335708e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__noise_delay__factor1__seed101",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.1094237467877974e-15,
+        "max_tolerance_fraction": 2.0089301432633664e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__noise_delay__factor1__seed202",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4424906541753444e-15,
+        "max_tolerance_fraction": 2.3158468752966772e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__noise_delay__factor1__seed303",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4424906541753444e-15,
+        "max_tolerance_fraction": 2.3157932254595486e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__sine__factor0.65__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6930901125533637e-15,
+        "max_tolerance_fraction": 1.6591620316183635e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__sine__factor1.5__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.162537064506978e-15,
+        "max_tolerance_fraction": 4.983055114104936e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "heldout__second_order__TwoDOF_PID__tuned__sine__factor1__seed0",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.609024107869118e-15,
+        "max_tolerance_fraction": 2.488900545397271e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__LADRC__baseline__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.643366172950762e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.881784197001252e-15,
+        "max_tolerance_fraction": 8.223875257963376e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__LADRC__baseline__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.662137425588298e-15,
+        "max_tolerance_fraction": 5.147402051662369e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.215650382226158e-15,
+        "max_tolerance_fraction": 7.460676026266918e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__LADRC__baseline__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.88418203051333e-15,
+        "max_tolerance_fraction": 5.349256391673729e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-15,
+        "max_tolerance_fraction": 7.666372774830607e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__LADRC__tuned__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.652044489000455e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-15,
+        "max_tolerance_fraction": 7.812680545512749e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__LADRC__tuned__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.105427357601002e-15,
+        "max_tolerance_fraction": 6.459479416000907e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.256133731167836e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__LADRC__tuned__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.994405055138486e-15,
+        "max_tolerance_fraction": 6.358550050125893e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.215650382226158e-15,
+        "max_tolerance_fraction": 7.468773074750926e-07
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PI__baseline__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.8833827526759706e-15,
+        "max_tolerance_fraction": 6.231755465476909e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PI__baseline__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.773159728050814e-15,
+        "max_tolerance_fraction": 5.251474152200177e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PI__baseline__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.662137425588298e-15,
+        "max_tolerance_fraction": 5.149331307667731e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PI__tuned__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.848123187710745e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PI__tuned__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.652035224112511e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PI__tuned__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.853903229241455e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PID_aw__baseline__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.105427357601002e-15,
+        "max_tolerance_fraction": 6.449427705985937e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PID_aw__baseline__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.88418203051333e-15,
+        "max_tolerance_fraction": 5.365020014793087e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PID_aw__baseline__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.855225444052542e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PID_aw__tuned__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.853895076095203e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PID_aw__tuned__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.651977600741774e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__PID_aw__tuned__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.853895076095203e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__TwoDOF_PID__baseline__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.849078552385187e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__TwoDOF_PID__baseline__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 5.995204332975845e-15,
+        "max_tolerance_fraction": 5.454671276067727e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__TwoDOF_PID__baseline__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.106226635438361e-15,
+        "max_tolerance_fraction": 5.553869378335679e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__TwoDOF_PID__tuned__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.105427357601002e-15,
+        "max_tolerance_fraction": 6.45314279240613e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__TwoDOF_PID__tuned__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.217248937900877e-15,
+        "max_tolerance_fraction": 5.651796982624908e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__first_order__TwoDOF_PID__tuned__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.439293542825908e-15,
+        "max_tolerance_fraction": 5.853899393718411e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__LADRC__baseline__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.887379141862766e-15,
+        "max_tolerance_fraction": 1.797442829020985e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 4.707345624410664e-14,
+        "max_tolerance_fraction": 4.072865816475298e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__LADRC__baseline__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.771561172376096e-16,
+        "max_tolerance_fraction": 7.401696436849236e-08
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.375077994860476e-14,
+        "max_tolerance_fraction": 2.814460102161521e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__LADRC__baseline__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.3919869338258384e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 3.8413716652030416e-14,
+        "max_tolerance_fraction": 3.201185908226381e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__LADRC__tuned__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.9115997527160687e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.08242361927114e-14,
+        "max_tolerance_fraction": 7.027414655944367e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__LADRC__tuned__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 7.216449660063518e-16,
+        "max_tolerance_fraction": 6.872809221199519e-08
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 8.43769498715119e-14,
+        "max_tolerance_fraction": 7.088508367433845e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__LADRC__tuned__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.9115997527160687e-07
+      },
+      "adrc_requests": {
+        "passed": true,
+        "max_abs_error": 5.906386491005833e-14,
+        "max_tolerance_fraction": 5.2490883402601966e-06
+      },
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PI__baseline__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.43044453933987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PI__baseline__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 8.326672684688674e-16,
+        "max_tolerance_fraction": 7.993475655511597e-08
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PI__baseline__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.4980018054066022e-15,
+        "max_tolerance_fraction": 2.43044453933987e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PI__tuned__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3314683517128287e-15,
+        "max_tolerance_fraction": 2.2088543706024e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PI__tuned__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.106226635438361e-16,
+        "max_tolerance_fraction": 5.945568890586374e-08
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PI__tuned__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 2.3314683517128287e-15,
+        "max_tolerance_fraction": 2.2088543706024e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PID_aw__baseline__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6016180812828427e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PID_aw__baseline__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 6.661338147750939e-16,
+        "max_tolerance_fraction": 6.442784739393059e-08
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PID_aw__baseline__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.6653345369377348e-15,
+        "max_tolerance_fraction": 1.6016180812828427e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PID_aw__tuned__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.8901058721119012e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PID_aw__tuned__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 9.159339953157541e-16,
+        "max_tolerance_fraction": 8.974637324609345e-08
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__PID_aw__tuned__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.9984014443252818e-15,
+        "max_tolerance_fraction": 1.8901058721119012e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__TwoDOF_PID__baseline__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__TwoDOF_PID__baseline__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 8.326672684688674e-16,
+        "max_tolerance_fraction": 7.957706584085122e-08
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__TwoDOF_PID__baseline__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.4432899320127035e-15,
+        "max_tolerance_fraction": 1.399468402183781e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__TwoDOF_PID__tuned__disturbance_step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.887379141862766e-15,
+        "max_tolerance_fraction": 1.8038144612488332e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__TwoDOF_PID__tuned__ramp",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 9.43689570931383e-16,
+        "max_tolerance_fraction": 9.181369602741756e-08
+      },
+      "adrc_requests": null,
+      "passed": true
+    },
+    {
+      "case_id": "training__second_order__TwoDOF_PID__tuned__step",
+      "plant": {
+        "passed": true,
+        "max_abs_error": 1.887379141862766e-15,
+        "max_tolerance_fraction": 1.8038144612488332e-07
+      },
+      "adrc_requests": null,
+      "passed": true
+    }
+  ],
+  "scope": "plant input replay + independent linear ADRC matrices; not a new full independent nonlinear closed-loop simulation",
+  "reference_script_sha256": "68aa06e3a765f641d0b518d523f649ba9ea8699b8a1552750d5dda27a3948d10"
+}

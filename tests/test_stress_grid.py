@@ -155,17 +155,18 @@ class StressExportChecks(unittest.TestCase):
 
     def test_archive_preserves_report_and_matching_sources(self):
         with tempfile.TemporaryDirectory(dir=ROOT / "outputs") as temporary:
-            source, destination = Path(temporary) / "grid", Path(temporary) / "archive"
+            source, destination = Path(temporary) / "grid", Path(temporary) / "archive-v0.3.0"
             execute_grid(source, StressPlan((0,), (0,)))
             (source / "README.md").write_text("original guide", encoding="utf8")
             checksums = json.loads((source / "checksums.json").read_text())
             checksums["README.md"] = hashlib.sha256((source / "README.md").read_bytes()).hexdigest()
             (source / "checksums.json").write_text(json.dumps(checksums), encoding="utf8")
             zipped = archive(source, destination)
+            self.assertEqual(zipped.name, "archive-v0.3.0.zip")
             self.assertEqual((source / "report.html").read_bytes(), (destination / "report.html").read_bytes())
             with zipfile.ZipFile(zipped) as stream:
                 self.assertIsNone(stream.testzip())
-                self.assertEqual(stream.read("archive/report.html"), (source / "report.html").read_bytes())
+                self.assertEqual(stream.read(destination.name+"/report.html"), (source / "report.html").read_bytes())
             self.assertTrue((destination / "source/stress_grid.py").is_file())
             self.assertEqual((destination / "README.md").read_text(), "original guide")
             self.assertTrue((destination / "ARCHIVE_README.md").is_file())
