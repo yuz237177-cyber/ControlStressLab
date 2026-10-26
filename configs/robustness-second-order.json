@@ -1,0 +1,127 @@
+{
+  "schema": "robustness-1.0",
+  "base": {
+    "schema": "experiment-1.0",
+    "name": "二阶振荡 · 正弦跟踪",
+    "model": "second_order",
+    "plant": {
+      "mass_kg": 1.0,
+      "damping_N_s_m": 0.6,
+      "stiffness_N_m": 4.0,
+      "initial_output": 0.0,
+      "initial_velocity_m_s": 0.0
+    },
+    "controllers": [
+      {
+        "name": "PI",
+        "parameters": {
+          "kp": 6,
+          "ki": 3,
+          "kd": 0,
+          "anti_windup": false,
+          "derivative_filter_s": 0.03
+        }
+      },
+      {
+        "name": "PID_aw",
+        "parameters": {
+          "kp": 6,
+          "ki": 3,
+          "kd": 3,
+          "anti_windup": true,
+          "derivative_filter_s": 0.03
+        }
+      },
+      {
+        "name": "TwoDOF_PID",
+        "parameters": {
+          "kp": 6,
+          "ki": 3,
+          "kd": 3,
+          "anti_windup": true,
+          "derivative_filter_s": 0.03,
+          "beta": 0.6
+        }
+      },
+      {
+        "name": "LADRC",
+        "parameters": {
+          "relative_degree": 2,
+          "b0": 1,
+          "control_bandwidth": 2.5,
+          "observer_bandwidth": 10
+        }
+      }
+    ],
+    "selected_controllers": [
+      "PID_aw",
+      "LADRC"
+    ],
+    "reference": {
+      "kind": "step",
+      "amplitude": 0.5,
+      "offset": 0.0,
+      "start_s": 0.5,
+      "frequency_hz": 0.25,
+      "stop_frequency_hz": 0.8,
+      "ramp_duration_s": 4.0,
+      "pulse_width_s": 1.0,
+      "hold_s": 0.5,
+      "seed": 42
+    },
+    "disturbance": {
+      "kind": "step",
+      "amplitude": 0.5,
+      "offset": 0.0,
+      "start_s": 6.0,
+      "frequency_hz": 0.25,
+      "stop_frequency_hz": 0.8,
+      "ramp_duration_s": 4.0,
+      "pulse_width_s": 1.0,
+      "hold_s": 0.5,
+      "seed": 42
+    },
+    "conditions": {
+      "dt_s": 0.01,
+      "duration_s": 12.0,
+      "input_limit": 5.0,
+      "output_bound": 20.0,
+      "noise_std": 0.0,
+      "measurement_delay_s": 0.0,
+      "seed": 42,
+      "evaluation_start_s": 0.5,
+      "recovery_start_s": 6.0,
+      "recovery_band": 0.01,
+      "recovery_dwell_s": 0.5,
+      "recovery_mode": "auto",
+      "reference_scale": 0.5
+    }
+  },
+  "axes": [
+    {
+      "key": "plant.mass_kg",
+      "values": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    {
+      "key": "conditions.measurement_delay_s",
+      "values": [
+        0.0,
+        0.05,
+        0.1
+      ]
+    }
+  ],
+  "seeds": [
+    42
+  ],
+  "max_runs": 500,
+  "thresholds": {
+    "rmse_max": 0.25,
+    "saturation_fraction_max": 0.25,
+    "input_variation_rate_max": null
+  }
+}

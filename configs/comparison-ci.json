@@ -1,0 +1,7 @@
+{
+  "schema": "comparison-1.0",
+  "entries": [
+    {"folder": "installed-robustness", "case_id": "x0_y0_seed42_PID_aw", "label": "tau=0.5"},
+    {"folder": "installed-robustness", "case_id": "x2_y0_seed42_PID_aw", "label": "tau=1.5"}
+  ]
+}

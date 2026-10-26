@@ -1,0 +1,15 @@
+{
+  "status": "visual_proposal_not_implemented",
+  "source_summary_sha256": "81867eb81bf0d1dcb3ca16e19c9de090739c1ac682581a809305ff3274468fe4",
+  "source_folder": "D:\\idea\\ControlStressLab\\outputs\\gui-v08-646765\\experiments\\20261025-011517-eb9f5b",
+  "selected_candidate": 26,
+  "comparison_candidate": 12,
+  "displayed_metrics": {
+    "J1": 0.06296084902930417,
+    "J2": 2.7614174124388255,
+    "baseline_J1": 0.13312063534605634,
+    "baseline_J2": 1.8113957146899684
+  },
+  "external_artworks_embedded": false,
+  "reference": "https://www.ignoredone.space/index.php/arknights_design/?path=arknightsdesign/2024/0926"
+}

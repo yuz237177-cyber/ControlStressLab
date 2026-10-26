@@ -34,13 +34,44 @@ def atomic_json(path, value):
     path = Path(path)
     temporary = path.with_name(path.name+".tmp")
     temporary.write_text(json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False), encoding="utf8", newline="\n")
-    temporary.replace(path)
+    replace_file(temporary,path)
+
+
+def replace_file(temporary,path):
+    # Windows indexers/AV may briefly hold a newly written file.
+    for attempt in range(8):
+        try:
+            temporary.replace(path)
+            break
+        except PermissionError as exc:
+            if getattr(exc,"winerror",None) not in (5,32,33) or attempt==7:raise
+            import time
+            time.sleep(.025*2**min(attempt,3))
 
 
 def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def plant_for_config(config):
+    if config["model"] == "transfer_function":
+        from .linear_models import TransferFunctionPlant
+        return TransferFunctionPlant(**config["plant"])
+    return MODELS[config["model"]](**config["plant"])
+
+
+def spec_for_config(config):
+    if config["model"] == "transfer_function":
+        return dict(units=deepcopy(config["plant"]["units"]), scale=config["conditions"]["reference_scale"],
+                    limit=config["conditions"]["input_limit"])
+    return spec_for(config["model"])
+
+
 def default_config(model="first_order"):
+    if model == "transfer_function":
+        from .linear_models import default_plant
+        value = default_config()
+        value.update(name="自定义模型实验", model=model, plant=default_plant())
+        return value
     spec = spec_for(model)
     signal = dict(kind="step", amplitude=spec["scale"], offset=0.0, start_s=0.5, frequency_hz=0.25,
                   stop_frequency_hz=0.8, ramp_duration_s=4.0, pulse_width_s=1.0, hold_s=0.5, seed=42)
@@ -93,7 +124,7 @@ def validate_config(value):
     finite_tree(value)
     keys(value, default_config(), "实验")
     config = deepcopy(value)
-    if config["schema"] != "experiment-1.0" or not isinstance(config["model"], str) or config["model"] not in MODELS:
+    if config["schema"] != "experiment-1.0" or not isinstance(config["model"], str) or config["model"] not in (*MODELS,"transfer_function"):
         raise ValueError("不支持的实验版本或对象")
     if not isinstance(config["name"], str) or not config["name"].strip() or len(config["name"]) > 120:
         raise ValueError("实验名称需为1～120个字符")
@@ -126,9 +157,17 @@ def validate_config(value):
             raise ValueError("PI定义要求kd=0且关闭抗饱和；请使用PID_aw调整微分与抗饱和参数")
         if definition["name"] in ("PID_aw", "TwoDOF_PID") and not params["anti_windup"]:
             raise ValueError("抗饱和PID与二自由度PID需启用anti_windup")
-    for k, v in config["plant"].items():
-        if type(v) not in (int, float): raise ValueError("对象参数必须为实数")
-    MODELS[config["model"]](**config["plant"])
+    if config["model"] == "transfer_function":
+        from .linear_models import validate_plant, sampled
+        config["plant"] = validate_plant(config["plant"])
+        if "LADRC" in names: raise ValueError("自定义对象当前支持PI/PID族；LADRC兼容性需单独定义")
+        if config["plant"]["disturbance_numerator"] is None and any(make_signal(config["disturbance"],config["conditions"]).values):
+            raise ValueError("自定义对象没有声明扰动通道，请关闭扰动或提供扰动分子")
+        sampled(config["plant"],config["conditions"]["dt_s"])
+    else:
+        for k, v in config["plant"].items():
+            if type(v) not in (int, float): raise ValueError("对象参数必须为实数")
+    plant_for_config(config)
     c = config["conditions"]
     for k, v in c.items():
         if k == "recovery_mode":
@@ -159,7 +198,7 @@ def execute(output, value, *, plots=False, progress=None, should_cancel=None):
     output = Path(output).resolve()
     output.mkdir(parents=True, exist_ok=False)
     expected, records = len(config["selected_controllers"]), []
-    spec = dict(spec_for(config["model"]), scale=config["conditions"]["reference_scale"], limit=s.voltage_limit)
+    spec = dict(spec_for_config(config), scale=config["conditions"]["reference_scale"], limit=s.voltage_limit)
     manifest = dict(schema_version="experiment-1.0", package_version=__version__, python=platform.python_version(),
         evidence="synthetic_assumption", hardware_validated=False, config=config, expected_runs=expected,
         units=spec["units"], source_files_sha256={p.name: sha(p) for p in sorted(Path(__file__).parent.glob("*.py"))}, artifacts_complete=False)
@@ -173,13 +212,17 @@ def execute(output, value, *, plots=False, progress=None, should_cancel=None):
     try:
         (output / "runs").mkdir()
         atomic_json(output / "config.json", config)
+        if config["model"] == "transfer_function":
+            from .linear_models import snapshot
+            atomic_json(output / "model-snapshot.json", snapshot(config["plant"],s.dt_s))
+            manifest["model_snapshot_sha256"] = sha(output / "model-snapshot.json")
         atomic_json(output / "inputs.json", dict(scenario=asdict(s), noise=s.noise_sequence(), units=spec["units"]))
         manifest.update(config_sha256=sha(output / "config.json"), input_sha256=sha(output / "inputs.json"))
         atomic_json(output / "manifest.json", manifest)
         for name in config["selected_controllers"]:
             checkpoint("运行 "+name)
             params = next(x["parameters"] for x in config["controllers"] if x["name"] == name)
-            run = simulate(MODELS[config["model"]](**config["plant"]), controller_for(name, params), s)
+            run = simulate(plant_for_config(config), controller_for(name, params), s)
             trace = "runs/"+name+".csv"
             write_csv(output / trace, [{new: row[old] for new, old in COLUMN_MAP.items()} for row in run.rows])
             metrics = neutral_metrics(run, spec)
@@ -202,7 +245,7 @@ def execute(output, value, *, plots=False, progress=None, should_cancel=None):
         (output / "report.html").write_text(f'''<!doctype html><meta charset="utf-8"><title>ControlStressLab 实验报告</title>
 <style>body{{font:16px sans-serif;line-height:1.7;max-width:1200px;margin:30px auto;padding:20px}}table{{border-collapse:collapse}}td,th{{padding:8px;border:1px solid #ddd}}img{{max-width:100%}}</style>
 <h1>{html.escape(config['name'])}</h1><p>合成模型，未经硬件验证。各控制器共用相同参考、扰动、噪声、限幅和评价窗口；不同指标分别解释，不预设普遍赢家。</p>
-<p>对象：{config['model']}；输出单位{spec['units']['output']}，输入单位{spec['units']['input']}，IAE单位为输出单位×s。
+<p>对象：{config['model']}；输出单位{html.escape(spec['units']['output'])}，输入单位{html.escape(spec['units']['input'])}，IAE单位为输出单位×s。
 评价窗口{s.evaluation_start_s}—{s.duration_s} s；恢复模式{s.recovery_mode}。持续变化输入的恢复可为不适用，失败指标为null，不作零误差。</p>
 <p><a href="config.json">实际配置</a> · <a href="inputs.json">配对输入</a> · <a href="results.json">逐次结果</a> · <a href="manifest.json">源码指纹</a> · <a href="status.json">产物状态</a></p>
 <table><tr><th>控制器</th><th>执行状态</th><th>RMSE</th><th>IAE</th><th>输入总变化量</th><th>饱和比例</th><th>恢复判定</th></tr>{rows}</table>{images}
@@ -217,7 +260,7 @@ def execute(output, value, *, plots=False, progress=None, should_cancel=None):
         atomic_json(output / "checksums.json", hashes)
         temp = output / "status.json.tmp"
         temp.write_bytes(status_bytes)
-        temp.replace(output / "status.json")
+        replace_file(temp,output / "status.json")
         if progress: progress(dict(event="completed", written=len(records), expected=expected, failed=failed, report=str(output / "report.html")))
         return output / "report.html", failed
     except BaseException as exc:
@@ -266,7 +309,7 @@ def load_result(folder):
         verification = "校验不一致" if problems else "校验通过"
     if manifest.get("schema_version") == "experiment-1.0":
         records = json.loads((folder / "results.json").read_text(encoding="utf8")) if (folder / "results.json").exists() else [json.loads(p.read_text(encoding="utf8")) for p in sorted((folder / "runs").glob("*.json"))]
-    elif manifest.get("schema_version") in ("coverage-1.0", "benchmark-1.0"):
+    elif manifest.get("schema_version") in ("coverage-1.0", "benchmark-1.0", "robustness-1.0", "comparison-1.0", "tuning-search-1.0", "tuning-validation-1.0"):
         records = [json.loads(p.read_text(encoding="utf8")) for p in sorted((folder / "runs").glob("*.json"))]
     else:
         records = []  # Historical motor scans retain their original HTML/schema.

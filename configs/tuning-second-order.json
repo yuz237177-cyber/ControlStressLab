@@ -1,0 +1,377 @@
+{
+  "schema": "tuning-config-1.0",
+  "base": {
+    "schema": "experiment-1.0",
+    "name": "二阶振荡 · 正弦跟踪",
+    "model": "second_order",
+    "plant": {
+      "mass_kg": 1.0,
+      "damping_N_s_m": 0.6,
+      "stiffness_N_m": 4.0,
+      "initial_output": 0.0,
+      "initial_velocity_m_s": 0.0
+    },
+    "controllers": [
+      {
+        "name": "PI",
+        "parameters": {
+          "kp": 6,
+          "ki": 3,
+          "kd": 0,
+          "anti_windup": false,
+          "derivative_filter_s": 0.03
+        }
+      },
+      {
+        "name": "PID_aw",
+        "parameters": {
+          "kp": 6,
+          "ki": 3,
+          "kd": 3,
+          "anti_windup": true,
+          "derivative_filter_s": 0.03
+        }
+      },
+      {
+        "name": "TwoDOF_PID",
+        "parameters": {
+          "kp": 6,
+          "ki": 3,
+          "kd": 3,
+          "anti_windup": true,
+          "derivative_filter_s": 0.03,
+          "beta": 0.6
+        }
+      },
+      {
+        "name": "LADRC",
+        "parameters": {
+          "relative_degree": 2,
+          "b0": 1,
+          "control_bandwidth": 2.5,
+          "observer_bandwidth": 10
+        }
+      }
+    ],
+    "selected_controllers": [
+      "PID_aw"
+    ],
+    "reference": {
+      "kind": "step",
+      "amplitude": 0.5,
+      "offset": 0.0,
+      "start_s": 0.5,
+      "frequency_hz": 0.25,
+      "stop_frequency_hz": 0.8,
+      "ramp_duration_s": 4.0,
+      "pulse_width_s": 1.0,
+      "hold_s": 0.5,
+      "seed": 42
+    },
+    "disturbance": {
+      "kind": "step",
+      "amplitude": 0.5,
+      "offset": 0.0,
+      "start_s": 6.0,
+      "frequency_hz": 0.25,
+      "stop_frequency_hz": 0.8,
+      "ramp_duration_s": 4.0,
+      "pulse_width_s": 1.0,
+      "hold_s": 0.5,
+      "seed": 42
+    },
+    "conditions": {
+      "dt_s": 0.01,
+      "duration_s": 12.0,
+      "input_limit": 5.0,
+      "output_bound": 20.0,
+      "noise_std": 0.005,
+      "measurement_delay_s": 0.0,
+      "seed": 42,
+      "evaluation_start_s": 0.5,
+      "recovery_start_s": 6.0,
+      "recovery_band": 0.01,
+      "recovery_dwell_s": 0.5,
+      "recovery_mode": "auto",
+      "reference_scale": 0.5
+    }
+  },
+  "controller": "PID_aw",
+  "candidate_budget": 16,
+  "search_seed": 91731,
+  "ranges": {
+    "kp": {
+      "low": 1,
+      "high": 20,
+      "scale": "log"
+    },
+    "ki": {
+      "low": 0.2,
+      "high": 8,
+      "scale": "log"
+    },
+    "kd": {
+      "low": 0.2,
+      "high": 8,
+      "scale": "log"
+    }
+  },
+  "thresholds": {
+    "error_max": null,
+    "saturation_max": 0.25,
+    "variation_max": null
+  },
+  "search": {
+    "axes": [
+      {
+        "key": "plant.mass_kg",
+        "values": [
+          0.8,
+          1.2
+        ]
+      },
+      {
+        "key": "conditions.measurement_delay_s",
+        "values": [
+          0.0,
+          0.04
+        ]
+      }
+    ],
+    "families": [
+      {
+        "id": "step",
+        "reference": {
+          "kind": "step",
+          "amplitude": 0.5,
+          "offset": 0.0,
+          "start_s": 0.5,
+          "frequency_hz": 0.25,
+          "stop_frequency_hz": 0.8,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.5,
+          "seed": 42
+        },
+        "disturbance": {
+          "kind": "constant",
+          "amplitude": 0.0,
+          "offset": 0.0,
+          "start_s": 6.0,
+          "frequency_hz": 0.25,
+          "stop_frequency_hz": 0.8,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.5,
+          "seed": 42
+        },
+        "conditions": {
+          "evaluation_start_s": 0.5,
+          "recovery_start_s": 0.5,
+          "recovery_mode": "tracking_only"
+        }
+      },
+      {
+        "id": "tracking",
+        "reference": {
+          "kind": "sine",
+          "amplitude": 0.15,
+          "offset": 0.3,
+          "start_s": 0.5,
+          "frequency_hz": 0.29,
+          "stop_frequency_hz": 0.73,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.5,
+          "seed": 42
+        },
+        "disturbance": {
+          "kind": "constant",
+          "amplitude": 0.0,
+          "offset": 0.0,
+          "start_s": 6.0,
+          "frequency_hz": 0.25,
+          "stop_frequency_hz": 0.8,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.5,
+          "seed": 42
+        },
+        "conditions": {
+          "evaluation_start_s": 0.5,
+          "recovery_start_s": 0.5,
+          "recovery_mode": "tracking_only"
+        }
+      },
+      {
+        "id": "disturbance",
+        "reference": {
+          "kind": "step",
+          "amplitude": 0.5,
+          "offset": 0.0,
+          "start_s": 0.5,
+          "frequency_hz": 0.25,
+          "stop_frequency_hz": 0.8,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.5,
+          "seed": 42
+        },
+        "disturbance": {
+          "kind": "step",
+          "amplitude": 0.5,
+          "offset": 0.0,
+          "start_s": 6.0,
+          "frequency_hz": 0.25,
+          "stop_frequency_hz": 0.8,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.3,
+          "seed": 42
+        },
+        "conditions": {
+          "evaluation_start_s": 6.0,
+          "recovery_start_s": 6.0,
+          "recovery_mode": "tracking_only"
+        }
+      }
+    ],
+    "seeds": [
+      81011,
+      81012
+    ]
+  },
+  "validation": {
+    "points": [
+      {
+        "plant.mass_kg": 0.9,
+        "conditions.measurement_delay_s": 0.01
+      },
+      {
+        "plant.mass_kg": 1.0,
+        "conditions.measurement_delay_s": 0.03
+      },
+      {
+        "plant.mass_kg": 1.1,
+        "conditions.measurement_delay_s": 0.05
+      },
+      {
+        "plant.mass_kg": 1.35,
+        "conditions.measurement_delay_s": 0.02
+      },
+      {
+        "plant.mass_kg": 0.7,
+        "conditions.measurement_delay_s": 0.06
+      }
+    ],
+    "families": [
+      {
+        "id": "step",
+        "reference": {
+          "kind": "step",
+          "amplitude": 0.4,
+          "offset": 0.0,
+          "start_s": 0.7,
+          "frequency_hz": 0.25,
+          "stop_frequency_hz": 0.8,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.5,
+          "seed": 42
+        },
+        "disturbance": {
+          "kind": "constant",
+          "amplitude": 0.0,
+          "offset": 0.0,
+          "start_s": 6.0,
+          "frequency_hz": 0.25,
+          "stop_frequency_hz": 0.8,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.5,
+          "seed": 42
+        },
+        "conditions": {
+          "evaluation_start_s": 0.7,
+          "recovery_start_s": 0.7,
+          "recovery_mode": "tracking_only"
+        }
+      },
+      {
+        "id": "tracking",
+        "reference": {
+          "kind": "chirp",
+          "amplitude": 0.125,
+          "offset": 0.275,
+          "start_s": 0.7,
+          "frequency_hz": 0.17,
+          "stop_frequency_hz": 0.73,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.5,
+          "seed": 42
+        },
+        "disturbance": {
+          "kind": "constant",
+          "amplitude": 0.0,
+          "offset": 0.0,
+          "start_s": 6.0,
+          "frequency_hz": 0.25,
+          "stop_frequency_hz": 0.8,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.5,
+          "seed": 42
+        },
+        "conditions": {
+          "evaluation_start_s": 0.7,
+          "recovery_start_s": 0.7,
+          "recovery_mode": "tracking_only"
+        }
+      },
+      {
+        "id": "disturbance",
+        "reference": {
+          "kind": "step",
+          "amplitude": 0.4,
+          "offset": 0.0,
+          "start_s": 0.7,
+          "frequency_hz": 0.25,
+          "stop_frequency_hz": 0.8,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.5,
+          "seed": 42
+        },
+        "disturbance": {
+          "kind": "prbs",
+          "amplitude": 0.45,
+          "offset": 0.0,
+          "start_s": 6.0,
+          "frequency_hz": 0.25,
+          "stop_frequency_hz": 0.8,
+          "ramp_duration_s": 4.0,
+          "pulse_width_s": 1.0,
+          "hold_s": 0.3,
+          "seed": 42
+        },
+        "conditions": {
+          "evaluation_start_s": 6.0,
+          "recovery_start_s": 6.0,
+          "recovery_mode": "tracking_only"
+        }
+      }
+    ],
+    "seeds": [
+      82011,
+      82012
+    ],
+    "waveform_seeds": [
+      83011,
+      83012
+    ]
+  },
+  "max_runs": 1000,
+  "max_intervals": 2000000,
+  "observed_inputs": []
+}

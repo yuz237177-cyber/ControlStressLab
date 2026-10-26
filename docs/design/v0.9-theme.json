@@ -1,0 +1,40 @@
+{
+  "status": "design-proposal-not-applied",
+  "version": "0.9-visual-1",
+  "reference": "https://www.ignoredone.space/index.php/arknights_design/?path=arknightsdesign/2024/0926",
+  "colors": {
+    "window": "#101416",
+    "sidebar": "#0C1012",
+    "panel": "#181D20",
+    "border": "#343D41",
+    "text": "#EEF0E8",
+    "muted": "#AAB5B7",
+    "primary": "#E4F13B",
+    "data": "#66D9DC",
+    "comparison": "#AD8CF2",
+    "error": "#EE7669"
+  },
+  "fonts": {
+    "chinese": ["Microsoft YaHei", "sans-serif"],
+    "display": ["Bahnschrift", "sans-serif"],
+    "numeric": ["Consolas", "monospace"],
+    "primary_weight": 700
+  },
+  "layout": {
+    "sidebar_width_range": [220, 260],
+    "plot_panel_width_fraction": 0.75,
+    "spacing_unit": 8,
+    "control_height_range": [38, 46],
+    "corner_cut_primary": 8,
+    "numeric_display_significant_digits": 5,
+    "animation_duration_ms": [120, 180]
+  },
+  "plots": {
+    "baseline_marker": "diamond-hollow",
+    "nondominated_marker": "star",
+    "selected_marker": "outer-ring",
+    "annotate_default": ["baseline", "selected", "nondominated"],
+    "preserve_full_precision": true
+  },
+  "external_artwork_embedded": false
+}

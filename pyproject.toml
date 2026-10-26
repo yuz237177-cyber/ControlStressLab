@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "controlstresslab"
-version = "0.4.0"
+version = "1.0.0"
 description = "Reproducible SISO controller stress tests with explicit evidence boundaries"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -13,8 +13,10 @@ dependencies = []
 
 [project.optional-dependencies]
 charts = ["matplotlib>=3.8"]
-reference = ["scipy>=1.9.1"]
-gui = ["PySide6-Essentials>=6.8", "matplotlib>=3.8"]
+reference = ["scipy>=1.9.1", "control>=0.10.2"]
+build = ["pyinstaller>=6.22,<7"]
+analysis = ["numpy>=1.26", "scipy>=1.14"]
+gui = ["PySide6-Essentials>=6.8", "matplotlib>=3.8", "numpy>=1.26", "scipy>=1.14"]
 
 [project.scripts]
 controlstresslab = "controlstresslab.cli:main"
@@ -24,6 +26,12 @@ controlstresslab-coverage = "controlstresslab.coverage:main"
 controlstresslab-benchmark = "controlstresslab.benchmark:main"
 controlstresslab-experiment = "controlstresslab.experiment:main"
 controlstresslab-gui = "controlstresslab.gui:main"
+controlstresslab-model-preview = "controlstresslab.model_analysis:main"
+controlstresslab-frequency = "controlstresslab.frequency:main"
+controlstresslab-robustness = "controlstresslab.robustness:main"
+controlstresslab-compare = "controlstresslab.comparison:main"
+controlstresslab-tune = "controlstresslab.tuning:main"
+controlstresslab-tune-validate = "controlstresslab.tuning_validation:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

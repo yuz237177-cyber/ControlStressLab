@@ -4,7 +4,7 @@ from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parent
-paths = [str(ROOT / p) for p in ("src", "outputs/gui-deps", "outputs/chart-deps")]
+paths = [str(ROOT / p) for p in ("src", "outputs/gui-deps", "outputs/chart-deps", "outputs/science-deps")]
 sys.path[:0] = paths
 os.environ["PYTHONPATH"] = os.pathsep.join(paths + ([os.environ["PYTHONPATH"]] if os.environ.get("PYTHONPATH") else []))
 os.environ.setdefault("MPLCONFIGDIR", str(ROOT / "outputs/mpl-cache"))

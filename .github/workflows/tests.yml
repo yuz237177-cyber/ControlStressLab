@@ -26,14 +26,50 @@ jobs:
       - name: Installed budgeted benchmark outside source directory
         run: controlstresslab-benchmark --config "${{ github.workspace }}/configs/benchmark-ci.json" --output installed-benchmark
         working-directory: ${{ runner.temp }}
+      - name: Installed general parameter scan outside source directory
+        run: controlstresslab-robustness --config "${{ github.workspace }}/configs/robustness-first-order.json" --output installed-robustness
+        working-directory: ${{ runner.temp }}
+      - name: Installed saved experiment comparison outside source directory
+        run: controlstresslab-compare --config "${{ github.workspace }}/configs/comparison-ci.json" --output installed-comparison
+        working-directory: ${{ runner.temp }}
+      - name: Installed constraint tuning and frozen validation
+        run: |
+          controlstresslab-tune --config "${{ github.workspace }}/configs/tuning-ci.json" --output installed-tuning
+          controlstresslab-tune-validate freeze --search installed-tuning --candidates 0 --main 0 --output installed-selection
+          controlstresslab-tune-validate run --selection installed-selection --output installed-tuning-validation
+        working-directory: ${{ runner.temp }}
       - run: python scripts/build_readme_preview.py
-      - run: python -m pip install ".[gui]"
+      - run: python -m pip install ".[gui,reference]"
         if: matrix.python == '3.12'
       - name: Desktop interactions and real background worker
         run: python -m unittest discover -s tests -p test_gui.py -v
         if: matrix.python == '3.12'
         env:
           QT_QPA_PLATFORM: offscreen
+      - name: Generic LTI model, paired workflows and immutable snapshots
+        run: python -m unittest discover -s tests -p test_linear_models.py -v
+        if: matrix.python == '3.12'
+      - name: Sampled PID frequency analysis and portable project protocols
+        run: |
+          python -m unittest discover -s tests -p test_frequency.py -v
+          python -m unittest discover -s tests -p test_projects.py -v
+        if: matrix.python == '3.12'
+      - name: Installed frequency analysis outside source directory
+        run: controlstresslab-frequency --output installed-frequency --plots
+        working-directory: ${{ runner.temp }}
+        if: matrix.python == '3.12'
+      - name: Independent frequency and internal-pole reference
+        run: python scripts/check_frequency_reference.py --suite "${{ runner.temp }}/installed-frequency" --output outputs/ci-frequency-reference.json
+        if: matrix.python == '3.12'
+      - name: Installed custom LTI experiment and saved model preview
+        run: |
+          controlstresslab-experiment --config "${{ github.workspace }}/configs/experiment-transfer-function.json" --output installed-custom-lti --plots
+          controlstresslab-model-preview --config "${{ github.workspace }}/configs/model-preview-fourth-order.json" --output installed-model-preview --plots
+        working-directory: ${{ runner.temp }}
+        if: matrix.python == '3.12'
+      - name: Independent custom LTI polynomial and DOP853 replay
+        run: python scripts/check_linear_model_reference.py --suite "${{ runner.temp }}/installed-custom-lti" --suite "${{ runner.temp }}/installed-model-preview" --output outputs/ci-linear-model-reference.json
+        if: matrix.python == '3.12'
       - run: python scripts/build_chart_gallery.py --output outputs/ci-gallery
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
       - run: controlstresslab-uncertainty --inertia-factors 1,1.5 --friction-factors 1,1.5 --output outputs/ci-uncertainty-plots --plots
@@ -53,4 +89,16 @@ jobs:
       - run: python scripts/check_coverage_reference.py --suite outputs/ci-benchmark --output outputs/ci-benchmark-reference.json
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
       - run: python scripts/check_benchmark_evidence.py --suite outputs/ci-benchmark --output outputs/ci-benchmark-evidence.json
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: controlstresslab-robustness --config configs/robustness-first-order.json --output outputs/ci-robustness --plots
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: python scripts/check_scan_evidence.py --suite outputs/ci-robustness --output outputs/ci-robustness-audit.json
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - run: python scripts/check_coverage_reference.py --suite outputs/ci-robustness --output outputs/ci-robustness-scipy.json
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+      - name: Independent tuning evidence audit and SciPy replay
+        run: |
+          controlstresslab-tune --config configs/tuning-ci.json --output outputs/ci-tuning --plots
+          python scripts/check_tuning_evidence.py --suite outputs/ci-tuning --output outputs/ci-tuning-audit.json
+          python scripts/check_coverage_reference.py --suite outputs/ci-tuning --output outputs/ci-tuning-scipy.json
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'

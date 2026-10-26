@@ -14,9 +14,9 @@ from PySide6.QtCore import QProcess, QTimer, Qt, QUrl
 from PySide6.QtGui import QDesktopServices, QFont, QFontDatabase
 from PySide6.QtWidgets import (QAbstractItemView, QApplication, QButtonGroup, QCheckBox, QComboBox,
     QDialog, QDialogButtonBox, QDoubleSpinBox, QFileDialog, QFormLayout, QFrame, QGridLayout,
-    QHBoxLayout, QHeaderView, QLabel, QLineEdit, QListWidget, QListWidgetItem, QMainWindow,
+    QHBoxLayout, QHeaderView, QLabel, QLayout, QLineEdit, QListWidget, QListWidgetItem, QMainWindow,
     QMessageBox, QProgressBar, QPushButton, QScrollArea, QSizePolicy, QSplitter, QStackedWidget,
-    QTableWidget, QTableWidgetItem, QTextEdit, QVBoxLayout, QWidget)
+    QTableWidget, QTableWidgetItem, QTabWidget, QTextEdit, QVBoxLayout, QWidget)
 
 import matplotlib
 from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg
@@ -25,12 +25,15 @@ from matplotlib.figure import Figure
 from .benchmark_design import DEFAULT_CONFIG, heldout_cases, validate_config as validate_benchmark
 from .experiment import (CONTROLLERS, atomic_json, default_config, export_zip, load_result,
     presets, read_trace, saved_reference, scenario_for, validate_config)
-from .gui_theme import COLORS, STYLE
+from .experiment import spec_for_config
+from .gui_theme import COLORS, STYLE, PLOT, style_plot
+from .gui_components import StageHeader, Foldout
+from . import __version__
 
-MODEL_LABELS = {"first_order": "一阶惯性", "second_order": "二阶振荡"}
+MODEL_LABELS = {"first_order": "一阶惯性", "second_order": "二阶振荡", "transfer_function": "自定义传递函数"}
 NAMES = {"PI": "PI", "PID_aw": "抗饱和 PID", "TwoDOF_PID": "二自由度 PID", "LADRC": "LADRC"}
 SIGNALS = {"constant": "常值", "step": "阶跃", "ramp": "斜坡", "sine": "正弦", "triangle": "三角波", "chirp": "扫频", "multistep": "多次阶跃", "pulse": "脉冲", "square": "方波", "prbs": "二值块"}
-PARAM_LABELS = {"gain": "增益", "tau_s": "时间常数 / s", "initial_output": "初始输出", "mass_kg": "质量 / kg",
+PARAM_LABELS = {"gain_scale": "控制增益尺度", "time_scale": "时间尺度","gain": "增益", "tau_s": "时间常数 / s", "initial_output": "初始输出", "mass_kg": "质量 / kg",
     "damping_N_s_m": "阻尼 / (N·s/m)", "stiffness_N_m": "刚度 / (N/m)", "initial_velocity_m_s": "初始速度 / (m/s)",
     "kp": "kp", "ki": "ki", "kd": "kd", "derivative_filter_s": "微分滤波 / s", "beta": "参考权重 beta",
     "relative_degree": "相对阶次", "b0": "名义输入增益 b0", "control_bandwidth": "控制带宽", "observer_bandwidth": "观察器带宽"}
@@ -90,6 +93,7 @@ class Workbench(QMainWindow):
         self.current_records = []
         self.trace_cache = {}
         self.running = False
+        self.active_project = None
         self._updating = True
         self.result_config_hash = None
         self.process = None
@@ -103,93 +107,109 @@ class Workbench(QMainWindow):
         self._refresh_profiles()
         self.apply_config(self.config)
         self._updating = False
+        self.draw_chart()
 
     def _build(self):
-        root = QWidget()
-        self.setCentralWidget(root)
-        outer = QHBoxLayout(root)
-        outer.setContentsMargins(18, 14, 18, 14)
-        outer.setSpacing(22)
-        rail = QWidget()
-        rail.setFixedWidth(280)
-        left = QVBoxLayout(rail)
-        left.setContentsMargins(0, 8, 0, 0)
-        left.setSpacing(13)
-        left.addWidget(label("ControlStressLab", "brand"))
-        left.addWidget(label("控制器评测工作台 · v0.4 桌面版", "muted"))
-        left.addWidget(label("●  本地实验 / 合成模型", "notice"))
-        self.new_button = button("＋ 新建实验配置", self.new_profile)
-        left.addWidget(self.new_button)
+        root = QWidget(); self.setCentralWidget(root)
+        outer = QVBoxLayout(root); outer.setContentsMargins(18, 10, 18, 12); outer.setSpacing(8)
+        topbar = QFrame(); topbar.setObjectName("topbar")
+        mast = QHBoxLayout(topbar); mast.setContentsMargins(2, 2, 2, 12)
+        mast.addWidget(label("ControlStressLab", "brand"))
+        mast.addSpacing(15); mast.addWidget(label("控制器评测工作台", "muted"))
+        mast.addStretch()
+        mast.addWidget(label("本地实验  /  合成模型", "badge"))
+        mast.addWidget(label("v"+__version__, "muted"))
+        self.library_button = button("实验配置")
+        self.library_button.setCheckable(True)
+        self.library_button.setAccessibleName("展开实验配置列表")
+        mast.addWidget(self.library_button)
+        mast.addWidget(button("使用说明", self.help))
+        outer.addWidget(topbar)
+        body = QHBoxLayout(); body.setSpacing(12); outer.addLayout(body, 1)
+        self.library = QWidget(); self.library.setObjectName("library"); self.library.setFixedWidth(270)
+        left = QVBoxLayout(self.library); left.setContentsMargins(12, 12, 12, 12); left.setSpacing(12)
+        left.addWidget(label("实验配置", "section"))
+        self.new_button = button("＋ 新建实验配置", self.new_profile); left.addWidget(self.new_button)
         row = QHBoxLayout()
         self.import_button = button("导入配置", self.import_config)
         self.open_button = button("打开实验", self.open_experiment)
-        row.addWidget(self.import_button)
-        row.addWidget(self.open_button)
-        left.addLayout(row)
-        left.addWidget(label("实验配置", "section"))
+        row.addWidget(self.import_button); row.addWidget(self.open_button); left.addLayout(row)
         self.profile_list = QListWidget()
         self.profile_list.currentRowChanged.connect(self.select_profile)
         left.addWidget(self.profile_list, 1)
-        self.profile_summary = label("一阶惯性 / 2 个控制器", "muted")
-        self.profile_summary.setWordWrap(True)
+        self.profile_summary = label("一阶惯性 / 2 个控制器", "muted"); self.profile_summary.setWordWrap(True)
         left.addWidget(self.profile_summary)
-        self.sidebar_detail = label("每次运行独立保存原始数据与报告", "muted")
-        self.sidebar_detail.setWordWrap(True)
+        self.sidebar_detail = label("每次运行独立保存原始数据与报告", "muted"); self.sidebar_detail.setWordWrap(True)
         left.addWidget(self.sidebar_detail)
-        left.addSpacing(18)
-        left.addWidget(button("使用说明", self.help))
-        left.addWidget(label("合成模型 · 未经硬件验证", "muted"))
-        outer.addWidget(rail)
-        surface = QFrame()
-        surface.setObjectName("workspace")
-        main = QVBoxLayout(surface)
-        main.setContentsMargins(24, 16, 24, 16)
-        main.setSpacing(12)
-        nav = QHBoxLayout()
-        self.nav = QButtonGroup(self)
-        for index, title in enumerate(("实验对比", "预算整定", "历史实验")):
-            b = button(title)
-            b.setCheckable(True)
-            b.setProperty("nav", True)
-            self.nav.addButton(b, index)
-            b.clicked.connect(lambda checked=False, i=index: self.switch_page(i))
+        body.addWidget(self.library); self.library.hide()
+        self.library_button.toggled.connect(self.library.setVisible)
+        surface = QFrame(); surface.setObjectName("workspace")
+        main = QVBoxLayout(surface); main.setContentsMargins(18, 8, 18, 12); main.setSpacing(9)
+        nav = QHBoxLayout(); nav.setSpacing(2); self.nav = QButtonGroup(self)
+        for index, title in enumerate(("实验对比", "预算整定", "历史实验", "参数扫描", "实验对照", "模型工作台", "频域分析", "研究项目")):
+            b = button(title); b.setCheckable(True); b.setProperty("nav", True)
+            self.nav.addButton(b, index); b.clicked.connect(lambda checked=False, i=index: self.switch_page(i))
             nav.addWidget(b)
-        self.nav.button(0).setChecked(True)
-        nav.addStretch()
+        self.nav.button(0).setChecked(True); nav.addStretch()
         nav.addWidget(button("实验详情", self.show_details))
-        self.report_button = button("打开报告", self.open_report)
-        self.report_button.setEnabled(False)
+        self.report_button = button("打开报告", self.open_report); self.report_button.setEnabled(False)
         nav.addWidget(self.report_button)
-        main.addLayout(nav)
+        nav_widget=QWidget();nav_widget.setLayout(nav)
+        nav_scroll=QScrollArea();nav_scroll.setWidgetResizable(True);nav_scroll.setWidget(nav_widget)
+        nav_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff);nav_scroll.setFixedHeight(64)
+        main.addWidget(nav_scroll)
         self.pages = QStackedWidget()
-        self.pages.addWidget(self._experiment_page())
-        self.pages.addWidget(self._benchmark_page())
+        self.pages.addWidget(self.scroll_page(self._experiment_page()))
+        self.tuning_tabs = QTabWidget()
+        self.tuning_tabs.addTab(self.scroll_page(self._benchmark_page()), "经典协议")
+        from .gui_tuning import TuningPage
+        self.tuning_page = TuningPage(self)
+        self.tuning_tabs.addTab(self.scroll_page(self.tuning_page), "约束多目标")
+        self.tuning_tabs.setCurrentIndex(1)
+        self.pages.addWidget(self.tuning_tabs)
         self.pages.addWidget(self._history_page())
+        from .gui_analysis import ScanPage, ComparisonPage
+        self.scan_page = ScanPage(self); self.comparison_page = ComparisonPage(self)
+        self.pages.addWidget(self.scroll_page(self.scan_page)); self.pages.addWidget(self.scroll_page(self.comparison_page))
+        from .gui_models import ModelPage
+        self.model_page = ModelPage(self)
+        self.pages.addWidget(self.scroll_page(self.model_page))
+        from .gui_frequency import FrequencyPage
+        from .gui_projects import ProjectPage
+        self.frequency_page=FrequencyPage(self);self.project_page=ProjectPage(self)
+        self.pages.addWidget(self.scroll_page(self.frequency_page));self.pages.addWidget(self.scroll_page(self.project_page))
         main.addWidget(self.pages, 1)
         footer = QHBoxLayout()
-        self.status_label = label("● 准备就绪", "notice")
-        self.status_label.setWordWrap(True)
+        self.status_label = label("● 准备就绪", "notice"); self.status_label.setWordWrap(True)
         footer.addWidget(self.status_label, 1)
-        self.progress = QProgressBar()
-        self.progress.setFixedWidth(130)
-        self.progress.setTextVisible(False)
-        self.progress.setValue(0)
-        footer.addWidget(self.progress)
+        self.progress = QProgressBar(); self.progress.setFixedWidth(110)
+        self.progress.setTextVisible(False); self.progress.setValue(0); footer.addWidget(self.progress)
         self.save_button = button("保存配置", self.save_config)
-        self.export_button = button("导出完整报告", self.export_report)
-        self.export_button.setEnabled(False)
-        self.run_button = button("▷ 开始对比", self.start_experiment, primary=True)
-        footer.addWidget(self.export_button)
-        footer.addWidget(self.save_button)
-        footer.addWidget(self.run_button)
-        main.addLayout(footer)
-        outer.addWidget(surface, 1)
+        self.export_button = button("导出完整报告", self.export_report); self.export_button.setEnabled(False)
+        self.run_button = button("开始对比", self.start_experiment, primary=True)
+        footer.addWidget(self.export_button); footer.addWidget(self.save_button); footer.addWidget(self.run_button)
+        main.addLayout(footer); body.addWidget(surface, 1)
+
+    def scroll_page(self, page):
+        page.layout().setSizeConstraint(QLayout.SizeConstraint.SetMinimumSize)
+        scroll = QScrollArea(); scroll.setWidgetResizable(True); scroll.setWidget(page)
+        scroll.setFrameShape(QFrame.Shape.NoFrame)
+        return scroll
+
+    def resizeEvent(self, event):
+        super().resizeEvent(event)
+        if not hasattr(self, "tuning_page"): return
+        compact = self.height() < 900
+        for header in self.findChildren(StageHeader): header.set_compact(compact)
+        for canvas in (self.canvas, self.tuning_page.canvas, self.scan_page.canvas, self.comparison_page.canvas):
+            canvas.setMinimumHeight(190 if compact else 270)
 
     def _experiment_page(self):
         page = QWidget()
         page.setObjectName("workspace")
         layout = QVBoxLayout(page)
         layout.setContentsMargins(0, 0, 0, 0)
+        layout.addWidget(StageHeader("01", "闭环响应", "SIMULATION / 信号 · 控制 · 响应"))
         splitter = QSplitter(Qt.Orientation.Vertical)
         splitter.setChildrenCollapsible(False)
         response = QWidget()
@@ -198,7 +218,7 @@ class Workbench(QMainWindow):
         top.setContentsMargins(0, 0, 0, 0)
         header = QHBoxLayout()
         heading = QVBoxLayout()
-        heading.addWidget(label("闭环响应", "section"))
+        heading.addWidget(label("响应工作区", "eyebrow"))
         self.chart_note = label("信号预览 · 开始对比后显示真实响应", "muted")
         heading.addWidget(self.chart_note)
         header.addLayout(heading, 1)
@@ -215,7 +235,7 @@ class Workbench(QMainWindow):
         top.addWidget(self.case_selector)
         matplotlib.rcParams.update({"font.family": ["Microsoft YaHei", "DejaVu Sans"], "axes.unicode_minus": False,
             "font.weight": "bold", "axes.labelweight": "bold", "axes.titleweight": "bold"})
-        self.figure = Figure(facecolor="#121315", layout="constrained")
+        self.figure = Figure(facecolor=PLOT, layout="constrained")
         self.canvas = FigureCanvasQTAgg(self.figure)
         self.canvas.setMinimumHeight(250)
         self.canvas.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
@@ -227,6 +247,7 @@ class Workbench(QMainWindow):
         self.pan_origin = None
         top.addWidget(self.canvas, 1)
         self.metric_strip = label("RMSE  —       IAE  —       输入变化量  —       饱和比例  —       恢复状态  —", "muted")
+        self.metric_strip.setObjectName("metricStrip")
         self.metric_strip.setWordWrap(True)
         self.metric_strip.setToolTip("指标使用完整轨迹计算；图例可点击隐藏曲线，滚轮缩放，左键拖动平移。")
         top.addWidget(self.metric_strip)
@@ -245,6 +266,7 @@ class Workbench(QMainWindow):
         self.model_choice = combo(MODEL_LABELS)
         self.model_choice.currentIndexChanged.connect(self.switch_model)
         a.addWidget(self.model_choice)
+        a.addWidget(button("编辑自定义模型", self.edit_model))
         self.plant_form = QGridLayout()
         a.addLayout(self.plant_form)
         grid = QGridLayout()
@@ -306,16 +328,12 @@ class Workbench(QMainWindow):
         c.addStretch()
         panels.addWidget(conditions, 1)
         for panel in (plant_panel, signal_panel, conditions):
-            panel.setMinimumWidth(240)
+            panel.setMinimumWidth(220)
             panel.setSizePolicy(QSizePolicy.Policy.Ignored, QSizePolicy.Policy.Preferred)
-        scroll = QScrollArea()
-        scroll.setWidgetResizable(True)
-        scroll.setWidget(self.controls)
-        scroll.setMinimumHeight(190)
-        splitter.addWidget(scroll)
-        splitter.setStretchFactor(0, 7)
-        splitter.setStretchFactor(1, 3)
-        splitter.setSizes([600, 265])
+        self.parameter_drawer = Foldout("对象、信号与实验条件", self.controls, height=280)
+        splitter.addWidget(self.parameter_drawer)
+        splitter.setStretchFactor(0, 1); splitter.setStretchFactor(1, 0)
+        splitter.setSizes([700, 56])
         layout.addWidget(splitter, 1)
         self.splitter = splitter
         return page
@@ -376,7 +394,7 @@ class Workbench(QMainWindow):
         page = QWidget()
         page.setObjectName("workspace")
         layout = QVBoxLayout(page)
-        layout.addWidget(label("历史实验", "section"))
+        layout.addWidget(StageHeader("05", "实验档案", "ARCHIVE / 配置 · 轨迹 · 选择依据"))
         note = label("打开保存目录读取原指标和单位，不用当前算法重算旧结果。通用实验、覆盖与预算测试可直接画图；早期电机扫描可打开原报告。", "muted")
         note.setWordWrap(True)
         layout.addWidget(note)
@@ -405,7 +423,7 @@ class Workbench(QMainWindow):
 
     def apply_config(self, config):
         config = validate_config(config)
-        visible = list(config["plant"].items())
+        visible = [(k,v) for k,v in config["plant"].items() if type(v) in (int,float)]
         for name in ("reference", "disturbance"):
             signal = config[name]
             visible.extend(((name+".value", signal["offset"] if signal["kind"] == "constant" else signal["amplitude"]),
@@ -421,12 +439,15 @@ class Workbench(QMainWindow):
             item = self.plant_form.takeAt(0)
             if item.widget(): item.widget().deleteLater()
         self.plant_boxes = {}
-        for i, (key, value) in enumerate(config["plant"].items()):
+        for i, (key, value) in enumerate((k,v) for k,v in config["plant"].items() if type(v) in (int,float)):
             w = number(value)
             w.valueChanged.connect(self.mark_dirty)
             self.plant_boxes[key] = w
             self._field(self.plant_form, i//2, i%2, PARAM_LABELS.get(key, key), w)
-        for name, w in self.controller_checks.items(): w.setChecked(name in config["selected_controllers"])
+        for name, w in self.controller_checks.items():
+            w.setChecked(name in config["selected_controllers"])
+            w.setEnabled(not self.running and (config["model"] != "transfer_function" or name != "LADRC"))
+            if name == "LADRC": w.setToolTip("自定义对象的LADRC兼容性尚未定义" if config["model"] == "transfer_function" else "")
         for target, source in ((self.reference_kind, config["reference"]), (self.disturbance_kind, config["disturbance"])):
             target.setCurrentIndex(target.findData(source["kind"]))
         self.ref_amplitude.setValue(config["reference"]["offset"] if config["reference"]["kind"] == "constant" else config["reference"]["amplitude"])
@@ -435,13 +456,14 @@ class Workbench(QMainWindow):
         self.dist_start.setValue(config["disturbance"]["start_s"])
         self.dist_enabled.setChecked(config["disturbance"]["kind"] != "constant" or config["disturbance"]["offset"] != 0)
         for key, w in self.condition_boxes.items(): w.setValue(config["conditions"][key])
-        self.units_label.setText("输出 / m；控制与扰动 / N" if config["model"] == "second_order" else "输出、控制、扰动 / unit")
+        units=spec_for_config(config)["units"]
+        self.units_label.setText("输出 / "+units["output"]+"；控制 / "+units["input"]+"；扰动 / "+units["disturbance"])
         self._updating = False
         self.mark_dirty()
 
     def collect_config(self):
         c = deepcopy(self.config)
-        c["plant"] = {k: w.value() for k, w in self.plant_boxes.items()}
+        c["plant"].update({k: w.value() for k, w in self.plant_boxes.items()})
         c["selected_controllers"] = [n for n, w in self.controller_checks.items() if w.isChecked()]
         c["reference"].update(kind=self.reference_kind.currentData(), amplitude=self.ref_amplitude.value(), start_s=self.ref_start.value())
         c["disturbance"].update(kind=self.disturbance_kind.currentData(), amplitude=self.dist_amplitude.value(), start_s=self.dist_start.value())
@@ -464,6 +486,11 @@ class Workbench(QMainWindow):
             self.update_chart_note()
         self.preview_timer.start(250)
 
+    def edit_model(self):
+        if self.config["model"] == "transfer_function":
+            self.model_page.set_plant(self.collect_config()["plant"])
+        self.switch_page(5)
+
     def switch_model(self):
         if self._updating: return
         self.apply_config(default_config(self.model_choice.currentData()))
@@ -484,9 +511,10 @@ class Workbench(QMainWindow):
     def switch_page(self, index):
         self.pages.setCurrentIndex(index)
         self.nav.button(index).setChecked(True)
-        self.run_button.setVisible(index != 1 or self.running)
+        self.run_button.setVisible(index == 0 or self.running)
         self.save_button.setVisible(index == 0)
         if index == 2: self.refresh_history()
+        if index == 3 and not self.scan_page.base_selected: self.scan_page.use_current_base()
 
     def error(self, message):
         self.status_label.setText(str(message)[:200])
@@ -511,6 +539,9 @@ class Workbench(QMainWindow):
             except Exception as exc: self.error(exc)
 
     def help(self):
+        guide=Path(getattr(sys,"_MEIPASS",Path(__file__).resolve().parents[2]))/"docs/PORTABLE_GUIDE.html"
+        if guide.is_file():
+            QDesktopServices.openUrl(QUrl.fromLocalFile(str(guide)));return
         QMessageBox.information(self, "使用说明", "1. 选择一阶或二阶对象与控制器。\n2. 设置参考、扰动、噪声和测量延迟；高级按钮可修改频率、偏置、随机种子和评价窗口。\n3. 点击开始对比。计算在独立进程中运行，可请求取消。\n4. 滚轮缩放曲线，复位视图恢复；逐次指标可查看全部控制器。\n5. 每次运行自动保留CSV、配置和PNG/SVG；可以打开HTML报告或导出完整ZIP。\n\n全部为合成模型，训练改善不保证测试改善；输入变化量不是能耗。")
 
     def _dialog(self, title, groups):
@@ -633,12 +664,16 @@ class Workbench(QMainWindow):
     def start_job(self, kind, config):
         if self.running: raise ValueError("已有一个任务正在运行")
         identifier = datetime.now().strftime("%Y%m%d-%H%M%S")+"-"+uuid.uuid4().hex[:6]
-        self.job_output = self.workspace / "experiments" / identifier
+        self.job_output = (self.active_project / "results" if self.active_project else self.workspace / "experiments") / identifier
+        if kind=="project_import":self.job_output=Path(config["destination"])
+        if kind=="project_export":self.job_output=Path(config["folder"])
         if kind == "export": self.job_output = Path(config["folder"])
         request = self.workspace / "jobs" / (identifier+".request.json")
         self.cancel_path = self.workspace / "jobs" / (identifier+".cancel")
         job_status = self.workspace / "jobs" / (identifier+".status.json")
+        self.job_status_path=job_status
         atomic_json(request, dict(kind=kind, config=config))
+        self.job_id=identifier
         self.job_kind = kind
         self.active_config_hash = hash_config(config)
         self.last_event = None
@@ -647,8 +682,13 @@ class Workbench(QMainWindow):
         worker_python = Path(sys.executable)
         if worker_python.name.lower() == "pythonw.exe": worker_python = worker_python.with_name("python.exe")
         self.process.setProgram(str(worker_python))
-        self.process.setArguments(["-m", "controlstresslab.gui_worker", "--request", str(request), "--output", str(self.job_output),
-                                   "--cancel", str(self.cancel_path), "--job-status", str(job_status)])
+        worker_args=["--request",str(request),"--output",str(self.job_output),"--cancel",str(self.cancel_path),"--job-status",str(job_status)]
+        self.frozen_events=None
+        if getattr(sys,"frozen",False):
+            self.frozen_events=job_status.with_suffix(".events");self.event_position=0
+            worker_args=["--worker",*worker_args,"--events",str(self.frozen_events),"--log",str(job_status.with_suffix(".worker.log"))]
+        else:worker_args=["-m","controlstresslab.gui_worker",*worker_args]
+        self.process.setArguments(worker_args)
         self.process.readyReadStandardOutput.connect(self.read_events)
         self.log_path = self.workspace / "jobs" / (identifier+".log")
         self.process.readyReadStandardError.connect(self.read_log)
@@ -656,14 +696,21 @@ class Workbench(QMainWindow):
         self.process.errorOccurred.connect(self.process_error)
         self.set_running(True)
         self.process.start()
+        if self.frozen_events:
+            self.event_timer=QTimer(self);self.event_timer.timeout.connect(self.read_events);self.event_timer.start(120)
 
     def set_running(self, active):
         self.running = active
         self.controls.setEnabled(not active)
+        self.scan_page.editor.setEnabled(not active)
+        self.comparison_page.editor.setEnabled(not active)
+        self.tuning_page.set_busy(active)
+        self.model_page.set_busy(active)
+        self.frequency_page.set_busy(active);self.project_page.set_busy(active)
         self.profile_list.setEnabled(not active)
         for w in (self.new_button, self.import_button, self.save_button, self.benchmark_start): w.setEnabled(not active)
-        self.run_button.setVisible(True)
-        self.run_button.setText("取消运行" if active else "▷ 开始对比")
+        self.run_button.setVisible(active or self.pages.currentIndex() == 0)
+        self.run_button.setText("取消运行" if active else "开始对比")
         self.progress.setRange(0, 0 if active else 100)
         if not active: self.progress.setValue(0)
         if active: self.status_label.setText("正在校验并启动独立计算进程…")
@@ -674,6 +721,9 @@ class Workbench(QMainWindow):
 
     def read_events(self):
         self.stdout_buffer += bytes(self.process.readAllStandardOutput())
+        if getattr(self,"frozen_events",None) and self.frozen_events.is_file():
+            with self.frozen_events.open("rb") as stream:
+                stream.seek(self.event_position);self.stdout_buffer+=stream.read();self.event_position=stream.tell()
         while b"\n" in self.stdout_buffer:
             raw, self.stdout_buffer = self.stdout_buffer.split(b"\n", 1)
             try: event = json.loads(raw)
@@ -702,12 +752,22 @@ class Workbench(QMainWindow):
         self.read_log()
         self.set_running(False)
         self.run_button.setEnabled(True)
+        if hasattr(self,"event_timer"):self.event_timer.stop()
+        if self.job_status_path.exists():
+            try:self.last_event=json.loads(self.job_status_path.read_text(encoding="utf-8"))
+            except (ValueError,OSError):pass
         final = self.last_event or {}
         state = final.get("state", "failed")
         if state in ("completed", "completed_with_failures"):
             try:
                 self.result_config_hash = self.active_config_hash if self.job_kind == "experiment" else None
-                self.open_result(self.job_output)
+                if self.job_kind=="project_import":self.project_page.open_folder(self.job_output)
+                elif self.job_kind=="project_export":self.status_label.setText("项目包已保存")
+                else:
+                    if self.active_project and self.job_output.parent==self.active_project/"results":
+                        from .projects import register
+                        register(self.active_project,self.job_output);self.project_page.refresh()
+                    self.open_result(self.job_output)
                 self.status_label.setText("完成，全部数据与图表已保存" if state == "completed" else "完成，但含运行失败；查看逐次指标")
                 self.progress.setValue(100)
             except Exception as exc: self.error("任务结束，但读取结果失败："+str(exc))
@@ -715,11 +775,23 @@ class Workbench(QMainWindow):
             self.status_label.setText("任务已取消/中断，已有数据保留："+self.job_output.name)
         else:
             self.error(final.get("message", "计算进程异常结束；详细信息保存在任务日志："+str(self.log_path)))
+        if self.active_project and self.job_kind not in ("project_import","project_export"):
+            try:
+                import shutil
+                target=self.active_project/"job-log"/self.job_id;target.mkdir(parents=True,exist_ok=True)
+                for path in (self.workspace/"jobs").glob(self.job_id+".*"):
+                    if path.is_file():shutil.copyfile(path,target/path.name)
+                if (self.job_output/"manifest.json").is_file() and self.job_output.parent==self.active_project/"results":
+                    from .projects import register
+                    register(self.active_project,self.job_output)
+                self.project_page.refresh()
+            except Exception as exc:self.error("原始结果已保留，但项目索引/任务日志保存失败："+str(exc))
         self.refresh_history()
 
     def refresh_history(self):
         self.history.clear()
         paths = list((self.workspace / "experiments").iterdir())
+        if self.active_project:paths+=list((self.active_project/"results").iterdir())
         for p in sorted(paths, reverse=True):
             if not (p / "status.json").is_file(): continue
             try:
@@ -736,16 +808,42 @@ class Workbench(QMainWindow):
             try: self.open_result(Path(name))
             except Exception as exc: self.error("读取失败："+str(exc))
 
-    def open_result(self, folder):
+    def open_result(self, folder, *, focus_analysis=True):
         loaded = load_result(folder)
         self.loaded = loaded
         self.trace_cache = {}
+        if loaded["manifest"].get("schema_version")=="frequency-1.0":
+            self.current_records=[];self.result_config_hash=None;self.frequency_page.load_saved(loaded);self.switch_page(6)
+            self.report_button.setEnabled((loaded["folder"]/"report.html").is_file())
+            self.export_button.setEnabled(loaded["verification"]=="校验通过" and loaded["status"].get("artifacts_complete",False))
+            self.status_label.setText("已打开冻结频域分析 · "+loaded["verification"]);return
+        if loaded["manifest"].get("schema_version") == "model-preview-1.0":
+            self.current_records = []; self.result_config_hash = None
+            self.model_page.load_saved(loaded); self.switch_page(5)
+            self.status_label.setText("已打开开环预览 · "+loaded["verification"])
+            self.report_button.setEnabled((loaded["folder"]/"report.html").is_file())
+            self.export_button.setEnabled(loaded["verification"] == "校验通过" and loaded["status"].get("artifacts_complete",False))
+            return
+        if focus_analysis and loaded["manifest"].get("schema_version", "").startswith("tuning-"):
+            self.current_records = []
+            self.result_config_hash = None
+            self.report_button.setEnabled((loaded["folder"] / "report.html").is_file())
+            self.export_button.setEnabled(loaded["status"].get("artifacts_complete", False) and loaded["verification"] == "校验通过")
+            self.tuning_page.load_saved(loaded)
+            self.tuning_tabs.setCurrentIndex(1)
+            self.switch_page(1)
+            self.status_label.setText("已打开整定阶段结果 · "+loaded["verification"])
+            return
         self.case_selector.blockSignals(True)
         self.case_selector.clear()
         groups = {}
         for record in loaded["records"]:
             key = (record["model_name"], record.get("subset", ""), record.get("family", record.get("scenario_name", record["scenario"]["name"])),
                    record.get("parameter_factor", ""), record.get("seed", ""))
+            if loaded["manifest"].get("schema_version") == "comparison-1.0":
+                key = ("全部对照轨迹",)
+            elif "axis_indices" in record:
+                key = (record["model_name"], "轴值 "+str(record["axis_values"]), "seed "+str(record["seed"]))
             groups.setdefault(key, []).append(record)
         self.record_groups = list(groups.values())
         for key in groups: self.case_selector.addItem(" / ".join(str(x) for x in key if x != ""))
@@ -766,11 +864,17 @@ class Workbench(QMainWindow):
             self.status_label.setText("历史格式可查看原HTML报告；"+loaded["verification"])
             self.figure.clear()
             ax = self.figure.add_subplot()
-            ax.set_facecolor("#121315")
+            ax.set_facecolor(PLOT)
             ax.text(.5, .5, "此历史格式请点击“打开报告”查看原始结果", ha="center", color="#b3bac7", transform=ax.transAxes)
             ax.set_axis_off()
             self.metric_strip.setText("历史报告使用原始单位与原始指标")
             self.canvas.draw_idle()
+        if focus_analysis and loaded["manifest"].get("schema_version") == "robustness-1.0":
+            self.scan_page.load_saved(loaded)
+            self.switch_page(3)
+        elif focus_analysis and loaded["manifest"].get("schema_version") == "comparison-1.0":
+            self.comparison_page.load_saved(loaded)
+            self.switch_page(4)
 
     def update_chart_note(self):
         text = "已保存实验 · "+self.loaded["verification"]+" · "+self.loaded["folder"].name
@@ -795,7 +899,7 @@ class Workbench(QMainWindow):
         self.figure.clear()
         self.ax = self.figure.add_subplot()
         ax = self.ax
-        ax.set_facecolor("#121315")
+        ax.set_facecolor(PLOT)
         for spine in ax.spines.values(): spine.set_color("#343943")
         ax.tick_params(colors="#b3bac7", labelsize=10)
         ax.xaxis.label.set_color("#b3bac7")
@@ -810,22 +914,26 @@ class Workbench(QMainWindow):
                 step = max(1, len(times)//5000)
                 ax.step(times[::step], s.reference.values[::step], where="post", color="#b3bac7", label="参考信号", lw=2)
                 other = ax.twinx()
-                other.set_facecolor("#121315")
+                other.set_facecolor(PLOT)
                 other.step(times[::step], s.load.values[::step], where="post", color=COLORS[1], label="扰动信号", lw=1.5)
                 other.tick_params(colors=COLORS[1], labelsize=9)
-                other.set_ylabel("扰动 / "+("N" if c["model"] == "second_order" else "unit"), color=COLORS[1])
+                other.set_ylabel("扰动 / "+spec_for_config(c)["units"]["disturbance"], color=COLORS[1])
                 for spine in other.spines.values(): spine.set_color("#343943")
-                ax.set_ylabel("参考 / "+("m" if c["model"] == "second_order" else "unit"))
+                ax.set_ylabel("参考 / "+spec_for_config(c)["units"]["output"])
                 ax.set_title("信号预览 · 尚未使用此配置运行响应", color="#b3bac7", fontsize=11, pad=12)
                 self.metric_strip.setText("RMSE  —       IAE  —       输入变化量  —       饱和比例  —       恢复状态  —")
             else:
-                for record in self.current_records:
+                for trace_index, record in enumerate(self.current_records):
                     rows = self._trace(record)
                     step = max(1, len(rows)//8000)
                     selected = rows[::step]
                     name = record["controller_name"]
                     text = NAMES.get(name, name)+(f" · {record['phase']}" if "phase" in record else "")
                     color = COLORS[list(CONTROLLERS).index(name)]
+                    if "comparison_label" in record:
+                        from .comparison_plots import COLORS as comparison_colors
+                        text = record["comparison_label"]+" / "+NAMES.get(name,name)
+                        color = comparison_colors[trace_index % len(comparison_colors)]
                     y = [r["reference"]-r["output"] if channel == "error" and r["output"] is not None else r.get(channel) for r in selected]
                     ax.plot([r["time_s"] for r in selected], y, color=color, lw=2.2,
                             ls="--" if record.get("phase") == "baseline" else "-", label=text)
@@ -851,6 +959,7 @@ class Workbench(QMainWindow):
             for item in self.legend_sources: item.set_picker(6)
         except Exception as exc:
             ax.text(0.5, 0.5, "配置或数据不可用\n"+str(exc), transform=ax.transAxes, ha="center", va="center", color="#e9b275", wrap=True)
+        style_plot(self.figure)
         self.canvas.draw_idle()
 
     def zoom_chart(self, event):
@@ -957,7 +1066,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workspace", type=Path, default=Path.cwd() / "outputs/gui")
     parser.add_argument("--open", type=Path, help="打开已保存的实验目录")
+    parser.add_argument("--project",type=Path)
+    parser.add_argument("--desktop-check",type=Path,help=argparse.SUPPRESS)
+    parser.add_argument("--layout-check",type=Path,help=argparse.SUPPRESS)
     args = parser.parse_args()
+    if getattr(sys,"frozen",False) and "--workspace" not in sys.argv:
+        args.workspace=Path(os.environ.get("LOCALAPPDATA",str(Path.home()/"AppData/Local")))/"ControlStressLab"
     app = QApplication.instance() or QApplication(sys.argv[:1])
     # Also supplies glyphs to offscreen QA on Windows.
     fonts = Path(os.environ.get("WINDIR", "C:/Windows")) / "Fonts"
@@ -974,6 +1088,13 @@ def main():
     screen = app.primaryScreen().availableGeometry()
     window.resize(min(1750, screen.width()-40), min(1060, screen.height()-60))
     window.show()
+    if args.project:window.project_page.open_folder(args.project)
+    if args.layout_check:
+        from .desktop_checks import run_layout
+        QTimer.singleShot(200,lambda:run_layout(window,args.layout_check))
+    if args.desktop_check:
+        from .desktop_checks import run
+        QTimer.singleShot(200,lambda:run(window,args.desktop_check))
     if args.open:
         try:
             saved = load_result(args.open)

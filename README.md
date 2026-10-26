@@ -1,148 +1,114 @@
 # ControlStressLab
 
 [![tests](https://github.com/yuz237177-cyber/ControlStressLab/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/yuz237177-cyber/ControlStressLab/actions/workflows/tests.yml)
-[![version](https://img.shields.io/badge/version-0.4.0-blue)](https://github.com/yuz237177-cyber/ControlStressLab/releases/tag/v0.4.0)
+[![version](https://img.shields.io/badge/version-1.0.0-green)](https://github.com/yuz237177-cyber/ControlStressLab/releases/tag/v1.0.0)
 
-**面向单输入单输出系统的控制器压力测试、参数整定与性能评估工具。**
+**面向单输入单输出系统的控制器压力测试、参数整定与性能分析桌面工具。**
 
-Reproducible SISO controller stress testing, budgeted tuning, and frozen held-out evaluation.
+从定义对象、声明要求，到多工况搜索、冻结主选和新工况验证，保留每项结论对应的配置、模型、原始轨迹与图表。项目按动力学类型组织，不绑定电机或轨道交通。
 
-配置被控对象与信号，选择控制方案，在相同条件下比较误差、控制动作、饱和与恢复行为；结果可以追溯到配置、轨迹、随机种子和源码指纹。项目以动力学类型组织，电机是可选应用案例。
+> 全部示例与公开实验来自合成仿真，尚未进行硬件验证。有限工况下满足要求、正裕度或可复现，均不构成真实设备适用性或鲁棒稳定性证明。
 
-> **全部公开结果来自合成仿真，尚未进行硬件验证。** 可复现不等于模型代表真实设备，也不构成稳定性证明。
+## 下载与运行
 
-## v0.4：桌面实验工作台
+**[下载 v1.0.0 Windows x64 便携版](https://github.com/yuz237177-cyber/ControlStressLab/releases/download/v1.0.0/ControlStressLab-v1.0.0-Windows-x64.zip)**（约141 MB，无需安装Python）
 
-已实现 Windows 独立窗口：深色界面、加粗字体、大面积响应图。可配置一阶/二阶对象和4种控制方案，调整波形、噪声、测量延迟与限幅，运行后查看输出/误差/实际输入及逐次指标，并保存完整数据、PNG/SVG、HTML和ZIP。预算页接入既有v0.3冻结测试协议。
+[版本说明与全部附件](https://github.com/yuz237177-cyber/ControlStressLab/releases/tag/v1.0.0) · [SHA256校验清单](https://github.com/yuz237177-cyber/ControlStressLab/releases/download/v1.0.0/SHA256SUMS.txt)
 
-![桌面工作台实际运行截图](docs/design/v0.4-gui-running.png)
+1. 完整解压ZIP，保留同目录的 `_internal` 文件夹。
+2. 双击 `ControlStressLab.exe`。
+3. 进入“研究项目”，选择一阶、二阶或自定义四阶示例，点击“打开完整示例”。
+4. 双击阶段列表查看实验、扫描、搜索、冻结验证和频域结果，再建立自己的模型与协议。
 
-从源码使用：
+默认工作区为 `%LOCALAPPDATA%/ControlStressLab`，项目页显示实际保存位置。修改草稿不会重写历史结果；导出的 `.cslproj` 项目包可以在另一目录导入并继续分析。
+
+已在Windows11 x64本机隔离Python路径后验证完整流程，并检查125%／150%／200%缩放。另一台全新Windows机器、不同显卡及Windows10兼容性仍需进一步复测。
+
+## v1.0能做什么
+
+| 模块 | 功能 |
+|---|---|
+| 通用模型 | 输入1～4阶连续实系数严格真有理SISO传递函数，分别定义控制与扰动通道、单位和初始状态；保存开环预览与采样矩阵 |
+| 配对控制实验 | PI、抗饱和PID、双自由度PID；原内置对象另保留LADRC；在相同参考、扰动、噪声、延迟与限幅下比较 |
+| 参数扫描 | 1～2轴有限网格，检查增益、时间尺度、噪声、延迟与扰动变化，定位不满足要求的原始工况 |
+| 约束整定 | 预先声明误差、饱和比例及动作变化率要求，多工况搜索并比较误差与动作之间的取舍 |
+| 冻结验证 | 保存主选与选择依据，在未参与选择的新工况上验证；保留失败记录，不根据验证结果重新排名选参 |
+| 频域解释 | 对应实际数字PI/PID的Bode、未约消内部极点、S/T、参考／扰动通道和有限频段交越明细，保存逐点与正弦核对 |
+| 完整项目 | 模型、协议、各阶段记录、观察历史与任务日志一起导出，迁移后按冻结指纹定位来源 |
+| 可追溯产物 | 配置、模型快照、CSV、指标、PNG/SVG、离线HTML与文件校验值自动保存 |
+
+### 频域与时域联动
+
+![v1.0实际频域工作台](docs/design/v1.0-desktop-frequency.png)
+
+频域对应未饱和、固定参数的数字控制器分支，保留采样、测量延迟、测量微分及滤波时序。内部稳定性与GM/PM分别报告；缺失、奇点或分辨率受限使用明确状态。有限频段采样不保证找到所有可能的交越。
+
+LADRC的频域模型及通用对象兼容性尚未建立；当前不以近似PID替代。MIMO、直接状态空间编辑、系统辨识和硬件实时闭环不属于v1.0范围。
+
+### 围绕一个问题组织实验
+
+![v1.0实际项目主页](docs/design/v1.0-desktop-project.png)
+
+项目围绕“模型 → 要求 → 搜索 → 选择 → 冻结 → 验证”组织。阶段标记表示记录已保存，是否满足要求请打开对应结果查看。克隆项目继承已观察输入，不能把看过的数据重新当作新验证工况。
+
+三套示例覆盖一阶过程、二阶振荡与自定义四阶对象。每套包含实际运行的实验、扫描、搜索、冻结、验证和频域结果。
+
+## 验证与证据
+
+v1.0本机验收结果：
+
+- **231项测试通过**，包含20项Qt交互、11项频域与5项项目／原子写入检查。
+- 独立参考检查12个频域控制器案例、60条PID／协议记录和41条通用四阶对象轨迹。
+- 隔离外部Python配置后，12个后台任务均使用便携包内的程序，完成项目迁移后的验证和频域重算。
+- 保存17张实际窗口截图；三套完整示例保留102组PNG/SVG以及全部原始轨迹。
+- 原有报告、图片和历史证据包继续保留。
+
+这些数字描述本机已执行的检查，不代表所有平台或全部模型均通过验证。线上检查状态以[GitHub Actions](https://github.com/yuz237177-cyber/ControlStressLab/actions/workflows/tests.yml)为准。
+
+[桌面使用指南](docs/V1_0_DESKTOP_GUIDE.md) · [交付验收与适用边界](docs/V1_0_DESKTOP_VERIFICATION.md) · [模型数学口径](docs/V1_0_GUIDE.md)
+
+## 从源码运行与复现
+
+需要Python 3.10+：
 
 ```sh
 python -m pip install -e ".[gui]"
 python run_gui.py
 ```
 
-Windows也可双击仓库根目录的 `Start-ControlStressLab.cmd`。**v0.4.0提供Python包与源码启动器，需要先安装Python和桌面依赖；本次不提供免Python的便携EXE。**
-
-[下载v0.4.0](https://github.com/yuz237177-cyber/ControlStressLab/releases/tag/v0.4.0) · [完整GUI示例数据、图表与源码](https://github.com/yuz237177-cyber/ControlStressLab/releases/download/v0.4.0/ControlStressLab-v0.4.0-GUI-evidence.zip)
-
-[使用说明与保存位置](docs/GUI_GUIDE.md) · [GUI本机验收记录](docs/GUI_VERIFICATION.md) · [设计与发布范围](docs/V0_4_GUI_PLAN.md)
-
-## v0.3：调参之后真的更好吗？
-
-新增一阶惯性与二阶振荡对象的预算化整定：每组32个候选，只在3个训练场景上选择；**冻结参数后**，再测试未参与选择的信号、对象参数和噪声种子。默认768次训练 + 384次冻结测试。
-
-![各测试族的基线与整定后误差](reports/benchmark-v0.3.0-2026-10-24/figures/heldout_family_errors.png)
-
-本轮一阶对象的4种方案总体误差均下降，但二阶抗饱和PID的族等权NIAE从0.1558上升到0.2242，其动作变化率则下降。一阶LADRC总体误差下降，噪声场景误差和动作变化却增加。**训练改善不保证测试改善，误差与执行代价需要一起看。**
-
-这些数值只对应公开协议与有限搜索范围，不是算法普遍排名；相同候选数也不保证不同维度的算法严格公平。
-
-[实验设计](docs/BENCHMARK_DESIGN.md) · [实际结果](docs/BENCHMARK_RESULTS.md) · [完整报告与图片](reports/benchmark-v0.3.0-2026-10-24/report.html) · [数据和源码ZIP](reports/benchmark-v0.3.0-2026-10-24.zip)
-
-GitHub不直接运行离线HTML；下载仓库或ZIP，在本机打开 `report.html`。
-
-## 快速开始
-
-需要Python 3.10+。核心仿真和报告无第三方运行依赖，绘图与SciPy对照为可选依赖。
+仅使用原有内置对象的核心仿真不依赖第三方数值库；通用模型需要 `.[analysis]`，绘图需要 `.[charts]`。桌面依赖集合已包含二者。
 
 ```sh
-python -m pip install -e ".[charts]"
-controlstresslab-benchmark --config configs/benchmark-v0.3.json --output outputs/my-benchmark --plots
-```
-
-打开 `outputs/my-benchmark/report.html`。较小实验可使用 `configs/benchmark-ci.json`。不需要图片时去掉 `--plots`，只安装 `python -m pip install -e .`。
-
-安装wheel后也可直接运行默认协议，无须配置文件：
-
-```sh
-controlstresslab-benchmark --output my-benchmark
-```
-
-输出目录必须不存在，重新运行请换新目录。出现失败会保留诊断和已有记录；没有可行训练候选时明确终止，不悄悄替换控制器。失败或中断返回非零退出码。
-
-## 测试工作流
-
-1. **配置对象与输入**：选择模型、参考、扰动、噪声、测量延迟与执行限幅。
-2. **选择控制方案**：使用内置控制器，或通过Python接口接入。
-3. **固定比较规则**：运行固定参数覆盖实验，或预先声明搜索范围、预算和动作约束的训练方案。
-4. **评估与解释**：分别查看IAE/RMSE、输入变化量、饱和比例和恢复状态；持续变化参考的常数恢复时间标为不适用。
-5. **保存证据**：离线HTML、逐次CSV/JSON、配对输入/噪声、源码指纹、PNG/SVG和校验清单。
-
-## 对象、算法与信号
-
-| 动力学类型 | 当前代表对象 | 输入/输出单位 |
-|---|---|---|
-| 一阶惯性 | `FirstOrder` | 教学模型unit，可设增益与时间常数 |
-| 二阶振荡 | `MassSpringDamper` | 力N / 位移m；质量、阻尼、刚度 |
-| 机电耦合应用 | 约化、含电感直流电机 | 电压V / 角速度rad/s |
-
-- 控制方案：PI、条件积分抗饱和PID、二自由度PID、一/二阶线性ADRC。ADRC只使用测量和实际输入，不读取真实速度、外扰或其他隐藏状态。
-- 参考：阶跃、斜坡、正弦、三角、扫频、多次阶跃。
-- 扰动：阶跃、脉冲、正弦、方波、扫频、固定种子的独立二值块；另有噪声、测量延迟与组合条件。
-- 信号预采样并零阶保持；当前二值块不是最大长度LFSR序列。
-- Python接口可扩展；当前没有通用非线性模型库、执行输入延迟、实测闭环接入或多变量评测。
-
-### 固定参数覆盖
-
-```sh
-controlstresslab-coverage --models first_order,mass_spring_damper --scenarios reference_sine,disturbance_prbs --output outputs/coverage-small --plots
-controlstresslab-coverage --output outputs/full-coverage --plots
-```
-
-完整覆盖为4对象×4控制方案×14场景，共224次及12组PNG/SVG。参数按对象固定，没有逐场景调参。
-
-![一阶对象：冻结整定前后的响应](reports/benchmark-v0.3.0-2026-10-24/figures/first_order_responses.png)
-
-### 参数失配与压力扫描
-
-v0.3测试改变一阶时间常数和二阶质量，控制器保持名义参数；同时比较新频率、二值扰动、噪声与延迟。配置和选择日志公开于报告。
-
-电机案例仍保留：惯量/摩擦7×7网格共196次，负载/测量延迟网格共286次，作为应用层示例运行：
-
-```sh
-controlstresslab-uncertainty --output outputs/motor-uncertainty --plots
-controlstresslab-stress-grid --output outputs/motor-stress-grid --plots
-controlstresslab --output outputs/legacy-motor-demo
-```
-
-## 结果核验
-
-```sh
+python -m controlstresslab.experiment --config configs/experiment-transfer-function.json --output outputs/my-experiment --plots
+python -m controlstresslab.frequency --output outputs/my-frequency --plots
+python -m controlstresslab.tuning --config configs/tuning-transfer-function.json --output outputs/my-search --plots
 python -m unittest discover -s tests -v
-python scripts/check_benchmark_evidence.py --suite outputs/my-benchmark --output outputs/my-benchmark-audit.json
-python -m pip install ".[reference]"
-python scripts/check_coverage_reference.py --suite outputs/my-benchmark --output outputs/my-benchmark-scipy.json
 ```
 
-产物审计独立检查训练选择、冻结指纹、配对输入、逐次配置及CSV指标；SciPy脚本不导入产品模块，以独立状态空间矩阵复算对象响应与LADRC请求。新实验保存432条原始轨迹，全部通过两类检查。另保留54配置的独立闭环/开环实现对照。
+输出目录必须是新目录。原始HTML报告需下载后在本机打开；GitHub网页不直接运行离线HTML。
 
-对象输入回放不等于新的完整独立非线性闭环实验，同一开发者的第二份实现也不等于第三方审计。详见[当前校验状态](docs/VERIFICATION_STATUS.md)。
-
-只有 `status.json` 中 `artifacts_complete=true` 且校验清单通过，才表示产物完整；它不表示全部运行成功。失败指标为null，不作零误差。变化量不是能耗，观察窗恢复不是无限时域稳定性。场景和参数网格不作为IID样本，不换算为现实可靠性概率。
-
-## 保存和复现
-
-[全部历史成果](reports/README.md)保留本轮8组PNG/SVG、384条测试与48条训练CSV，以及此前各轮所有报告和图片。
-
-早期案例仍可查看：[历史电机示例](docs/examples/README.md)、[九张图表与说明](docs/examples/gallery/README.md)及[离线图表浏览页](docs/examples/gallery/index.html)（下载后本机打开）。
+在Windows上重新构建便携包：
 
 ```sh
-python scripts/archive_results.py --source outputs/my-benchmark --destination reports/my-benchmark
+python -m pip install -e ".[gui,build,reference]"
+python scripts/build_desktop.py --verify
 ```
 
-归档复制完整产物和匹配源码，生成逐文件校验后的ZIP。目标已存在时拒绝覆盖。
+构建脚本生成完整示例、独立程序、迁移和缩放检查、逐文件清单及ZIP；已有交付目录不会覆盖。[详细构建与使用说明](docs/V1_0_DESKTOP_GUIDE.md)
 
-| 文档 | 内容 |
+## 设计记录与后续研究
+
+| 内容 | 入口 |
 |---|---|
-| [v0.3设计](docs/BENCHMARK_DESIGN.md) / [结果](docs/BENCHMARK_RESULTS.md) | 搜索、预算、约束和训练/测试隔离 |
-| [覆盖设计](docs/COVERAGE_EXPANSION_DESIGN.md) / [结果](docs/COVERAGE_EXPANSION_RESULTS.md) | 模型、波形和控制方案 |
-| [扩展接口](docs/EXTENDING.md) | 自定义对象、控制器与信号 |
-| [实验协议](docs/EXPERIMENT_PROTOCOL.md) | 时序、指标、窗口及失败 |
-| [独立对照](docs/REFERENCE_COMPARISON_DESIGN.md) | 数值路径、范围与容差 |
-| [验证计划](docs/VALIDATION_PLAN.md) / [数据说明](data/README.md) | 合成与实测证据边界 |
-| [路线](docs/ROADMAP.md) / [变更](CHANGELOG.md) | 当前与后续工作 |
+| 版本与兼容范围 | [CHANGELOG](CHANGELOG.md) · [路线图](docs/ROADMAP.md) |
+| 本轮验收状态 | [校验记录](docs/VERIFICATION_STATUS.md) |
+| 多工况约束整定 | [协议](docs/V0_8_EXPERIMENT_PROTOCOL.md) · [功能说明](docs/V0_8_GUIDE.md) |
+| 扫描与跨实验对照 | [v0.6说明](docs/V0_6_GUIDE.md) |
+| 历史GUI与结果 | [v0.9界面记录](docs/V0_9_GUI_GUIDE.md) · [v0.4历史版本](https://github.com/yuz237177-cyber/ControlStressLab/releases/tag/v0.4.0) |
+| 研究计划 | [v2.0科研路线](docs/V2_0_RESEARCH_PLAN.md) |
 
-欢迎带配置、环境和复现步骤的问题反馈。引入对象请说明单位、假设及参数来源。MIT License.
+v2.0计划围绕有限预算下的约束感知工况采样开展本科研究，先做文献核对与基线复现，再进行预声明实验和独立验证。目前不宣称方法新颖性或已取得论文结果。
+
+## License
+
+[MIT](LICENSE)。Windows包另附所用第三方组件的许可文本。

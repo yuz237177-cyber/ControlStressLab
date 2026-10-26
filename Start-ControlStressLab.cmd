@@ -1,6 +1,10 @@
 @echo off
 setlocal
 cd /d "%~dp0"
+if exist "%~dp0dist\v1.0.0\ControlStressLab\ControlStressLab.exe" (
+  start "" "%~dp0dist\v1.0.0\ControlStressLab\ControlStressLab.exe" --workspace "%~dp0outputs\gui" %*
+  exit /b
+)
 set "CSL_RUNTIME=%USERPROFILE%\.cache\codex-runtimes\codex-primary-runtime\dependencies\python"
 if exist "%CSL_RUNTIME%\pythonw.exe" (
   start "" "%CSL_RUNTIME%\pythonw.exe" "%~dp0run_gui.py"

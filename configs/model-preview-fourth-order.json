@@ -1,0 +1,33 @@
+{
+  "plant": {
+    "name": "四阶惯性对象",
+    "numerator": [
+      24.0
+    ],
+    "denominator": [
+      1.0,
+      10.0,
+      35.0,
+      50.0,
+      24.0
+    ],
+    "disturbance_numerator": [
+      1.0
+    ],
+    "initial_state": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gain_scale": 1.0,
+    "time_scale": 1.0,
+    "units": {
+      "input": "unit",
+      "output": "unit",
+      "disturbance": "unit"
+    }
+  },
+  "dt_s": 0.02,
+  "duration_s": 12.0
+}

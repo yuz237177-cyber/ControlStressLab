@@ -1,0 +1,35 @@
+name: Windows portable desktop
+on:
+  workflow_dispatch:
+    inputs:
+      native_verify:
+        description: "Run native desktop acceptance (requires an interactive Windows desktop)"
+        type: boolean
+        default: false
+jobs:
+  portable:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e ".[gui,build,reference]"
+      - run: python -m unittest discover -s tests -v
+        env:
+          QT_QPA_PLATFORM: offscreen
+      - name: Build with native acceptance
+        if: inputs.native_verify
+        run: python scripts/build_desktop.py --verify
+      - name: Build package without native desktop certification
+        if: ${{ !inputs.native_verify }}
+        run: python scripts/build_desktop.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ControlStressLab-Windows-x64
+          path: |
+            dist/*.zip
+            dist/*.sha256.txt
+            dist/*delivery.json
+      - run: echo "Check delivery.json verified status. A CI build does not replace separate clean-machine validation." >> $env:GITHUB_STEP_SUMMARY

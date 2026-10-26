@@ -40,7 +40,8 @@ def write_csv(path: Path, rows: list[dict]) -> None:
 
 
 def write_json(path: Path, value: dict) -> None:
-    path.write_text(json.dumps(value, indent=2, allow_nan=False), encoding="utf-8", newline="\n")
+    from .experiment import atomic_json
+    atomic_json(path,value)
 
 
 def batch_status(state: str, expected: int, written: int, failed: int, *, complete: bool = False, error: BaseException | None = None) -> dict:

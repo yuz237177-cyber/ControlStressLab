@@ -16,6 +16,7 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--cancel", type=Path, required=True)
     parser.add_argument("--job-status", type=Path, required=True)
+    parser.add_argument("--events",type=Path);parser.add_argument("--log",type=Path)
     args = parser.parse_args()
     def emit(value):
         print(json.dumps(value, ensure_ascii=True, allow_nan=False), flush=True)
@@ -30,9 +31,33 @@ def main():
                 original.flush()
             if request["kind"] == "experiment":
                 report, failed = execute(args.output, request["config"], plots=True, progress=progress, should_cancel=args.cancel.exists)
+            elif request["kind"] == "model_preview":
+                from .model_analysis import execute as preview
+                report, failed = preview(args.output, request["config"], plots=True, progress=progress, should_cancel=args.cancel.exists)
+            elif request["kind"] == "frequency":
+                from .frequency import execute as analyze
+                report,failed=analyze(args.output,request["config"],plots=True,progress=progress,should_cancel=args.cancel.exists)
+            elif request["kind"]=="project_export":
+                from .projects import export_bundle
+                report=export_bundle(request["config"]["folder"],request["config"]["destination"],args.cancel.exists);failed=0
+            elif request["kind"]=="project_import":
+                from .projects import import_bundle
+                report=import_bundle(request["config"]["archive"],request["config"]["destination"],args.cancel.exists);failed=0
             elif request["kind"] == "benchmark":
                 from .benchmark import execute as benchmark
                 report, failed = benchmark(args.output, request["config"], plots=True, progress=progress, should_cancel=args.cancel.exists)
+            elif request["kind"] in ("robustness", "comparison"):
+                from importlib import import_module
+                runner = import_module("controlstresslab."+request["kind"]).execute
+                report, failed = runner(args.output, request["config"], plots=True, progress=progress, should_cancel=args.cancel.exists)
+            elif request["kind"] in ("tuning_search", "tuning_freeze", "tuning_validation"):
+                if request["kind"] == "tuning_search":
+                    from .tuning import execute as runner
+                elif request["kind"] == "tuning_freeze":
+                    from .tuning_validation import freeze as runner
+                else:
+                    from .tuning_validation import execute as runner
+                report, failed = runner(args.output, request["config"], plots=True, progress=progress, should_cancel=args.cancel.exists)
             elif request["kind"] == "export":
                 progress(dict(event="progress", stage="打包并逐文件校验报告", written=0, expected=1, failed=0))
                 export_zip(Path(request["config"]["folder"]), Path(request["config"]["destination"]), should_cancel=args.cancel.exists)
@@ -40,7 +65,8 @@ def main():
             else:
                 raise ValueError("未知任务类型")
         state = "completed_with_failures" if failed else "completed"
-        final = dict(event="finished", state=state, report=str(report), output=str(args.output), failed=failed)
+        final = dict(event="finished", state=state, report=str(report), output=str(args.output), failed=failed,
+                     runtime=dict(frozen=bool(getattr(sys,"frozen",False)),executable=sys.executable,prefix=sys.prefix))
         atomic_json(args.job_status, final)
         emit(final)
         return 1 if failed else 0

@@ -1,0 +1,261 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1200" viewBox="0 0 1920 1200">
+<title>ControlStressLab v0.9 original visual proposal</title>
+<desc>Design proposal, not an implemented application screenshot. Scatter points and metrics come from a saved v0.8 search. No third-party artwork is embedded.</desc>
+<rect x="0" y="0" width="1920" height="1200" fill="#101416" stroke="none"/>
+<rect x="0" y="0" width="262" height="1200" fill="#0C1012" stroke="none"/>
+<path d="M262,0 L262,1200" stroke="#343D41" stroke-width="1" fill="none"/>
+<polygon points="30.000,29.000 40.000,29.000 30.000,39.000" fill="#EEF0E8" stroke="none" stroke-width="1"/>
+<polygon points="43.000,29.000 53.000,29.000 43.000,39.000" fill="#E4F13B" stroke="none" stroke-width="1"/>
+<polygon points="43.000,42.000 53.000,42.000 43.000,52.000" fill="#EEF0E8" stroke="none" stroke-width="1"/>
+<polygon points="56.000,42.000 66.000,42.000 56.000,52.000" fill="#E4F13B" stroke="none" stroke-width="1"/>
+<polygon points="30.000,55.000 40.000,55.000 30.000,65.000" fill="#EEF0E8" stroke="none" stroke-width="1"/>
+<polygon points="56.000,55.000 66.000,55.000 56.000,65.000" fill="#EEF0E8" stroke="none" stroke-width="1"/>
+<text x="89" y="50.0" font-family="Bahnschrift" font-size="25" font-weight="700" fill="#EEF0E8">CS / LAB</text>
+<text x="29" y="126.52" font-family="Bahnschrift" font-size="31" font-weight="700" fill="#EEF0E8">CONTROL</text>
+<text x="29" y="164.52" font-family="Bahnschrift" font-size="31" font-weight="700" fill="#EEF0E8">STRESS LAB.</text>
+<text x="30" y="199.8" font-family="Microsoft YaHei" font-size="15" font-weight="700" fill="#AAB5B7">控制器压力测试工作台</text>
+<rect x="30" y="224" width="40" height="3" fill="#E4F13B" stroke="none"/>
+<path d="M80,225 L230,225" stroke="#343D41" stroke-width="1" fill="none"/>
+<text x="30" y="269.56" font-family="Microsoft YaHei" font-size="18" font-weight="700" fill="#EEF0E8">实验档案</text>
+<text x="30" y="294.12" font-family="Bahnschrift" font-size="11" font-weight="700" fill="#AAB5B7">EXPERIMENT ARCHIVE</text>
+<polygon points="20.000,321.000 233.000,321.000 242.000,330.000 242.000,424.000 29.000,424.000 20.000,415.000" fill="#242B2C" stroke="#343D41" stroke-width="1"/>
+<rect x="20" y="321" width="5" height="103" fill="#E4F13B" stroke="none"/>
+<text x="37" y="363.76" font-family="Bahnschrift" font-size="28" font-weight="700" fill="#E4F13B">01</text>
+<text x="83" y="357.48" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#EEF0E8">一阶惯性</text>
+<text x="37" y="395.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">抗饱和 PID · 已保存搜索</text>
+<polygon points="20.000,440.000 233.000,440.000 242.000,449.000 242.000,527.000 29.000,527.000 20.000,518.000" fill="#151B1D" stroke="#343D41" stroke-width="1"/>
+<text x="37" y="478.0" font-family="Bahnschrift" font-size="25" font-weight="700" fill="#AAB5B7">02</text>
+<text x="83" y="473.56" font-family="Microsoft YaHei" font-size="18" font-weight="700" fill="#EEF0E8">二阶振荡</text>
+<text x="37" y="503.96" font-family="Microsoft YaHei" font-size="13" font-weight="700" fill="#AAB5B7">双自由度 PID · 实验档案</text>
+<polygon points="20.000,551.000 233.000,551.000 242.000,560.000 242.000,597.000 29.000,597.000 20.000,588.000" fill="#222A2D" stroke="#343D41" stroke-width="1"/>
+<text x="37" y="578.64" font-family="Microsoft YaHei" font-size="17" font-weight="700" fill="#EEF0E8">＋ 新建实验</text>
+<polygon points="20.000,607.000 115.000,607.000 124.000,616.000 124.000,653.000 29.000,653.000 20.000,644.000" fill="#222A2D" stroke="#343D41" stroke-width="1"/>
+<text x="37" y="634.64" font-family="Microsoft YaHei" font-size="17" font-weight="700" fill="#EEF0E8">导入</text>
+<polygon points="136.000,607.000 233.000,607.000 242.000,616.000 242.000,653.000 145.000,653.000 136.000,644.000" fill="#222A2D" stroke="#343D41" stroke-width="1"/>
+<text x="153" y="634.64" font-family="Microsoft YaHei" font-size="17" font-weight="700" fill="#EEF0E8">打开</text>
+<text x="30" y="737.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">当前对象</text>
+<text x="30" y="772.48" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#EEF0E8">一阶惯性</text>
+<path d="M30,788 L232,788" stroke="#343D41" stroke-width="1" fill="none"/>
+<text x="30" y="827.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">记录范围</text>
+<text x="30" y="862.48" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#EEF0E8">32 候选 / 24 条件</text>
+<path d="M30,878 L232,878" stroke="#343D41" stroke-width="1" fill="none"/>
+<text x="30" y="1039.04" font-family="Bahnschrift" font-size="12" font-weight="700" fill="#AAB5B7">FINITE CONDITIONS</text>
+<text x="30" y="1068.8" font-family="Microsoft YaHei" font-size="15" font-weight="700" fill="#EEF0E8">有限工况 · 合成模型</text>
+<text x="30" y="1136.04" font-family="Bahnschrift" font-size="12" font-weight="700" fill="#E4F13B">v0.9 / VISUAL PROPOSAL</text>
+<text x="298" y="52.480000000000004" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#AAB5B7">实验对比</text>
+<text x="447" y="52.480000000000004" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#E4F13B">预算整定</text>
+<rect x="447" y="77" width="100" height="4" fill="#E4F13B" stroke="none"/>
+<text x="596" y="52.480000000000004" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#AAB5B7">历史实验</text>
+<text x="745" y="52.480000000000004" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#AAB5B7">参数扫描</text>
+<text x="894" y="52.480000000000004" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#AAB5B7">实验对照</text>
+<text x="1398" y="48.8" font-family="Microsoft YaHei" font-size="15" font-weight="700" fill="#AAB5B7">视觉提案 / 真实 v0.8 数据</text>
+<path d="M292,83 L1890,83" stroke="#343D41" stroke-width="1" fill="none"/>
+<text x="299" y="116.88" font-family="Bahnschrift" font-size="14" font-weight="700" fill="#E4F13B">WORKSPACE / 02</text>
+<text x="296" y="172.56" font-family="Microsoft YaHei" font-size="43" font-weight="700" fill="#EEF0E8">约束多目标整定</text>
+<text x="300" y="212.48" font-family="Bahnschrift" font-size="19" font-weight="700" fill="#AAB5B7">CONSTRAINED TUNING</text>
+<text x="985" y="162.56" font-family="Microsoft YaHei" font-size="18" font-weight="700" fill="#AAB5B7">从性能取舍，到可复查的参数选择。</text>
+<text x="1642" y="188.88" font-family="Bahnschrift" font-size="89" font-weight="700" fill="#354045">03</text>
+<text x="1787" y="192.0" font-family="Bahnschrift" font-size="25" font-weight="700" fill="#AAB5B7">/ 04</text>
+<circle cx="1430" cy="120" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1440" cy="120" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1450" cy="120" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1460" cy="120" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1470" cy="120" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1480" cy="120" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1490" cy="120" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1500" cy="120" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1510" cy="120" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1520" cy="120" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1530" cy="120" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1430" cy="130" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1440" cy="130" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1450" cy="130" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1460" cy="130" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1470" cy="130" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1480" cy="130" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1490" cy="130" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1500" cy="130" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1510" cy="130" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1520" cy="130" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1530" cy="130" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1430" cy="140" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1440" cy="140" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1450" cy="140" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1460" cy="140" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1470" cy="140" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1480" cy="140" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1490" cy="140" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1500" cy="140" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1510" cy="140" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1520" cy="140" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1530" cy="140" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1430" cy="150" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1440" cy="150" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1450" cy="150" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1460" cy="150" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1470" cy="150" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1480" cy="150" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1490" cy="150" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1500" cy="150" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1510" cy="150" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1520" cy="150" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<circle cx="1530" cy="150" r="1.1" fill="#303A3D" stroke="none" stroke-width="1"/>
+<rect x="298" y="246" width="386" height="55" fill="#191F22" stroke="#343D41"/>
+<text x="314" y="278.32" font-family="Bahnschrift" font-size="21" font-weight="700" fill="#AAB5B7">01</text>
+<text x="361" y="277.56" font-family="Microsoft YaHei" font-size="18" font-weight="700" fill="#EEF0E8">设置要求</text>
+<text x="584" y="276.96" font-family="Microsoft YaHei" font-size="13" font-weight="700" fill="#AAB5B7">完成</text>
+<rect x="697" y="246" width="386" height="55" fill="#191F22" stroke="#343D41"/>
+<text x="713" y="278.32" font-family="Bahnschrift" font-size="21" font-weight="700" fill="#AAB5B7">02</text>
+<text x="760" y="277.56" font-family="Microsoft YaHei" font-size="18" font-weight="700" fill="#EEF0E8">搜索候选</text>
+<text x="983" y="276.96" font-family="Microsoft YaHei" font-size="13" font-weight="700" fill="#AAB5B7">完成</text>
+<rect x="1096" y="246" width="386" height="55" fill="#252D2E" stroke="#343D41"/>
+<rect x="1096" y="246" width="4" height="55" fill="#E4F13B" stroke="none"/>
+<text x="1112" y="278.32" font-family="Bahnschrift" font-size="21" font-weight="700" fill="#E4F13B">03</text>
+<text x="1159" y="277.56" font-family="Microsoft YaHei" font-size="18" font-weight="700" fill="#EEF0E8">选择与冻结</text>
+<text x="1382" y="276.96" font-family="Microsoft YaHei" font-size="13" font-weight="700" fill="#E4F13B">当前</text>
+<rect x="1495" y="246" width="386" height="55" fill="#191F22" stroke="#343D41"/>
+<text x="1511" y="278.32" font-family="Bahnschrift" font-size="21" font-weight="700" fill="#AAB5B7">04</text>
+<text x="1558" y="277.56" font-family="Microsoft YaHei" font-size="18" font-weight="700" fill="#EEF0E8">验证与报告</text>
+<text x="1781" y="276.96" font-family="Microsoft YaHei" font-size="13" font-weight="700" fill="#AAB5B7">待开始</text>
+<rect x="298" y="322" width="1194" height="608" fill="#181D20" stroke="#343D41"/>
+<rect x="298" y="322" width="5" height="56" fill="#66D9DC" stroke="none"/>
+<text x="320" y="363.0" font-family="Microsoft YaHei" font-size="25" font-weight="700" fill="#EEF0E8">候选取舍</text>
+<text x="486" y="360.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">32 个候选 · 24 组声明条件</text>
+<text x="1153" y="359.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#66D9DC">搜索已完成 / 要求已检查</text>
+<text x="320" y="412.72" font-family="Microsoft YaHei" font-size="16" font-weight="700" fill="#EEF0E8">候选取舍</text>
+<rect x="320" y="427" width="92" height="3" fill="#66D9DC" stroke="none"/>
+<text x="458" y="412.72" font-family="Microsoft YaHei" font-size="16" font-weight="700" fill="#AAB5B7">响应对照</text>
+<text x="596" y="412.72" font-family="Microsoft YaHei" font-size="16" font-weight="700" fill="#AAB5B7">实际输入</text>
+<text x="734" y="412.72" font-family="Microsoft YaHei" font-size="16" font-weight="700" fill="#AAB5B7">要求明细</text>
+<text x="1066" y="410.96" font-family="Microsoft YaHei" font-size="13" font-weight="700" fill="#AAB5B7">★ 非支配候选   ◇ 基线   ● 其他候选</text>
+<path d="M390.0,477 L390.0,810" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="373.0" y="836.96" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">0.05</text>
+<path d="M598.0,477 L598.0,810" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="581.0" y="836.96" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">0.10</text>
+<path d="M806.0,477 L806.0,810" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="789.0" y="836.96" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">0.15</text>
+<path d="M1014.0,477 L1014.0,810" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="997.0" y="836.96" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">0.20</text>
+<path d="M1222.0,477 L1222.0,810" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="1205.0" y="836.96" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">0.25</text>
+<path d="M1430.0,477 L1430.0,810" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="1413.0" y="836.96" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">0.30</text>
+<path d="M390,810.0 L1430,810.0" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="360" y="814.96" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">0</text>
+<path d="M390,762.4285714285714 L1430,762.4285714285714" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="360" y="767.3885714285715" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">1</text>
+<path d="M390,714.8571428571429 L1430,714.8571428571429" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="360" y="719.8171428571429" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">2</text>
+<path d="M390,667.2857142857142 L1430,667.2857142857142" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="360" y="672.2457142857143" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">3</text>
+<path d="M390,619.7142857142858 L1430,619.7142857142858" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="360" y="624.6742857142858" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">4</text>
+<path d="M390,572.1428571428571 L1430,572.1428571428571" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="360" y="577.1028571428571" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">5</text>
+<path d="M390,524.5714285714286 L1430,524.5714285714286" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="360" y="529.5314285714286" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">6</text>
+<path d="M390,477.0 L1430,477.0" stroke="#2B3539" stroke-width="1" fill="none"/>
+<text x="360" y="481.96" font-family="Consolas" font-size="13" font-weight="700" fill="#AAB5B7">7</text>
+<path d="M390,477 L390,810" stroke="#68777C" stroke-width="1" fill="none"/>
+<path d="M390,810 L1430,810" stroke="#68777C" stroke-width="1" fill="none"/>
+<text x="341" y="455.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">动作目标 J2 / (1/s)</text>
+<text x="1193" y="870.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">误差目标 J1 / 归一化 RMSE</text>
+<polygon points="735.782,717.829 741.782,723.829 735.782,729.829 729.782,723.829" fill="#181D20" stroke="#D3DAD6" stroke-width="2"/>
+<text x="745.7818430395944" y="717.7893181440344" font-family="Microsoft YaHei" font-size="13" font-weight="700" fill="#AAB5B7">基线 0</text>
+<circle cx="845.6444725571082" cy="764.7366886615971" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<polygon points="965.108,788.210 967.166,793.378 972.717,793.738 968.437,797.291 969.811,802.682 965.108,799.710 960.406,802.682 961.780,797.291 957.500,793.738 963.051,793.378" fill="#66D9DC" stroke="none" stroke-width="1"/>
+<text x="974.1084665828148" y="790.1696825440006" font-family="Consolas" font-size="13" font-weight="700" fill="#66D9DC">2</text>
+<circle cx="781.8800873918146" cy="762.2387032757238" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="938.1321664514727" cy="764.7605569468388" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="599.7099315328051" cy="713.2503844416041" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="449.0286321308003" cy="706.3466569605696" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="1147.2836679470438" cy="797.6775687146956" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="751.4777553694939" cy="670.6578262732671" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="1273.8873858997522" cy="776.5612844657879" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<polygon points="448.965,704.699 451.022,709.867 456.573,710.227 452.294,713.780 453.667,719.171 448.965,716.199 444.263,719.171 445.636,713.780 441.356,710.227 446.908,709.867" fill="#66D9DC" stroke="none" stroke-width="1"/>
+<text x="457.96486259947784" y="706.6589327274071" font-family="Consolas" font-size="13" font-weight="700" fill="#66D9DC">10</text>
+<circle cx="1057.1596325908995" cy="789.4372919770807" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<polygon points="1086.769,791.987 1088.826,797.155 1094.377,797.515 1090.098,801.068 1091.471,806.459 1086.769,803.487 1082.067,806.459 1083.440,801.068 1079.160,797.515 1084.712,797.155" fill="#AD8CF2" stroke="none" stroke-width="1"/>
+<text x="1095.7688215178814" y="793.9468519098837" font-family="Consolas" font-size="13" font-weight="700" fill="#AD8CF2">12</text>
+<circle cx="785.0163072780231" cy="612.0441508487862" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="871.2807531694739" cy="758.9650024501482" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<polygon points="534.439,725.001 536.496,730.170 542.047,730.529 537.768,734.083 539.141,739.473 534.439,736.501 529.737,739.473 531.110,734.083 526.830,730.529 532.382,730.170" fill="#66D9DC" stroke="none" stroke-width="1"/>
+<text x="543.4388841553787" y="726.9610872688438" font-family="Consolas" font-size="13" font-weight="700" fill="#66D9DC">15</text>
+<circle cx="689.4310436498513" cy="699.4964341113821" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="995.3684398091568" cy="793.949694269325" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="901.2500370906075" cy="758.281976009917" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<polygon points="571.838,746.057 573.895,751.225 579.446,751.585 575.166,755.138 576.540,760.529 571.838,757.557 567.135,760.529 568.509,755.138 564.229,751.585 569.780,751.225" fill="#66D9DC" stroke="none" stroke-width="1"/>
+<text x="580.8376608517938" y="748.0168303901896" font-family="Consolas" font-size="13" font-weight="700" fill="#66D9DC">19</text>
+<circle cx="493.4588752625744" cy="578.420524821629" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="739.2871536450413" cy="753.1809672598199" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="633.1102626144511" cy="706.3835806128559" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="1244.382699772633" cy="786.5085524996201" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<polygon points="634.704,766.320 636.762,771.489 642.313,771.848 638.033,775.402 639.407,780.792 634.704,777.820 630.002,780.792 631.376,775.402 627.096,771.848 632.647,771.489" fill="#66D9DC" stroke="none" stroke-width="1"/>
+<text x="643.704425011861" y="768.280275557177" font-family="Consolas" font-size="13" font-weight="700" fill="#66D9DC">24</text>
+<circle cx="1321.6423052766052" cy="770.831655311483" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<polygon points="443.917,670.635 445.974,675.804 451.526,676.163 447.246,679.717 448.619,685.108 443.917,682.135 439.215,685.108 440.588,679.717 436.309,676.163 441.860,675.804" fill="#66D9DC" stroke="none" stroke-width="1"/>
+<circle cx="461.9003300035802" cy="712.2715251620258" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="695.5022075707993" cy="600.6823872041459" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="1030.026355925658" cy="572.4860279278464" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="1179.6658805427585" cy="494.26737239010686" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="1047.5222785747987" cy="597.6605965236337" r="4.5" fill="#7C898E" stroke="none" stroke-width="1"/>
+<circle cx="443.91713196190534" cy="678.6354288082673" r="15" fill="none" stroke="#E4F13B" stroke-width="2"/>
+<path d="M458.91713196190534,668.6354288082673 L498.91713196190534,636.6354288082673" stroke="#E4F13B" stroke-width="1" fill="none"/>
+<polygon points="498.917,602.635 646.917,602.635 655.917,611.635 655.917,657.635 507.917,657.635 498.917,648.635" fill="#263235" stroke="#343D41" stroke-width="1"/>
+<text x="510.91713196190534" y="623.6754288082673" font-family="Microsoft YaHei" font-size="12" font-weight="700" fill="#AAB5B7">当前查看</text>
+<text x="510.91713196190534" y="650.1154288082673" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#E4F13B">候选 26</text>
+<text x="321" y="898.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">点击候选查看参数与轨迹；悬停读取完整数值。</text>
+<rect x="1512" y="322" width="378" height="608" fill="#181D20" stroke="#343D41"/>
+<polygon points="1530.000,340.000 1863.000,340.000 1872.000,349.000 1872.000,444.000 1539.000,444.000 1530.000,435.000" fill="#EEF0E8" stroke="none" stroke-width="1"/>
+<text x="1548" y="364.04" font-family="Bahnschrift" font-size="12" font-weight="700" fill="#101416">当前查看 / INSPECTING</text>
+<text x="1546" y="425.44" font-family="Bahnschrift" font-size="57" font-weight="700" fill="#101416">26</text>
+<text x="1669" y="388.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#46514C">搜索要求</text>
+<text x="1669" y="426.08" font-family="Microsoft YaHei" font-size="24" font-weight="700" fill="#101416">满足</text>
+<text x="1534" y="483.56" font-family="Microsoft YaHei" font-size="18" font-weight="700" fill="#EEF0E8">控制器参数</text>
+<text x="1757" y="483.88" font-family="Consolas" font-size="14" font-weight="700" fill="#AAB5B7">PID_aw</text>
+<text x="1534" y="522.8" font-family="Microsoft YaHei" font-size="15" font-weight="700" fill="#AAB5B7">比例 kp</text>
+<text x="1715" y="525.32" font-family="Consolas" font-size="21" font-weight="700" fill="#EEF0E8">5.80412</text>
+<text x="1534" y="567.8" font-family="Microsoft YaHei" font-size="15" font-weight="700" fill="#AAB5B7">积分 ki</text>
+<text x="1715" y="570.32" font-family="Consolas" font-size="21" font-weight="700" fill="#EEF0E8">2.26095</text>
+<text x="1534" y="612.8" font-family="Microsoft YaHei" font-size="15" font-weight="700" fill="#AAB5B7">微分 kd</text>
+<text x="1715" y="615.32" font-family="Consolas" font-size="21" font-weight="700" fill="#EEF0E8">0.0407408</text>
+<path d="M1534,654 L1868,654" stroke="#343D41" stroke-width="1" fill="none"/>
+<text x="1534" y="688.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">误差目标 J1</text>
+<text x="1534" y="732.52" font-family="Consolas" font-size="31" font-weight="700" fill="#EEF0E8">0.062961</text>
+<text x="1722" y="726.96" font-family="Microsoft YaHei" font-size="13" font-weight="700" fill="#66D9DC">较基线 -52.7%</text>
+<text x="1534" y="777.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">动作目标 J2</text>
+<text x="1534" y="820.52" font-family="Consolas" font-size="31" font-weight="700" fill="#EEF0E8">2.7614</text>
+<text x="1722" y="816.96" font-family="Microsoft YaHei" font-size="13" font-weight="700" fill="#E4F13B">较基线 +52.4%</text>
+<path d="M1534,855 L1868,855" stroke="#343D41" stroke-width="1" fill="none"/>
+<text x="1534" y="889.72" font-family="Microsoft YaHei" font-size="16" font-weight="700" fill="#E4F13B">主选状态：尚未冻结</text>
+<text x="1534" y="916.96" font-family="Microsoft YaHei" font-size="13" font-weight="700" fill="#AAB5B7">更低误差伴随更多控制动作。</text>
+<rect x="298" y="950" width="1194" height="142" fill="#181D20" stroke="#343D41"/>
+<text x="320" y="987.4" font-family="Microsoft YaHei" font-size="20" font-weight="700" fill="#EEF0E8">要求与测试计划</text>
+<text x="1304" y="987.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">展开编辑  ＋</text>
+<text x="320" y="1030.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">误差上限</text>
+<text x="523" y="1033.48" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#EEF0E8">未启用</text>
+<path d="M681,1012 L681,1060" stroke="#343D41" stroke-width="1" fill="none"/>
+<text x="709" y="1030.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">饱和比例上限</text>
+<text x="912" y="1033.48" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#EEF0E8">25%</text>
+<path d="M1070,1012 L1070,1060" stroke="#343D41" stroke-width="1" fill="none"/>
+<text x="1098" y="1030.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">动作变化率上限</text>
+<text x="1301" y="1033.48" font-family="Microsoft YaHei" font-size="19" font-weight="700" fill="#EEF0E8">未启用</text>
+<text x="320" y="1076.04" font-family="Microsoft YaHei" font-size="12" font-weight="700" fill="#AAB5B7">对象、采样和要求均来自已保存的搜索协议。</text>
+<text x="1515" y="967.8" font-family="Microsoft YaHei" font-size="15" font-weight="700" fill="#EEF0E8">主选候选 26  /  比较候选 12</text>
+<polygon points="1512.000,989.000 1881.000,989.000 1890.000,998.000 1890.000,1051.000 1521.000,1051.000 1512.000,1042.000" fill="#E4F13B" stroke="none" stroke-width="1"/>
+<text x="1535" y="1027.16" font-family="Microsoft YaHei" font-size="23" font-weight="700" fill="#101416">冻结所选方案</text>
+<text x="1836" y="1027.84" font-family="Microsoft YaHei" font-size="27" font-weight="700" fill="#101416">→</text>
+<text x="1516" y="1082.88" font-family="Microsoft YaHei" font-size="14" font-weight="700" fill="#AAB5B7">冻结后，才可运行新工况验证。</text>
+<path d="M298,1120 L1890,1120" stroke="#343D41" stroke-width="1" fill="none"/>
+<rect x="298" y="1139" width="8" height="8" fill="#E4F13B" stroke="none"/>
+<text x="321" y="1148.8" font-family="Microsoft YaHei" font-size="15" font-weight="700" fill="#EEF0E8">视觉提案 · 尚未接入主程序</text>
+<text x="776" y="1148.96" font-family="Microsoft YaHei" font-size="13" font-weight="700" fill="#AAB5B7">真实数据来自 v0.8 已保存搜索；有限工况不构成鲁棒稳定性证明。</text>
+<path d="M285,313 L293,313" stroke="#647276" stroke-width="1" fill="none"/>
+<path d="M289,309 L289,317" stroke="#647276" stroke-width="1" fill="none"/>
+<path d="M1895,313 L1903,313" stroke="#647276" stroke-width="1" fill="none"/>
+<path d="M1899,309 L1899,317" stroke="#647276" stroke-width="1" fill="none"/>
+<path d="M285,1101 L293,1101" stroke="#647276" stroke-width="1" fill="none"/>
+<path d="M289,1097 L289,1105" stroke="#647276" stroke-width="1" fill="none"/>
+<path d="M1895,1101 L1903,1101" stroke="#647276" stroke-width="1" fill="none"/>
+<path d="M1899,1097 L1899,1105" stroke="#647276" stroke-width="1" fill="none"/>
+</svg>
